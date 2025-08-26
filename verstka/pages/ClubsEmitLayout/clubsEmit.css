@@ -1,0 +1,435 @@
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.body__page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    color: #171F29;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 30px;
+}
+
+.header__image-star {
+    max-width: 150px;
+    position: absolute;
+    right: 250px;
+    top: 60px;
+}
+
+.section__title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    max-width: 450px;
+}
+
+.section__logos {
+    margin-inline-end: 30px;
+}
+
+.title__page-name {
+    font-family: 'Helios';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 45px;
+}
+
+.section__navigation {
+    margin-block-start: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 45px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    font-family: 'Montserrat';
+} 
+
+.clubs-background {
+    position: absolute;
+    z-index: -1;
+    top: 720px;
+    left: 150px;
+}
+
+.main__arrows-image {
+    max-width: 40px;
+    align-self: center;
+}
+
+.club__images {
+    max-width: 250px;
+    height: fit-content;
+}
+
+.main__section__clubs {
+    padding-inline: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
+
+.main__section__clubs__position {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.main__section__clubs__description {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+.main__section__clubs__name {
+    font-family: 'Montserrat-Bold';
+    font-size: 28px;
+}
+
+.main__section__clubs__text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.know-more__button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: solid 2px #A00F33;
+    border-radius: 30px;
+    padding-block: 7px;
+    padding-inline: 20px;
+}
+
+.club__arrow-image {
+    max-width: 100px;
+}
+
+
+
+.footer {
+    background-color: #171F29;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    padding-block: 30px;
+    font-size: 13px;
+}
+
+.footer__section__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer__section__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer__section__numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media__logo {
+    width: 24px;
+}
+
+.footer__title {
+    font-size: 15px;
+    font-family: 'Montserrat-Bold';
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (width < 1024px) {
+    .header__image-star {
+        display: none;
+    }
+
+    .ranepa__logos {
+        max-width: 130px;
+    }
+
+    .main__section__clubs {
+        padding-inline: 70px;
+    }
+
+    .clubs-background {
+        max-width: 800px;
+    }
+}
+
+@media (width <945px) {
+    .clubs-background {
+        max-width: 650px;
+        left: 60px;
+    }
+
+    .main__section__clubs {
+        gap: 80px;
+    }
+
+}
+
+@media (width < 768px) {
+    .title__page-name {
+        font-size: 38px;
+    }
+
+    .ranepa__logos {
+        max-width: 120px;
+    }
+
+    .navigation__button {
+        max-width: 50px;
+    }
+
+    .section__navigation {
+        margin-top: 80px;
+    }
+
+    .clubs-background {
+        display: none;
+    }
+
+    .club__images {
+        max-width: 130px;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 20px;
+    }
+
+    .main__arrows-image {
+        display: none;
+    }
+
+    .footer {
+        padding-inline: 30px;
+        text-align: start;
+        gap: 50px;
+    }
+}
+
+@media (width < 652px) {
+    .ranepa__logos {
+        max-width: 100px;
+    }
+
+    .section__title {
+        max-width: 250px;
+    }
+
+    .title__page-name {
+        font-size: 30px;
+    }
+
+    .main-page__button {
+        font-size: 15px;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 15px;
+    }
+
+    .main__section__clubs__name {
+        font-size: 20px;
+    }
+
+    .main__section__clubs__text {
+        font-size: 16px;
+    }
+
+    .main__section__clubs__description {
+        gap: 15px;
+    }
+
+    .club__arrow-image {
+        /* max-width: 70px; */
+        display: none;
+    }
+}
+
+@media (width < 524px) {
+    .body__page {
+        gap: 30px;
+    }
+
+    .main {
+        gap: 15px;
+    }
+
+    .title__page-name {
+        font-size: 23px;
+    }
+
+    .ranepa__logos {
+        max-width: 50px;
+    }
+
+    .navigation__button {
+        max-width: 30px;
+    }
+
+    .section__navigation {
+        margin-top: 60px;
+        font-size: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section__logos {
+        margin-inline-end: 5px;
+    }
+
+    .main-page__button {
+        font-size: 13px;
+    }
+
+    .main-page__button__main {
+        padding-inline-start: 0;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 0;
+    }
+
+    .main__section__clubs {
+        padding-inline: 30px;
+    }
+
+    .main__section__clubs__name {
+        font-size: 17px;
+    }
+
+    .main__section__clubs__text {
+        font-size: 13px;
+    }
+
+    .know-more__button {
+        padding-inline: 6px;
+        padding-block: 2px;
+    }
+
+    .footer {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__title {
+        font-size: 12px;
+    }
+
+    .footer__title__social-media {
+        display: none;;
+    }
+}
+
+@media (width < 380px) {
+    .ranepa__logos {
+        display: none;
+    }
+
+    .section__header {
+        margin-top: 10px;
+    }
+
+    .section__navigation {
+        margin-top: 110px;
+    }
+
+    .title__page-name {
+        max-width: 150px;
+    }
+
+    .club__images {
+        max-width: 200px;
+    }
+
+    .main__section__clubs {
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .main__section__clubs__position {
+        flex-direction: column;
+        max-width: 200px;
+        gap: 15px;
+    }
+
+    .reversed-position {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (width < 279px) {
+   .section__description {
+        padding-inline: 2px;
+   }
+}

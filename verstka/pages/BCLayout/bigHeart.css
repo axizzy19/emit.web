@@ -1,0 +1,520 @@
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.body__page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    color: #171F29;
+}
+
+
+
+.bold-font {
+    font-family: 'Montserrat-Bold';
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 30px;
+}
+
+.section__title {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    gap: 10px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+.section__logos {
+    margin-inline-end: 30px;
+}
+
+.big-heart__image-logo {
+    max-width: 80px;
+}
+
+.title__page-name {
+    font-family: 'Helios';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 42px;
+}
+
+.section__navigation {
+    margin-block-start: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    gap: 45px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'Montserrat';
+    /* padding-inline: 230px; */
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 60px;
+} 
+
+.padding__inline {
+    padding-inline: 230px; 
+}
+
+.section__description {
+    width: fit-content;
+}
+
+.section__description__text {
+    background: linear-gradient(to right,#A00F33, #CA0F3E);
+    color: white;
+    text-align: start;
+    padding-inline: 25px;
+    padding-block: 20px;
+    border-radius: 35px;
+}
+
+.section__description__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.section__big-heart__images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+    position: relative;
+}
+
+.big-heart__foto-corner {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    max-width: 50px;
+}
+
+.big-heart__foto-circles {
+    position: absolute;
+    bottom: -40px;
+    right: -70px;
+    max-width: 130px;
+}
+
+.big-heart__image {
+    max-width: 300px;
+}
+
+.section__project-insides {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.insides {
+    text-align: start;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.position__relative {
+    position: relative;
+}
+
+/* .big-heart__lines {
+    width: fit-content;
+    position: absolute;
+    top: -8px;
+    left: -230px;
+} */
+
+.chart__image {
+    max-width: 300px;
+    height: fit-content;
+}
+
+.section__chart {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.section__chart__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+
+.footer {
+    background-color: #171F29;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    padding-block: 30px;
+    font-size: 13px;
+}
+
+.footer__section__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer__section__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer__section__numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media__logo {
+    width: 24px;
+}
+
+.footer__title {
+    font-size: 15px;
+    font-family: 'Montserrat-Bold';
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (width < 1024px) {
+    .ranepa__logos {
+        max-width: 130px;
+    }
+
+    .chart__image {
+        max-width: 250px;
+    }
+}
+
+@media (width < 962px) {
+    .padding__inline {
+        padding-inline: 150px;
+    }
+}
+
+@media (width < 850px) {
+    .padding__inline {
+        padding-inline: 100px;
+    }
+}
+
+
+@media (width < 768px) {
+    .title__page-name {
+        font-size: 38px;
+    }
+
+    .ranepa__logos {
+        max-width: 100px;
+    }
+
+    .navigation__button {
+        max-width: 50px;
+    }
+
+    .section__navigation {
+        margin-top: 80px;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 20px;
+    }
+
+    .padding__inline {
+        padding-inline: 80px;
+    }
+
+    .big-heart__foto-circles {
+        display: none;
+    }
+
+    .footer {
+        padding-inline: 30px;
+        text-align: start;
+        gap: 50px;
+    }
+}
+
+@media (width < 652px) {
+    .main {
+        gap: 50px;
+        margin-bottom: 0;
+    }
+
+    .main-page__button {
+        font-size: 15px;
+    }
+
+    .ranepa__logos {
+        display: none;
+    }
+
+    .section__title {
+        max-width: 250px;
+    }
+
+    .title__page-name {
+        font-size: 30px;
+        /* margin-top: 30px; */
+    }
+
+    .section__project-insides__title {
+        font-size: 20px;
+    }
+
+    .insides {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .chart__title {
+        font-size: 20px;
+    }
+
+    .chart__text {
+        font-size: 16px;
+    }
+
+    .chart__image {
+        max-width: 180px;
+    }
+
+    .section__navigation {
+        margin-top: 50px;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 15px;
+    }
+
+    .big-heart__image-logo {
+        display: none;
+    }
+
+    .big-heart__foto-corner {
+        display: none;
+    }
+
+    .padding__inline {
+        padding-inline: 30px;
+    }
+
+    .big-heart__image {
+        max-width: 200px;
+    }
+
+    .section__description__text {
+        font-size: 17px;
+    }
+}
+
+@media (width < 565px) {
+    .body__page {
+        gap: 30px;
+    }
+
+    .title__page-name {
+        font-size: 23px;
+    }
+
+    .ranepa__logos {
+        max-width: 50px;
+    }
+
+    .navigation__button {
+        max-width: 30px;
+    }
+
+    .section__navigation {
+        margin-top: 60px;
+        font-size: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section__logos {
+        margin-inline-end: 5px;
+    }
+
+    .main-page__button {
+        font-size: 13px;
+    }
+
+    .main-page__button__main {
+        padding-inline-start: 0;
+    }
+
+    .main-page__button__emitman {
+        padding-inline-end: 0;
+    }
+
+    .footer {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__title {
+        font-size: 12px;
+    }
+
+    .footer__title__social-media {
+        display: none;;
+    }
+
+    .big-heart__image {
+        max-width: 150px;
+    }
+}
+
+@media (width < 380px) {
+    .main {
+        gap: 20px;
+    }
+
+    .ranepa__logos {
+        display: none;
+    }
+
+    .section__header {
+        margin-top: 10px;
+    }
+
+    .section__navigation {
+        margin-top: 110px;
+    }
+
+    .title__page-name {
+        max-width: 150px;
+    }
+
+    .section__navigation {
+        margin-top: 70px;
+    }
+
+    .big-heart__image {
+        max-width: 120px;
+    }
+
+    .section__description__text {
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .section__project-insides {
+        gap: 10px;
+    }
+
+    .section__chart__info {
+        gap: 10px;
+        text-align: center;
+    }
+
+    .section__project-insides__title {
+        font-size: 16px;
+    }
+
+    .insides {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .chart__title {
+        font-size: 16px;
+    }
+
+    .chart__text {
+        font-size: 13px;
+    }
+
+    .chart__image {
+        max-width: 120px;
+    }
+
+    .padding__inline {
+        padding-inline: 15px;
+    }
+
+    .section__chart {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (width < 279px) {
+  .main {
+    gap: 20px;
+  }
+
+  .big-heart__image {
+    max-width: 90px;
+  }
+}

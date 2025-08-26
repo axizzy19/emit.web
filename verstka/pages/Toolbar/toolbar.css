@@ -1,0 +1,84 @@
+body{
+   /* background-color: #171F29; */
+   opacity: 0.8;
+   padding: 0;
+   margin: 0;
+   height: auto;
+   max-width: 250px;
+   /* width: 100vw; */
+   display: flex;
+   position: absolute;
+   background-color: black;
+}
+
+h2, h3, p {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+
+.main {
+    background-color: #171F29;
+}
+
+.toolbar__name {
+    background-color: #CA0F3E;
+    /* opacity: 0.8; */
+    color: white;
+    font-family: 'Montserrat-Bold';
+    font-size: 17px;
+    padding: 20px;
+}
+
+.toolbar__name-text {
+    color: white;
+    opacity: 100%;
+}
+
+.toolbar__image {
+    max-width: 20px;
+    height: fit-content;
+}
+
+.toolbar__style {
+    font-family: 'Montserrat';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-inline: 10px;
+    padding-top: 15px;
+    margin-bottom: 200px;
+}
+
+
+.toolbar__titles {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.toolbar__section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.toolbar__name__positions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.section__parts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.toolbar__parts {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    gap: 12px;
+}
