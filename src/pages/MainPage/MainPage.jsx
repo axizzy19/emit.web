@@ -11,62 +11,68 @@ const MainPage = () => {
   usePageTitle('Главная страница');
   
   return (
-      <body>
-        <section class="corner-lines__background">
-          <img
-            class="corner-line__left lines__corners"
-            src={cornerLineLeftTop}
-            alt="Угол верхний левый"
-          />
-          <img
-            class="corner-line__right lines__corners"
-            src={cornerLineRightBottom}
-            alt="Угол нижний правый"
-          />
-        </section>
-        <header class="header">
-          <a class="header__logo">
+    <div id="main-page">
+      {
+        <div className="body">
+          <section className="corner-lines__background">
             <img
-              class="header__logo-img"
-              src={logo}
-              alt="Логотип проекта"
+              className="corner-line__left lines__corners"
+              src={cornerLineLeftTop}
+              alt="Угол верхний левый"
             />
-          </a>
-        </header>
-        <section class="corner-images__background">
-          <img
-            class="corner-image__right image__corners"
-            src={cornerPictureRightTop}
-            alt="Картинка в правом верхнем углу"
-          />
-          <img
-            class="corner-image__left image__corners"
-            src={cornerPictureLeftBottom}
-            alt="Картинка в левом нижнем углу"
-          />
-        </section>
-        <section class="header__main">
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item header__menu-item-major">
-                <button class="header__menu-button">Общая информация</button>
-              </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" href="#0">Клубы</button>
-              </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" href="#0">Студенческий совет ЭМИТ</button>
-              </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" href="#0">Студенческий спортивный клуб ЭМИТ</button>
-              </li>
-              <li class="header__menu-item">
-                <button class="header__menu-button" href="#0">ЭМИТ man</button>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </body>   
+            <img
+              className="corner-line__right lines__corners"
+              src={cornerLineRightBottom}
+              alt="Угол нижний правый"
+            />
+          </section>
+          <header className="header">
+            <a className="header__logo">
+              <img
+                className="header__logo-img"
+                src={logo}
+                alt="Логотип проекта"
+              />
+            </a>
+          </header>
+          <section className="corner-images__background">
+            <img
+              className="corner-image__right image__corners"
+              src={cornerPictureRightTop}
+              alt="Картинка в правом верхнем углу"
+            />
+            <img
+              className="corner-image__left image__corners"
+              src={cornerPictureLeftBottom}
+              alt="Картинка в левом нижнем углу"
+            />
+          </section>
+          <section className="header__main">
+            <nav className="header__menu">
+              <ul className="header__menu-list">
+                <li className="header__menu-item header__menu-item-major">
+                  <button className="header__menu-button">Общая информация</button>
+                </li>
+                <li className="header__menu-item">
+                  <button className="header__menu-button" href="#0">Клубы</button>
+                </li>
+                <li className="header__menu-item">
+                  <button className="header__menu-button" href="#0">Студенческий совет ЭМИТ</button>
+                </li>
+                <li className="header__menu-item">
+                  <button className="header__menu-button" href="#0">Студенческий спортивный клуб ЭМИТ</button>
+                </li>
+                <li className="header__menu-item">
+                  <button className="header__menu-button" href="#0">ЭМИТ man</button>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>   
+      }
+      
+    </div>
+      
   )
 }
 

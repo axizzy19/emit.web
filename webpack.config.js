@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    clean: true,
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -18,9 +18,20 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            modules: {
+              auto: true,
+              localIdentName: '[name]__[local]--[hash:base64:5]'
+            }
+          }
+        }
+      ]
+    },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
         type: 'asset/resource',
@@ -39,6 +50,9 @@ module.exports = {
     port: 3000,
     hot: true,
     open: true,
+    historyApiFallback: {
+      index: '/', 
+    },
   },
   resolve: {
     extensions: ['.js', '.jsx'],

@@ -1,0 +1,368 @@
+
+ .ccemit-page__main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 35px;
+    gap: 50px;
+    color: #171F29;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+ .ccemit-page__section__name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+ .ccemit-page__section__name__text {
+    font-family: 'Montserrat-Bold';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: end;
+}
+
+ .ccemit-page__arrows__image {
+    width: 45px;
+}
+
+ .ccemit-page__arrows__image-reverse {
+    rotate: 180deg;
+}
+
+ .ccemit-page__section__style {
+    padding-inline: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+} 
+
+ .ccemit-page__section__description__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ .ccemit-page__section__description__main__part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+ .ccemit-page__description_lines {
+    height: 120px;
+    align-self: center;
+    margin-inline: 20px;
+}
+
+ .ccemit-page__main-page__images {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+ .ccemit-page__main-page__text {
+    text-align: start;
+    padding-inline: 20px;
+    padding-block: 25px;
+    max-width: 300px;
+    background-color: #A00F33;
+    border-radius: 30px;
+    color: white;
+    margin: 0;
+}
+
+ .ccemit-page__main-page__image-1 {
+    padding-inline-start: 20px;
+}
+
+ .ccemit-page__section__calendar__name {
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+
+ .ccemit-page__section__calendar__main__info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+ .ccemit-page__section__calendar__images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+ .ccemit-page__calendar-lines__image {
+    max-width: 120px;
+    align-self: flex-end;
+}
+
+ .ccemit-page__calendar__images {
+    max-width: inherit;
+}
+
+ .ccemit-page__section__calendar__events {
+    max-width: 100%;
+    border: black solid 3px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+ .ccemit-page__section__calendar__event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    gap: 20px;
+    font-family: 'Montserrat-SemiBold';
+}
+
+ .ccemit-page__section__calendar__event__details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    font-size: 15px;
+}
+
+ .ccemit-page__section__calendar__event__name {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+ .ccemit-page__section__calendar__event__date {
+    color:#A00F33;
+}
+
+ .ccemit-page__section__calendar__event__place {
+    color: #A00F33;
+    text-align: end;
+    font-size: 13px;
+}
+
+ .ccemit-page__section__calendar__star-image {
+    width: 50px;
+    padding-right: 105px;
+    margin-top: -25px;
+}
+
+ .ccemit-page__section__president__title {
+    font-family: 'Montserrat-Bold';
+}
+
+ .ccemit-page__section__president__name {
+    color: #A00F33;
+}
+
+ .ccemit-page__section__president__image {
+    max-width: 600px;
+}
+
+ .ccemit-page__section__president {
+    position: relative;
+    gap: 60px;
+}
+
+ .ccemit-page__section__president-background {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: -1;
+}
+
+ .ccemit-page__section__team {
+    margin-top: 200px;
+}
+
+ .ccemit-page__section__team__title {
+    font-family: 'Montserrat-Bold';
+}
+
+ .ccemit-page__section__team__image {
+    max-width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (width < 1024px) {
+     .ccemit-page__section__style {
+        padding-inline: 15%;
+    }
+
+     .ccemit-page__section__team {
+        margin-top: 50px;
+    }
+}
+
+@media (width < 768px) {
+     .ccemit-page__section__description__main__part {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+     .ccemit-page__section__description__main__part-2 {
+        flex-direction: column-reverse;
+    }
+
+     .ccemit-page__section__description__main {
+        gap: 15px;
+    }
+
+     .ccemit-page__main-page__images {
+        width: fit-content;
+    }
+
+     .ccemit-page__description_lines {
+        display: none;
+    }
+
+     .ccemit-page__main-page__image-1 {
+        padding: 0;
+    }
+
+     .ccemit-page__section__description {
+        max-width: 270px;
+        padding: 0;
+        align-self: center;
+    }
+
+    .ccemit-page__section__calendar {
+        padding-inline: 5%;
+    }
+}
+
+@media (width < 652px) {
+     .ccemit-page__section__calendar__main__info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+     .ccemit-page__section__calendar__images {
+        display: none;
+    }
+
+     .ccemit-page__section__calendar {
+        padding-inline: 15%
+    }
+
+     .ccemit-page__section__calendar__star-image {
+        display: none;
+    }
+
+     .ccemit-page__section__president__image {
+        max-width: 250px;
+    }
+
+     .ccemit-page__section__team {
+        margin-top: 0;
+        padding-inline: 10%;
+    }
+}
+
+@media (width < 524px) {
+    .ccemit-page__main {
+        gap: 15px;
+    }
+
+     .ccemit-page__section__president {
+        gap: 10px;
+    }
+
+     .ccemit-page__section__president-background {
+        display: none;
+    }
+
+     .ccemit-page__section__name__text {
+        font-size: 20px;
+    }
+
+     .ccemit-page__arrows__image {
+        max-width: 35px;
+    }
+
+     .ccemit-page__main-page__text {
+        font-size: 13px;
+    }
+
+     .ccemit-page__section__calendar {
+        padding: 7%;
+    }
+
+     .ccemit-page__section__calendar__event__name {
+        font-size: 15px;
+    }
+
+     .ccemit-page__section__calendar__event__date {
+        font-size: 11px;
+    }
+
+     .ccemit-page__section__calendar__event__time {
+        font-size: 11px;
+    }
+
+     .ccemit-page__section__calendar__event__place {
+        font-size: 11px;
+    }
+
+     .ccemit-page__section__president__title__status {
+        font-size: 15px;
+    }
+
+     .ccemit-page__section__president__name {
+        font-size: 15px;
+    }
+
+     .ccemit-page__section__president__image {
+        max-width: 200px;
+    }
+
+     .ccemit-page__section__team__title {
+        font-size: 17px;
+    }
+
+     .ccemit-page__section__team {
+        padding: 2%;
+        gap: 10px;
+    }
+}
+
+@media (width < 279px) {
+    .ccemit-page__section__description {
+        padding-inline: 2px;
+   }
+
+    .ccemit-page__section__calendar__event {
+        flex-direction: column;
+        align-items: start;
+   }
+
+    .ccemit-page__section__calendar__event__place {
+    text-align: start;
+   }
+
+    .ccemit-page__section__president__image {
+    max-width: 120px;
+   }
+}
