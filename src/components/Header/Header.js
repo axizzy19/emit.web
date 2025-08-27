@@ -4,7 +4,7 @@ import navigationButton from '../../assets/images/NavigationButton.png';
 import ranepaLogos from '../../assets/images/RanepaLogos.svg';
 
 
-const Header = () => {
+const Header = ({ title, subtitle }) => {
   return (
         <header className="header-component__header">
           <section className="header-component__section__header">
@@ -25,8 +25,10 @@ const Header = () => {
               </section>
           </section>
           <section className="header-component__section__title">
-              <h1 className="header-component__title__page-name">Студенческий совет ЭМИТ</h1>
-              <h2 className="header-component__title__page-name__h2">XVI созыв</h2>
+              <h1 className="header-component__title__page-name">{title}</h1>
+                {subtitle && (
+                <h2 className="header-component__title__page-name__h2">{subtitle}</h2>
+                )}
           </section>
           <section className="header-component__section__navigation">
               <button className="header-component__main-page__button header-component__main-page__button__main">ГЛАВНАЯ СТРАНИЦА</button>

@@ -21,7 +21,7 @@ const CCEmitPage = () => {
 
   return ( 
     <>
-      <Header />
+      <Header title="Cтуденческий совет ЭМИТ" subtitle="XVI созыв"/>
       <main className="ccemit-page__main">
         <section className="ccemit-page__section__description  ccemit-page__section__style">
             <section className="ccemit-page__section__name">
