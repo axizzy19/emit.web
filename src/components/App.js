@@ -9,6 +9,7 @@ import ITCommunityPage from '../pages/ITCommunityPage/ITCommunityPage';
 import CSCPage from '../pages/CSCPage/CSCPage';
 import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
+import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/pages/clubs/csc" element={<CSCPage/>} />
         <Route path="/pages/clubs/bc" element={<BCPage/>} />
         <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
+        <Route path="/pages/clubs/emeeting" element={<EmeetingPage/>} />
       </Routes>
     </Router>
   );

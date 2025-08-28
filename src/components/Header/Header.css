@@ -173,6 +173,7 @@ button:hover {
 
     .header-component__title__page-name {
         max-width: 150px;
+        align-self: center;
     }
 
     .header-component__section__navigation {

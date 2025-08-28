@@ -8,6 +8,10 @@
     padding-block: 30px;
     font-size: 13px;
     font-family: 'Montserrat';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer__section__info {
