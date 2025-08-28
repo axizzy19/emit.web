@@ -174,4 +174,8 @@ button:hover {
     .header-component__title__page-name {
         max-width: 150px;
     }
+
+    .header-component__section__navigation {
+        margin-top: 100px;
+    }
 }
