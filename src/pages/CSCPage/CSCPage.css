@@ -8,13 +8,11 @@ h1, h2, h3, h4, p, br {
     margin: 0;
 }
 
-
-
-/* .header-black-component__section__navigation {
+/* .csc-page__header-black-component__section__navigation {
   margin-top: 80px;
 } */
 
-.main {
+.csc-page__main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,56 +26,15 @@ h1, h2, h3, h4, p, br {
     background-color: black;
 }
 
-.section__title {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    position: absolute;
-    top: 40px;
-    margin: 0;
-    padding: 0;
-    max-width: 450px;
-}
-
-.section__logos {
-    margin-inline-end: 30px;
-}
-
-.title__page-name {
-    font-family: 'Helios';
-    font-weight: 700;
-    font-style: bold;
-    font-size: 45px;
-}
-
-.title__page-name__h2 {
-    color: #A00F33;
-    font-weight: 400;
-    font-size: 27px;
-}
-
-.section__navigation {
-    margin-block-start: 90px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-block: 20px;
-    gap: 45px;
-    border-top: 2px white solid;
-    border-bottom: 2px white solid;
-}
-
-
-.section__description {
+.csc-page__section__description {
     position: relative;
 }
 
-.padding__inline {
+.csc-page__padding__inline {
     padding-inline: 230px;
 }
 
-.section__description__text {
+.csc-page__section__description__text {
     background: linear-gradient(to right,#A00F33, #29345B);
     color: white;
     text-align: start;
@@ -86,22 +43,22 @@ h1, h2, h3, h4, p, br {
     border-radius: 30px;
 }
 
-.section__description__background {
+.csc-page__section__description__background {
     position: absolute;
     max-width: 40px;
     left: 220px;
     top: -10px;
 }
 
-.section__main-image {
+.csc-page__section__main-image {
     position: relative;
 }
 
-.csc-image {
+.csc-page__csc-image {
     max-width: 400px;
 }
 
-.main-image__background {
+.csc-page__main-image__background {
     position: absolute;
     left: 0;
     top: 0;
@@ -109,7 +66,7 @@ h1, h2, h3, h4, p, br {
     z-index: -1;
 }
 
-.section__fields {
+.csc-page__section__fields {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,13 +74,13 @@ h1, h2, h3, h4, p, br {
     gap: 20px;
 }
 
-.section__career-science {
+.csc-page__section__career-science {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.project__style {
+.csc-page__project__style {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -131,308 +88,152 @@ h1, h2, h3, h4, p, br {
     gap: 20px;
 }
 
-.project__text {
+.csc-page__project__text {
     padding: 15px;
     border: white solid 1px;
     border-radius: 30px;
 }
 
-.name-project__style {
+.csc-page__name-project__style {
     color: #CA0F3E;
     font-size: 23px;
 }
 
-.csc-image__figures {
+.csc-page__csc-image__figures {
     max-width: 50px;
 }
 
-.section__project {
+.csc-page__section__project {
     padding-inline: 120px;
 }
 
-.section__chat {
+.csc-page__section__chat {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.section__chat__info {
+.csc-page__section__chat__info {
     text-align: start;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.chat-image {
+.csc-page__chat-image {
     max-width: 250px;
 }
 
-.footer {
-    background-color: #171F29;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-    color: white;
-    padding-block: 30px;
-    font-size: 13px;
-}
-
-.footer__section__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-}
-
-.footer__section__contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-}
-
-.footer__section__numbers {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-}
-
-.social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-}
-
-.social-media__logo {
-    width: 24px;
-}
-
-.footer__title {
-    font-size: 15px;
-    font-family: 'Montserrat-Bold';
-}
-
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.csc-page__05);
 }
 
 @media (width < 1024px) {
-   
-    .padding__inline {
+    .csc-page__padding__inline {
         padding-inline: 180px;
     }
 
-    .section__description__background {
+    .csc-page__section__description__background {
         left: 170px;
     }
 }
 
 @media (width <945px) {
-    .padding__inline {
+    .csc-page__padding__inline {
         padding-inline: 150px;
     }
 
-    .section__description__background {
+    .csc-page__section__description__background {
         display: none;
     }
 }
 
 @media (width < 768px) {
-    .ranepa__logos {
-        max-width: 100px;
-    }
-
-    .navigation__button {
-        max-width: 50px;
-    }
-
-    .section__navigation {
-        margin-top: 120px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .padding__inline {
+    .csc-page__padding__inline {
         padding-inline: 180px;
     }
 
-    .main {
+    .csc-page__main {
         gap: 40px;
     }
 
-    .csc-image {
+    .csc-page__csc-image {
         max-width: 200px;
     }
 
-    .section__career-science {
+    .csc-page__section__career-science {
         flex-direction: column;
     }
 
-    .section__project {
+    .csc-page__section__project {
         padding-inline: 0;
     }
 
-    .csc-image__figures {
+    .csc-page__csc-image__figures {
         display: none;
     }
 
-    .section__fields {
+    .csc-page__section__fields {
         gap: 50px;
     }
 
-    .section__chat {
+    .csc-page__section__chat {
         flex-direction: column;
     }
 
-    .chat__title {
+    .csc-page__chat__title {
         text-align: center;
     }
 
-    .chat-image {
+    .csc-page__chat-image {
         max-width: 200px;
-    }
-
-    .footer {
-        padding-inline: 30px;
-        text-align: start;
-        gap: 50px;
     }
 }
 
 @media (width < 652px) {
-    .ranepa__logos {
-        max-width: 100px;
-    }
-
-    .section__title {
-        max-width: 250px;
-    }
-
-    .title__page-name {
-        font-size: 30px;
-    }
-
-    .section__navigation {
-        margin-top: 80px;
-    }
-
-    .main-page__button {
-        font-size: 15px;
-    }
-
-    .main-page__button__emitman {
-        padding-inline-end: 15px;
-    }
-
-    .padding__inline {
+    .csc-page__padding__inline {
         padding-inline: 80px;
     }
 }
 
 @media (width < 524px) {
-    .body__page {
-        gap: 20px;
-    }
-
-    .title__page-name {
-        font-size: 23px;
-    }
-
-    .ranepa__logos {
-        max-width: 50px;
-    }
-
-    .navigation__button {
-        max-width: 30px;
-    }
-
-    .section__navigation {
-        font-size: 10px;
-    }
-
-    .section__logos {
-        margin-inline-end: 5px;
-    }
-
-    .main-page__button__main {
-        padding-inline-start: 0;
-    }
-
-    .main-page__button__emitman {
-        padding-inline-end: 0;
-    }
-
-    .section__description__text {
+    .csc-page__section__description__text {
         font-size: 15px;
     }
 
-    .name-project__style {
+    .csc-page__name-project__style {
         font-size: 18px;
     }
 
-    .project__text {
+    .csc-page__project__text {
         font-size: 15px;
     }
 
-    .chat__text {
+    .csc-page__chat__text {
         font-size: 15px;
     }
 
-    .chat__title {
+    .csc-page__chat__title {
         font-size: 18px;
-    }
-
-    .footer {
-        font-size: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer__title {
-        font-size: 12px;
-    }
-
-    .footer__title__social-media {
-        display: none;;
     }
 }
 
 @media (width < 380px) {
-    .ranepa__logos {
-        display: none;
-    }
-
-    .section__header {
-        margin-top: 10px;
-    }
-
-    .title__page-name {
-        max-width: 150px;
-    }
-
-    .padding__inline {
+    .csc-page__padding__inline {
         padding-inline: 40px;
     }
 
-    .csc-image {
+    .csc-page__csc-image {
         max-width: 100%;
     }
 
-    .chat-image {
+    .csc-page__chat-image {
         max-width: 100%;
     }
 }
 
 @media (width < 279px) {
-   .padding__inline {
+   .csc-page__padding__inline {
         padding-inline: 25px;
     }
 }

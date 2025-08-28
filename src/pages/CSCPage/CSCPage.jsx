@@ -15,56 +15,56 @@ const CSCPage = () => {
   return (
     <>
       <HeaderBlack title="Career&Science Community" subtitle="Про карьеру, науку, проекты"/>
-      <main className="main">
-        <section className="section__description padding__inline">
-            <p className="section__description__text">Это уникальная инициатива, объединяющая карьерное развитие, научные исследования и инновационные проекты. </p>
+      <main className="csc-page__main">
+        <section className="csc-page__section__description csc-page__padding__inline">
+            <p className="csc-page__section__description__text">Это уникальная инициатива, объединяющая карьерное развитие, научные исследования и инновационные проекты. </p>
             <img
                 src={CSCLeftTopCorner}
-                className="section__description__background"
+                className="csc-page__section__description__background"
             />
         </section>
-        <section className="section__main-image padding__inline">
+        <section className="csc-page__section__main-image csc-page__padding__inline">
             <img
                 src={cscImage}
-                className="csc-image"
+                className="csc-page__csc-image"
             />
             <img
                 src={mainImageBackground}
-                className="main-image__background"
+                className="csc-page__main-image__background"
             />
         </section>
-        <section className="section__fields padding__inline">
-            <section className="section__career-science">
-                <section className="section__career project__style">
-                    <h3 className="name-project__style">КАРЬЕРА</h3>
-                    <p className="project__text">- это не просто работа, это путь к вашим мечтам. Мы предлагаем ресурсы, советы и менторские программы, которые помогут вам определить свои цели и достичь их. Вместе мы создадим стратегию вашего карьерного роста! </p>
+        <section className="csc-page__section__fields csc-page__padding__inline">
+            <section className="csc-page__section__career-science">
+                <section className="csc-page__section__career csc-page__project__style">
+                    <h3 className="csc-page__name-project__style">КАРЬЕРА</h3>
+                    <p className="csc-page__project__text">- это не просто работа, это путь к вашим мечтам. Мы предлагаем ресурсы, советы и менторские программы, которые помогут вам определить свои цели и достичь их. Вместе мы создадим стратегию вашего карьерного роста! </p>
                 </section>
-                <section className="section__science project__style">
-                    <h3 className="name-project__style">НАУКА</h3>
-                    <p className="project__text">- научные исследования открывают новые горизонты и возможности. В рамках Career&Science Community мы будем делиться последними достижениями науки, чтобы вдохновить вас на новые идеи и открытия. </p>
+                <section className="csc-page__section__science csc-page__project__style">
+                    <h3 className="csc-page__name-project__style">НАУКА</h3>
+                    <p className="csc-page__project__text">- научные исследования открывают новые горизонты и возможности. В рамках Career&Science Community мы будем делиться последними достижениями науки, чтобы вдохновить вас на новые идеи и открытия. </p>
                 </section>
             </section>
             <img
-                className="csc-image__figures"
+                className="csc-page__csc-image__figures"
                 src={cscFigures}
             />
-            <section className="section__project project__style">
-                <h3 className="name-project__style">ПРОЕКТЫ</h3>
-                <p className="project__text">- мы верим в силу совместной работы. Career&Science Community станет платформой для реализации ваших идей и проектов. Объединяя усилия, мы сможем создать что-то поистине значимое и инновационное.</p>
+            <section className="csc-page__section__project csc-page__project__style">
+                <h3 className="csc-page__name-project__style">ПРОЕКТЫ</h3>
+                <p className="csc-page__project__text">- мы верим в силу совместной работы. Career&Science Community станет платформой для реализации ваших идей и проектов. Объединяя усилия, мы сможем создать что-то поистине значимое и инновационное.</p>
             </section>
         </section>
-        <section className="section__chat padding__inline">
-            <section className="section__chat-image">
+        <section className="csc-page__section__chat csc-page__padding__inline">
+            <section className="csc-page__section__chat-image">
                 {/* <!-- <img /> --> */}
                 <img
                     src={chatImage}
-                    className="chat-image"
+                    className="csc-page__chat-image"
                 />
                 {/* <!-- <img/> --> */}
             </section>
-            <section className="section__chat__info">
-                <h2 className="chat__title">ЧАТ</h2>
-                <section className="chat__text">
+            <section className="csc-page__section__chat__info">
+                <h2 className="csc-page__chat__title">ЧАТ</h2>
+                <section className="csc-page__chat__text">
                     <p>Для участников нашего сообщества, куда будет публиковаться важная информация:<br />- о возможностях в Академии и не только<br />- о стажировках и различных проектах<br />- об олимпиадах</p>
                 </section>
             </section>
