@@ -7,6 +7,7 @@ import CCKEmitPage from '../pages/CCKEmitPage/CCKEmitPage';
 import ClubsPage from '../pages/ClubsPage/ClubsPage';
 import ITCommunityPage from '../pages/ITCommunityPage/ITCommunityPage';
 import CSCPage from '../pages/CSCPage/CSCPage';
+import BCPage from '../pages/BCPage/BCPage';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/pages/clubs" element={<ClubsPage/>}/>
         <Route path='/pages/clubs/itcommunity' element={<ITCommunityPage/>} />
         <Route path="/pages/clubs/csc" element={<CSCPage/>} />
+        <Route path="/pages/clubs/bc" element={<BCPage/>} />
       </Routes>
     </Router>
   );
