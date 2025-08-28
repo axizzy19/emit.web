@@ -10,8 +10,11 @@ import cscLogo from "../../assets/images/ClubCSC.png";
 import clubBC from "../../assets/images/ClubBC.png";
 import clubDebates from "../../assets/images/ClubDebates.png";
 import clubEmeeting from "../../assets/images/ClubEmeeting.png";
+import usePageTitle from "../../hooks/usePageTitle";
 
 const ClubsPage = () => {
+  usePageTitle("Клубы Института ЭМИТ");
+
   return (
     <>
       <Header title="Клубы Института ЭМИТ"/>
