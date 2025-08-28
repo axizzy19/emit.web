@@ -8,6 +8,7 @@ import ClubsPage from '../pages/ClubsPage/ClubsPage';
 import ITCommunityPage from '../pages/ITCommunityPage/ITCommunityPage';
 import CSCPage from '../pages/CSCPage/CSCPage';
 import BCPage from '../pages/BCPage/BCPage';
+import DebatesPage from '../pages/DebatesPage/DebatesPage';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/pages/clubs/itcommunity' element={<ITCommunityPage/>} />
         <Route path="/pages/clubs/csc" element={<CSCPage/>} />
         <Route path="/pages/clubs/bc" element={<BCPage/>} />
+        <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
       </Routes>
     </Router>
   );

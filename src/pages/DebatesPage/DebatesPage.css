@@ -1,0 +1,168 @@
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, p, br {
+    padding: 0;
+    margin: 0;
+}
+
+.debates-page__main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-block: 50px;
+    color: white;
+    background-color: black;
+    gap: 80px;
+}
+
+.debates-page__padding__inline {
+    padding-inline: 170px;
+}
+
+.debates-page__section__description__text {
+    background: white;
+    color: black;
+    text-align: start;
+    padding-inline: 25px;
+    padding-block: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.debates-page__debates__line {
+    max-width: 100%;
+}
+
+.debates-page__section__info {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.debates-page__section__info-part {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    border: solid 2px #CA0F3E;
+    border-radius: 40px;
+}
+
+.debates-page__text-info {
+    padding-top: 15px;
+    padding-inline: 20px;
+    font-size: 18px;
+}
+
+.debates-page__debates__foto {
+    max-width: 350px;
+    height: 100%;
+}
+
+.debates-page__debates__foto__logo {
+    max-width: 100%;
+}
+
+.debates-page__style-reversed {
+    flex-direction: row-reverse;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media (width < 1024px) {
+   
+    .debates-page__padding__inline {
+        padding-inline: 180px;
+    }
+
+    .debates-page__section__info-part {
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-radius: 70px;
+    }
+
+    .debates-page__text-info {
+        padding-inline: 35px;
+    }
+
+    .debates-page__debates__foto {
+        max-width: 100%;
+    }
+}
+
+@media (width <945px) {
+    .debates-page__padding__inline {
+        padding-inline: 150px;
+    }
+}
+
+@media (width < 768px) {
+    .debates-page__padding__inline {
+        padding-inline: 100px;
+    }
+
+    .debates-page__section__info-part {
+        border-radius: 50px;
+    }
+
+    .debates-page__main {
+        gap: 40px;
+    }
+}
+
+@media (width < 652px) {
+    .debates-page__padding__inline {
+        padding-inline: 80px;
+    }
+
+    .debates-page__section__description__text {
+        font-size: 15px;
+    }
+
+    .debates-page__text-info {
+        font-size: 15px;
+    }
+}
+
+@media (width < 524px) {
+    .debates-page__section__description__text {
+        font-size: 15px;
+    }
+
+    .debates-page__padding__inline {
+        padding-inline: 30px;
+    }
+}
+
+@media (width < 380px) {
+    .debates-page__section__info-part {
+        border: none;
+        gap: 20px
+    }
+
+    .debates-page__section__info {
+        gap: 30px;
+    }
+
+    .debates-page__text-info {
+        padding: 0;
+    }
+
+    .debates-page__padding__inline {
+        padding-inline: 20px;
+    }
+}
+
+@media (width < 279px) {
+   .debates-page__padding__inline {
+        padding-inline: 25px;
+    }
+}

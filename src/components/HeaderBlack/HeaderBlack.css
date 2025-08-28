@@ -32,6 +32,7 @@ h1, h2, h3, h4, p {
   display: flex;
   flex-direction: column;
   align-self: center;
+  text-align: center;
   position: absolute;
   top: 40px;
   margin: 0;
@@ -160,5 +161,13 @@ h1, h2, h3, h4, p {
 
   .header-black-component__title__page-name {
     max-width: 150px;
+  }
+
+  .header-black-component__section__title {
+    align-items: center;
+  }
+
+    .header-black-component__title__page-name__h2 {
+    display: none;
   }
 }
