@@ -12,7 +12,7 @@ import cckFotoEvents3 from "../../assets/images/CCK-foto-events-3.png";
 import starImage from "../../assets/images/StarImage.png";
 import presidentCckFoto from "../../assets/images/PresidentCCKFoto.png";
 import presidentCckBackground from "../../assets/images/PresidentCCKBackground.svg";
-import cckTeamFoto from "../../assets/images/CCKTeamFoto.jpg";
+import cckTeamFoto from "../../assets/images/CCKTeamFoto.png";
 import Footer from '../../components/Footer/Footer';
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from '../../hooks/useFavicon';
