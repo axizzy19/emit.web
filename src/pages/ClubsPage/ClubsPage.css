@@ -43,7 +43,8 @@ h1, h2, h3, h4, p {
 
 .clubs-page__club__images {
     max-width: 250px;
-    height: fit-content;
+    /* height: fit-content; */
+    height: auto;
 }
 
 .clubs-page__main__section__clubs {
