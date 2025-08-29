@@ -6,9 +6,19 @@ import cornerLineRightBottom from '../../assets/images/CornerLineRightBottom.svg
 import cornerPictureRightTop from '../../assets/images/CornerPictureRightTop.svg';
 import cornerPictureLeftBottom from '../../assets/images/CornerPictureLeftBottom.svg';
 import usePageTitle from "../../hooks/usePageTitle";
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from "../../hooks/useFavicon";
+import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
   usePageTitle('Главная страница');
+  useFavicon(customFavicon);
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
   
   return (
     <div id="main-page">
@@ -50,21 +60,36 @@ const MainPage = () => {
           <section className="header__main">
             <nav className="header__menu">
               <ul className="header__menu-list">
-                <li className="header__menu-item header__menu-item-major">
+                {/* <li className="header__menu-item header__menu-item-major">
                   <button className="header__menu-button">Общая информация</button>
+                </li> */}
+                <li className="header__menu-item">
+                  <button
+                    className="header__menu-button"
+                    onClick={() => handleNavigation('/pages/clubs')}
+                  >
+                    Клубы
+                  </button>
                 </li>
                 <li className="header__menu-item">
-                  <button className="header__menu-button" href="#0">Клубы</button>
+                  <button
+                    className="header__menu-button"
+                    onClick={() => handleNavigation('/pages/ccemit')}
+                  >
+                    Студенческий совет ЭМИТ
+                  </button>
                 </li>
                 <li className="header__menu-item">
-                  <button className="header__menu-button" href="#0">Студенческий совет ЭМИТ</button>
+                  <button
+                    className="header__menu-button"
+                    onClick={() => handleNavigation('/pages/cckemit')}
+                  >
+                    Студенческий спортивный клуб ЭМИТ
+                  </button>
                 </li>
-                <li className="header__menu-item">
-                  <button className="header__menu-button" href="#0">Студенческий спортивный клуб ЭМИТ</button>
-                </li>
-                <li className="header__menu-item">
+                {/* <li className="header__menu-item">
                   <button className="header__menu-button" href="#0">ЭМИТ man</button>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </section>

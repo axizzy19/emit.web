@@ -11,9 +11,16 @@ import clubBC from "../../assets/images/ClubBC.png";
 import clubDebates from "../../assets/images/ClubDebates.png";
 import clubEmeeting from "../../assets/images/ClubEmeeting.png";
 import usePageTitle from "../../hooks/usePageTitle";
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from "../../hooks/useFavicon";
 
 const ClubsPage = () => {
   usePageTitle("Клубы Института ЭМИТ");
+  useFavicon(customFavicon);
+
+  const handleExternalNavigation = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <>
@@ -36,7 +43,7 @@ const ClubsPage = () => {
                 <section className="clubs-page__main__section__clubs__description">
                     <h2 className="clubs-page__main__section__clubs__name">Цифровое комьюнити</h2>
                     <p className="clubs-page__main__section__clubs__text">Комьюнити единомышленников, заинтересованных в развитии в сфере цифровых технологий.</p>
-                    <button className="clubs-page__know-more__button">
+                    <button className="clubs-page__know-more__button" onClick={() => handleExternalNavigation("https://vk.com/bit_ranepa")}>
                         <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
                         <img
                             className="clubs-page__club__arrow-image"
@@ -49,7 +56,7 @@ const ClubsPage = () => {
                 <section className="clubs-page__main__section__clubs__description">
                     <h2 className="clubs-page__main__section__clubs__name">Career&Science Community</h2>
                     <p className="clubs-page__main__section__clubs__text">Проект-проводник в мир карьеры и науки.</p>
-                    <button className="clubs-page__know-more__button">
+                    <button className="clubs-page__know-more__button" onClick={() => handleExternalNavigation("https://vk.com/career_science_com")}>
                         <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
                         <img
                             className="clubs-page__club__arrow-image"
@@ -70,7 +77,7 @@ const ClubsPage = () => {
                 <section className="clubs-page__main__section__clubs__description">
                     <h2 className="clubs-page__main__section__clubs__name">Большое сердце</h2>
                     <p className="clubs-page__main__section__clubs__text">Проект, целью которого является благотворительная помощь всем, кто в ней нуждается.</p>
-                    <button className="clubs-page__know-more__button">
+                    <button className="clubs-page__know-more__button" onClick={() => handleExternalNavigation("https://vk.com/bolshoeserdtseemit")}>
                         <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
                         <img
                             className="clubs-page__club__arrow-image"
@@ -83,7 +90,7 @@ const ClubsPage = () => {
                 <section className="clubs-page__main__section__clubs__description">
                     <h2 className="clubs-page__main__section__clubs__name">Клуб дебатов</h2>
                     <p className="clubs-page__main__section__clubs__text">Парламентские дебаты представляют собой интеллектуальную игру, в которой необходимо аргументировать позицию, достающуюся в случайном порядке.</p>
-                    <button className="clubs-page__know-more__button">
+                    <button className="clubs-page__know-more__button" onClick={() => handleExternalNavigation("https://vk.com/debate_emit")}>
                         <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
                         <img
                             className="clubs-page__club__arrow-image"
@@ -104,13 +111,13 @@ const ClubsPage = () => {
                 <section className="clubs-page__main__section__clubs__description">
                     <h2 className="clubs-page__main__section__clubs__name">ЭMEETING</h2>
                     <p className="clubs-page__main__section__clubs__text">Мероприятие, направленное на сплочение студентов и отдых от рабочей атмосферы.</p>
-                    <button className="clubs-page__know-more__button">
+                    {/* <button className="clubs-page__know-more__button" onClick={() => handleExternalNavigation("")}>
                         <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
                         <img
                             className="clubs-page__club__arrow-image"
                             src={knowMoreArrows}
                         />
-                    </button>
+                    </button> */}
                 </section>
             </section>
         </section>

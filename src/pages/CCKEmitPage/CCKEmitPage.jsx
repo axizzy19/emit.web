@@ -14,10 +14,12 @@ import presidentCckFoto from "../../assets/images/PresidentCCKFoto.png";
 import presidentCckBackground from "../../assets/images/PresidentCCKBackground.svg";
 import cckTeamFoto from "../../assets/images/CCKTeamFoto.jpg";
 import Footer from '../../components/Footer/Footer';
-
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from '../../hooks/useFavicon';
 
 const CCKEmitPage = () => {
   usePageTitle("Студенческий спортивный клуб ЭМИТ");
+  useFavicon(customFavicon);
 
   return (
     <>

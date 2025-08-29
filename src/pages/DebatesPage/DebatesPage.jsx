@@ -7,9 +7,13 @@ import debatesBackground from "../../assets/images/DebatesBackground.svg";
 import debatesFoto1 from "../../assets/images/DebatesFoto-1.png";
 import debatesFoto2 from "../../assets/images/DebatesFoto-2.png";
 import debatesClubLogo from "../../assets/images/DebatesClubLogo.png";
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from "../../hooks/useFavicon";
 
 const DebatesPage = () => {
   usePageTitle("Клуб дебатов");
+  useFavicon(customFavicon);
+
   return (
     <>
     <HeaderBlack title="Клуб дебатов ЭМИТ" subtitle="Учим аргументировать"/>

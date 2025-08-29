@@ -8,9 +8,12 @@ import cscImage from "../../assets/images/CSCImage.png";
 import mainImageBackground from "../../assets/images/CSCBackground.png";
 import cscFigures from "../../assets/images/CSCFigures.svg";
 import chatImage from "../../assets/images/CSCChat.svg";
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from "../../hooks/useFavicon";
 
 const CSCPage = () => {
   usePageTitle("Career&Science Community");
+  useFavicon(customFavicon);
 
   return (
     <>

@@ -1,3 +1,4 @@
+
 .footer {
     background-color: #171F29;
     display: flex;
@@ -8,10 +9,10 @@
     padding-block: 30px;
     font-size: 13px;
     font-family: 'Montserrat';
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
 }
 
 .footer__section__info {

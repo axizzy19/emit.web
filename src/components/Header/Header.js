@@ -2,9 +2,16 @@ import React from 'react';
 import './Header.css';
 import navigationButton from '../../assets/images/NavigationButton.png';
 import ranepaLogos from '../../assets/images/RanepaLogos.svg';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 
 const Header = ({ title, subtitle }) => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
         <header className="header-component__header">
           <section className="header-component__section__header">
@@ -31,10 +38,30 @@ const Header = ({ title, subtitle }) => {
                 )}
           </section>
           <section className="header-component__section__navigation">
-              <button className="header-component__main-page__button header-component__main-page__button__main">ГЛАВНАЯ СТРАНИЦА</button>
-              <button className="header-component__main-page__button">СТУДЕНЧЕСКАЯ СТРУКТУРА</button>
-              <button className="header-component__main-page__button">КЛУБЫ</button>
-              <button className="header-component__main-page__button header-component__main-page__button__emitman">ЭМИТMAN</button>
+              <button
+                className="header-component__main-page__button header-component__main-page__button__main"
+                onClick={() => handleNavigation('/')}
+              >
+                    ГЛАВНАЯ СТРАНИЦА
+              </button>
+              <button
+                className="header-component__main-page__button"
+                onClick={() => handleNavigation('/pages/ccemit')}
+              >
+                СТУДЕНЧЕСКАЯ СТРУКТУРА
+              </button>
+              <button
+                className="header-component__main-page__button"
+                onClick={() => handleNavigation('/pages/clubs')}
+              >
+                КЛУБЫ
+              </button>
+              {/* <button
+                className="header-component__main-page__button header-component__main-page__button__emitman"
+                onClick={() => handleNavigation('/pages/')}
+              >
+                ЭМИТMAN
+              </button> */}
           </section>
         </header>
   )

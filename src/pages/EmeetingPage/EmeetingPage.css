@@ -9,6 +9,14 @@ h1, h2, h3, h4, p {
     font-family: 'Montserrat';
 }
 
+/* вот тут нужно править с футером что то  */
+.positions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .emeetimg-page__main {
     margin: 0;
     padding: 0;

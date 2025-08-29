@@ -2,8 +2,15 @@ import React from 'react';
 import './HeaderBlack.css';
 import navigationButton from "../../assets/images/NavigationButton.png"
 import ranepaLogos from "../../assets/images/RanepaLogosWhite.svg"
+import { useNavigate } from 'react-router-dom';
 
 const HeaderBlack = ({ title, subtitle }) => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <>
       <header className="header-black-component__header">
@@ -29,10 +36,25 @@ const HeaderBlack = ({ title, subtitle }) => {
             <h2 className="header-black-component__title__page-name__h2">{subtitle}</h2>
         </section>
         <section className="header-black-component__section__navigation">
-            <button className="header-black-component__main-page__button main-page__button__main">ГЛАВНАЯ СТРАНИЦА</button>
-            <button className="header-black-component__main-page__button">СТУДЕНЧЕСКАЯ СТРУКТУРА</button>
-            <button className="header-black-component__main-page__button">КЛУБЫ</button>
-            <button className="header-black-component__main-page__button main-page__button__emitman">ЭМИТMAN</button>
+            <button
+              className="header-black-component__main-page__button main-page__button__main"
+              onClick={() => handleNavigation('/')}
+            >
+              ГЛАВНАЯ СТРАНИЦА
+            </button>
+            <button
+              className="header-black-component__main-page__button"
+              onClick={() => handleNavigation('/pages/ccemit')}
+            >
+              СТУДЕНЧЕСКАЯ СТРУКТУРА
+            </button>
+            <button 
+              className="header-black-component__main-page__button"
+              onClick={() => handleNavigation('/pages/clubs')}
+            >
+              КЛУБЫ
+            </button>
+            {/* <button className="header-black-component__main-page__button main-page__button__emitman">ЭМИТMAN</button> */}
         </section>
       </header>
     </>

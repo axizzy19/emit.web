@@ -41,6 +41,11 @@ h1, h2, h3, h4, p {
   max-width: 450px;
 }
 
+/* пока убрали кнопку навигации !!!! */
+.header-black-component__navigation__button {
+  display: none;
+}
+
 .header-black-component__section__logos {
   margin-inline-end: 30px;
 }

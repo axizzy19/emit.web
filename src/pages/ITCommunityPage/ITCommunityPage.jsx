@@ -9,9 +9,12 @@ import podcastFoto2 from "../../assets/images/PodcastFoto-2.png";
 import BITFoto from "../../assets/images/BITFoto.png";
 import BITCircles from "../../assets/images/BITCircles.svg";
 import pulsarFoto from "../../assets/images/PulsarFoto.png";
+import customFavicon from "../../assets/images/favicon.svg";
+import useFavicon from "../../hooks/useFavicon";
 
 const ITCommunityPage = () => {
   usePageTitle("Цифровое комьюнити");
+  useFavicon(customFavicon);
 
   return (
     <>

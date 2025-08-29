@@ -10,9 +10,12 @@ import BCFoto1 from "../../assets/images/BCFoto-1.png";
 import BCFoto2 from "../../assets/images/BCFoto-2.png";
 import BCLinesDivision from "../../assets/images/BCLinesDivision.svg";
 import BCChart from "../../assets/images/BCChart.png"
+import useFavicon from "../../hooks/useFavicon";
+import customFavicon from "../../assets/images/favicon.svg";
 
 const BCPage = () => {
   usePageTitle("Большое сердце");
+  useFavicon(customFavicon);
 
   return (
     <>

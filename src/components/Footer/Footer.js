@@ -4,6 +4,10 @@ import vkLogo from "../../assets/images/vk-logo.png";
 import telegramLogo from "../../assets/images/telegram-logo.png";
 
 const Footer = () => {
+  const handleExternalNavigation = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="footer">
       <section className="footer__section__info">
@@ -17,14 +21,14 @@ const Footer = () => {
       </section>
       <section className="footer__section__contacts">
           <h4 className="footer__title footer__title__social-media">Мы в социальных сетях</h4>
-          <button className="social-media">
+          <button className="social-media" onClick={() => handleExternalNavigation("https://vk.com/smi_emit")}>
               <img
                   className="vk-image social-media__logo"
                   src={vkLogo}
               />
               <p>ВКонтанкте</p>
           </button>
-          <button className="social-media">
+          <button className="social-media" onClick={() => handleExternalNavigation("https://t.me/smi_emit")}>
               <img
                   className="vk-image social-media__logo"
                   src={telegramLogo}

@@ -52,6 +52,10 @@ button:hover {
     margin-inline-end: 30px;
 }
 
+.header-component__navigation__button {
+    display: none;
+}
+
  .header-component__title__page-name {
     font-family: 'Helios';
     font-weight: 400;
@@ -115,6 +119,10 @@ button:hover {
     .header-component__main-page__button__emitman {
         padding-inline-end: 15px;
     }
+
+    .header-component__section__navigation {
+        margin-top: 70px;
+    }
 }
 
 @media (width < 524px) {
@@ -177,6 +185,6 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 100px;
+        margin-top: 120px;
     }
 }
