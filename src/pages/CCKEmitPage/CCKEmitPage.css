@@ -70,7 +70,6 @@ h1, h2, h3, h4, p {
 
 .cckemit-page__main-page__text {
     text-align: start;
-    max-width: 450px;
     border-radius: 30px;
     color: white;
     margin: 0;
@@ -115,6 +114,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
 }
 
 .cckemit-page__section__calendar__event {
