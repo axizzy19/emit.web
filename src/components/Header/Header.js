@@ -12,6 +12,7 @@ const Header = ({ title, subtitle }) => {
     navigate(path);
   };
 
+ 
   return (
         <header className="header-component__header">
           <section className="header-component__section__header">
@@ -56,12 +57,12 @@ const Header = ({ title, subtitle }) => {
               >
                 КЛУБЫ
               </button>
-              {/* <button
+              <button
                 className="header-component__main-page__button header-component__main-page__button__emitman"
                 onClick={() => handleNavigation('/pages/')}
               >
                 ЭМИТMAN
-              </button> */}
+              </button>
           </section>
         </header>
   )
