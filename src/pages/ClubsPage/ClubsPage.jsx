@@ -31,7 +31,7 @@ const ClubsPage = () => {
 
   return (
     <>
-      <Header title="Клубы Института ЭМИТ"/>
+      <Header title="Клубы Института ЭМИТ" subtitle="Выходи за рамки"/>
       <main className="clubs-page__main">
        <img
             src={mainArrows}

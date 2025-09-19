@@ -42,14 +42,14 @@ button:hover {
     flex-direction: column;
     align-self: center;
     position: absolute;
-    top: 40px;
+    top: 80px;
     margin: 0;
     padding: 0;
     max-width: 450px;
 }
 
  .header-component__section__logos {
-    margin-inline-end: 30px;
+    margin-inline-start: 5px;
 }
 
 .header-component__navigation__button {
@@ -65,12 +65,12 @@ button:hover {
 
  .header-component__title__page-name__h2 {
     color: #A00F33;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 27px;
 }
 
  .header-component__section__navigation {
-    margin-block-start: 90px;
+    margin-block-start: 130px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -83,7 +83,9 @@ button:hover {
 
 @media (width < 768px) {
     .header-component__ranepa__logos {
-        max-width: 120px;
+        max-width: 300px;
+        margin-top: 20px;
+        margin-inline-end: 5px;
     }
 
     .header-component__navigation__button {
@@ -91,7 +93,11 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 120px;
+        margin-top: 150px;
+    }
+
+    .header-component__section__title {
+        margin-top: 10px;
     }
 }
 
@@ -101,15 +107,16 @@ button:hover {
     }
     
     .header-component__ranepa__logos {
-        max-width: 100px;
+        max-width: 250px;
+        margin-inline-start: 5px;
     }
 
     .header-component__section__title {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     .header-component__title__page-name {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .header-component__title__page-name__h2 {
@@ -121,7 +128,7 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 70px;
+        margin-top: 140px;
     }
 }
 
@@ -135,15 +142,16 @@ button:hover {
     }
 
     .header-component__title__page-name {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .header-component__title__page-name__h2 {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .header-component__ranepa__logos {
-        max-width: 50px;
+        max-width: 200px;
+        margin-inline-start: 5px;
     }
 
     .header-component__navigation__button {
@@ -151,14 +159,19 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 10px;
         flex-direction: column;
         gap: 10px;
+        
+    }
+
+    .header-component__section__title {
+        margin-block: -10px;
     }
 
     .header-component__section__logos {
-        margin-inline-end: 5px;
+        margin-inline-end: 10px;
     }
 
     .header-component__main-page__button__main {
@@ -182,9 +195,14 @@ button:hover {
     .header-component__title__page-name {
         max-width: 150px;
         align-self: center;
+        
+    }
+
+    .header-component__section__title {
+        margin-block: -40px;
     }
 
     .header-component__section__navigation {
-        margin-top: 120px;
+        margin-top: 190px;
     }
 }
