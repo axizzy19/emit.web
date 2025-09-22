@@ -32,6 +32,7 @@ h1, h2, h3, h4, p {
     color: #171F29;
     padding-top: 40px;
     padding-bottom: 40px;
+    
 } 
 
 .bc-page__padding__inline {
@@ -40,6 +41,9 @@ h1, h2, h3, h4, p {
 
 .bc-page__section__description {
     width: fit-content;
+    animation-name:autoShowanimation ;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 .bc-page__section__description__text {
@@ -57,6 +61,7 @@ h1, h2, h3, h4, p {
     left: 0;
     width: 100%;
     z-index: -1;
+    
 }
 
 .bc-page__section__big-heart__images {
@@ -65,6 +70,8 @@ h1, h2, h3, h4, p {
     gap: 20px;
     align-self: center;
     position: relative;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .bc-page__big-heart__foto-corner {
@@ -89,6 +96,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 40% 20%);
 }
 
 .bc-page__insides {
@@ -119,6 +128,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .bc-page__section__chart__info {
@@ -126,6 +137,7 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 20px;
     text-align: start;
+    
 }
 
 button:hover {
@@ -283,4 +295,24 @@ button:hover {
   .bc-page__big-heart__image {
     max-width: 90px;
   }
+}
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

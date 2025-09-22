@@ -34,6 +34,9 @@ h1, h2, h3, h4, p, br {
     padding-block: 20px;
     border-radius: 30px;
     font-size: 18px;
+    animation-name: autoShowanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease ;
 }
 
 .debates-page__debates__line {
@@ -52,6 +55,8 @@ h1, h2, h3, h4, p, br {
     text-align: start;
     border: solid 2px #CA0F3E;
     border-radius: 40px;
+    animation: scrollAnimation both;
+    animation-timeline: view(60% 20%);
 }
 
 .debates-page__text-info {
@@ -63,10 +68,13 @@ h1, h2, h3, h4, p, br {
 .debates-page__debates__foto {
     max-width: 350px;
     height: 100%;
+    
 }
 
 .debates-page__debates__foto__logo {
     max-width: 100%;
+    animation: scrollAnimation both;
+    animation-timeline: view(80% 20%);
 }
 
 .debates-page__style-reversed {
@@ -164,5 +172,25 @@ button:hover {
 @media (width < 279px) {
    .debates-page__padding__inline {
         padding-inline: 25px;
+    }
+}
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }

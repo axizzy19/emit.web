@@ -1,3 +1,5 @@
+
+
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -12,6 +14,7 @@ html, body, #root {
   padding: 0;
   overflow: hidden;
 }
+
 
 
 #main-page .body {
@@ -54,6 +57,7 @@ html, body, #root {
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
 #main-page .header__logo-img {
@@ -104,6 +108,36 @@ html, body, #root {
     padding-block: 25px;
     padding-inline: 125px;
     transition: transform 0.3s ease;
+}
+
+.corner-image__right{
+    animation-name: RightImageCorner;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.corner-image__left{
+    animation-name: LeftImageCorner;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.header__menu-button{
+    animation-name: LIstAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.header__logo-img{
+    animation-name: ShowAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.lines__corners{
+    animation-name: ShowAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 @media (width < 1024px) {
@@ -259,4 +293,44 @@ html, body, #root {
     background: linear-gradient(to right,#CA0F3E, #29345B);
     transform: scale(1.05);
     color: white;
+}
+
+@keyframes ShowAnimation {
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes RightImageCorner{
+    from{
+        opacity: 0;
+        transform: translateX(200px); 
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes LeftImageCorner{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes LIstAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }

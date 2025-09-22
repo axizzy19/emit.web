@@ -29,6 +29,8 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: #171F29;
     padding-top: 50px;
+    
+
 } 
 
 .emeetimg-page__padding__inline {
@@ -47,6 +49,10 @@ h1, h2, h3, h4, p {
     padding-inline: 25px;
     padding-block: 20px;
     border-radius: 35px;
+    animation-name: autoShowanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease ;
+
 }
 
 .emeetimg-page__section__description__background {
@@ -77,6 +83,8 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 30px;
     text-align: start;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 80% 20%);
 }
 
 .emeetimg-page__emeeting__fotos {
@@ -122,6 +130,7 @@ button:hover {
 @media (width <945px) {
     .emeetimg-page__padding__inline {
         padding-inline: 200px;
+        
     }
 
     .emeetimg-page__emeeting__fotos {
@@ -202,4 +211,24 @@ button:hover {
    .emeetimg-page__section__description__text {
     text-align: center;
    }
+}
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

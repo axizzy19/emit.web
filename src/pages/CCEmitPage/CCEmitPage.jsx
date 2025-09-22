@@ -18,6 +18,8 @@ import teamFoto from "../../assets/images/TeamFoto.svg";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
 
+
+
 const CCEmitPage = () => {
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
@@ -70,7 +72,7 @@ const CCEmitPage = () => {
                     <section className="ccemit-page__section__calendar__images">
                     <img
                         src={eventFoto1}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                     <img
                         src={calendarLines}
@@ -78,7 +80,7 @@ const CCEmitPage = () => {
                     />
                     <img
                         src={eventFoto2}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                     <img
                         src={calendarLines}
@@ -86,7 +88,7 @@ const CCEmitPage = () => {
                     />
                     <img
                         src={eventFoto3}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                 </section>
                 <section className="ccemit-page__section__calendar__events">

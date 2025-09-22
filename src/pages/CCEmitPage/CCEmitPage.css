@@ -1,4 +1,5 @@
 
+
  .ccemit-page__main {
     margin: 0;
     padding: 0;
@@ -29,14 +30,24 @@ h1, h2, h3, h4, p {
     font-weight: 400;
     font-size: 28px;
     text-align: end;
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
+
 
  .ccemit-page__arrows__image {
     width: 45px;
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
 
  .ccemit-page__arrows__image-reverse {
     rotate: 180deg;
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
 
  .ccemit-page__section__style {
@@ -64,12 +75,19 @@ h1, h2, h3, h4, p {
     height: 120px;
     align-self: center;
     margin-inline: 20px;
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
 
  .ccemit-page__main-page__images {
     max-height: 200px;
     max-width: 100%;
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
+ 
 
  .ccemit-page__main-page__text {
     text-align: start;
@@ -80,21 +98,30 @@ h1, h2, h3, h4, p {
     border-radius: 30px;
     color: white;
     margin: 0;
+    
+    animation-name: autoShowanimation;
+    animation-timing-function:ease ;
+    animation-duration: 2s;
 }
+
 
  .ccemit-page__main-page__image-1 {
     padding-inline-start: 20px;
-}
+ }
 
  .ccemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
+    
+    
 }
 
  .ccemit-page__section__calendar__main__info {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    animation: scrollAnimation both;
+    animation-timeline: view(70% 5%);
 }
 
  .ccemit-page__section__calendar__images {
@@ -103,15 +130,18 @@ h1, h2, h3, h4, p {
     gap: 15px;
     justify-content: space-between;
     max-width: 250px;
+    
 }
 
  .ccemit-page__calendar-lines__image {
     max-width: 120px;
     align-self: flex-end;
+    
 }
 
  .ccemit-page__calendar__images {
     max-width: inherit;
+    
 }
 
  .ccemit-page__section__calendar__events {
@@ -122,6 +152,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 }
 
  .ccemit-page__section__calendar__event {
@@ -132,6 +163,7 @@ h1, h2, h3, h4, p {
     text-align: start;
     gap: 20px;
     font-family: 'Montserrat-SemiBold';
+    
 }
 
  .ccemit-page__section__calendar__event__details {
@@ -140,16 +172,19 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 12px;
     font-size: 15px;
+    
 }
 
  .ccemit-page__section__calendar__event__name {
     font-size: 20px;
     font-weight: bold;
-}
+    
+} 
 
  .ccemit-page__section__calendar__event__date {
     color:#A00F33;
     font-weight: bold;
+    
 }
 
  .ccemit-page__section__calendar__event__place {
@@ -157,21 +192,26 @@ h1, h2, h3, h4, p {
     text-align: end;
     font-size: 13px;
     font-weight: bold;
+    
 }
 
 .ccemit-page__section__calendar__event__time {
     font-weight: bold;
+    
 }
 
  .ccemit-page__section__calendar__star-image {
     width: 50px;
     padding-right: 105px;
     margin-top: -25px;
+    
 }
 
  .ccemit-page__section__president__title__status {
     font-family: 'Montserrat-Bold';
     font-size: 55px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 30% 20%);
     
 }
 
@@ -179,15 +219,19 @@ h1, h2, h3, h4, p {
     color: #A00F33;
     font-size: 55px;
     font-weight: 600;
+    
 }
 
  .ccemit-page__section__president__image {
     max-width: 600px;
+    
 }
 
  .ccemit-page__section__president {
     position: relative;
     gap: 60px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
  .ccemit-page__section__president-background {
@@ -196,10 +240,13 @@ h1, h2, h3, h4, p {
     top: 30px;
     width: 100%;
     z-index: -1;
+    
 }
 
  .ccemit-page__section__team {
     margin-top: 200px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
  .ccemit-page__section__team__title {
@@ -376,4 +423,25 @@ button:hover {
     .ccemit-page__section__president__image {
     max-width: 120px;
    }
+}
+
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform: translateX(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

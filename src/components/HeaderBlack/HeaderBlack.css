@@ -34,11 +34,14 @@ h1, h2, h3, h4, p {
   align-self: center;
   text-align: center;
   position: absolute;
-  top: 90px;
+  top: 150px;
   margin: 0;
   padding: 0;
   gap: 10px;
   max-width: 450px;
+  animation-name: headerAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
 }
 
 /* пока убрали кнопку навигации !!!! */
@@ -47,7 +50,10 @@ h1, h2, h3, h4, p {
 }
 
 .header-black-component__section__logos {
-  margin-inline-end: 5px;
+  animation-name: headerAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  margin-top: 60px;
 }
 
 .header-black-component__title__page-name {
@@ -176,9 +182,9 @@ h1, h2, h3, h4, p {
   }
 
   .header-black-component__title__page-name {
-    max-width: 150px;
+    max-width: 200px;
     align-self: center;
-    margin-block: -50px;
+    margin-block: -80px;
   }
 
   .header-black-component__section__title {
@@ -192,9 +198,13 @@ h1, h2, h3, h4, p {
   .header-black-component__section__navigation {
     margin-top: 160px;
   }
-  
-  
-
-    
- 
+}
+@keyframes headerAnimation{
+    from{
+        opacity: 0;
+        transform: scale(0.3);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }

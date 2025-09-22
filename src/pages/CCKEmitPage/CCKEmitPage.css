@@ -27,6 +27,7 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    
 }
 
 .cckemit-page__section__name__text {
@@ -36,11 +37,17 @@ h1, h2, h3, h4, p {
     font-size: 35px;
     text-align: end;
     margin-top: 40px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 15% 50%);
+    
+    
 }
 
 .cckemit-page__arrows__image {
     width: 45px;
     position: relative; top: 22px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 15% 50%);
 }
 
 .cckemit-page__section__style {
@@ -49,12 +56,15 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    
 } 
 
 .cckemit-page__section__description__main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__description__main__part {
@@ -62,6 +72,7 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-content: space-between;
     gap: 20px;
+    
 }
 
 .cckemit-page_corner_image {
@@ -96,12 +107,15 @@ h1, h2, h3, h4, p {
     color: white;
     margin: 0;
     font-size: 21px;
+    
+    
 }
 
 
 .cckemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
+    
 }
 
 .cckemit-page__arrows__image-reverse {
@@ -121,6 +135,8 @@ h1, h2, h3, h4, p {
     gap: 15px;
     justify-content: space-between;
     max-width: 250px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__calendar-lines__image {
@@ -140,6 +156,8 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__calendar__event {
@@ -159,10 +177,12 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 12px;
     font-size: 15px;
+    
 }
 
 .cckemit-page__section__calendar__event__name {
     font-size: 20px;
+    
 }
 
 .cckemit-page__section__calendar__event__date {
@@ -184,10 +204,12 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president__title {
     font-family: 'Montserrat-Bold';
     font-size: 25px;
+    
 }
 
 .cckemit-page__section__president__name {
     color: #A00F33;
+
 
 }
 
@@ -198,6 +220,8 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president {
     position: relative;
     gap: 60px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__president-background {
@@ -210,6 +234,8 @@ h1, h2, h3, h4, p {
 
 .cckemit-page__section__team {
     margin-bottom: 50px;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__team__title {
@@ -407,4 +433,24 @@ button:hover {
   .cckemit-page__section__president__image {
     max-width: 160px;
   }
+}
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

@@ -22,6 +22,7 @@ h1, h2, h3, h4, p {
   text-align: center;
   color: #171F29;
   margin-block: 30px;
+  
 } 
 
 .itcommunity-page__section-reverse {
@@ -38,6 +39,9 @@ h1, h2, h3, h4, p {
     padding-inline: 30px;
     padding-block: 20px;
     border-radius: 35px;
+    animation-name:autoShowanimation ;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 .itcommunity-page__section__podcast {
@@ -45,6 +49,8 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 60px;
     position: relative;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .itcommunity-page__section__podcast__part-1 {
@@ -53,6 +59,7 @@ h1, h2, h3, h4, p {
     align-items: start;
     justify-content: start;
     gap: 30px;
+   
 }
 
 .itcommunity-page__section__podcast__part-2 {
@@ -60,10 +67,12 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-items: start;
     justify-content: end;
+    
 }
 
 .itcommunity-page__podcast__fotos {
     max-width: 500px;
+    
 }
 
 .itcommunity-page__podcast__name {
@@ -72,10 +81,12 @@ h1, h2, h3, h4, p {
     justify-content: start;
     align-items: start;
     font-size: 18px;
+    
 }
 
 .itcommunity-page__name__podcast {
     font-family: 'Montserrat-SemiBold';
+    
 }
 
 .itcommunity-page__name__name-podcast {
@@ -94,6 +105,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 60px;
+  
 }
 
 .itcommunity-page__product-item {
@@ -101,6 +113,8 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 30px;
     position: relative;
+    animation: scrollAnimation both;
+    animation-timeline: view(block 90% 20%);
 }
 
 .itcommunity-page__product-reverse {
@@ -289,4 +303,24 @@ button:hover {
   .itcommunity-page__main {
     padding-inline: 12px;
   }
+}
+
+@keyframes autoShowanimation{
+    from{
+        opacity: 0%;
+        transform:  scale(0.3);
+    }to{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+@keyframes scrollAnimation{
+    from{
+        opacity: 0%;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
