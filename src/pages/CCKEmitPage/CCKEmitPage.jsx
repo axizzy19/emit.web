@@ -3,6 +3,8 @@ import './CCKEmitPage.css';
 import HeaderBlack from '../../components/HeaderBlack/HeaderBlack';
 import usePageTitle from '../../hooks/usePageTitle';
 import arrows from "../../assets/images/ArrowsRed.png";
+import linestop from "../../assets/images/CornerWhiteTop.png"
+import lines from "../../assets/images/CornerWhite.png"
 import cckFoto1 from "../../assets/images/CCK-foto-1.svg";
 import cckFoto2 from "../../assets/images/CCK-foto-2.png";
 import cckFotoEvents1 from "../../assets/images/CCK-foto-events-1.png";
@@ -37,16 +39,26 @@ const CCKEmitPage = () => {
                 <section className="cckemit-page__section__description__main__part">
                     <section className="cckemit-page__main-page__text__decoration">
                         <p className="cckemit-page__main-page__text">Студенческий спортивный клуб «Чёрная Мамба» - это команда активных студентов, развивающая спорт и здоровый образ жизни. Клуб предлагает разнообразные спортивные секции, от командных до индивидуальных видов</p>
+                        <img
+                            src={lines}
+                            className="cckemit-page_corner_image"
+                        />
                     </section>
+                   
                     <img
                         src={cckFoto1}
-                        className="cckemit-page__description_images cckemit-page__main-page__images cckemit-page__main-page__image-1"
+                        className="cckemit-page__main-page__image-1"
                     />
                 </section>
                 <section className="cckemit-page__section__description__main__part cckemit-page__section__description__main__part-2">
                     <img
                         src={cckFoto2}
                         className="cckemit-page__description_images cckemit-page__main-page__images"
+                    />
+
+                    <img
+                        src={linestop}
+                        className="cckemit-page_cornertop_image"
                     />
                     <p className="cckemit-page__main-page__text">Предоставляет возможности для организации спортивных мероприятий, поиска новых друзей и улучшения жизни института. Ведь успех – это движение, а движение – это ЭМИТ!</p>
                 </section>

@@ -103,7 +103,7 @@ h1, h2, h3, h4, p {
     position: relative;
 }
 
-/* .bc-page__big-heart__lines {
+/*.bc-page__big-heart__lines {
     width: fit-content;
     position: absolute;
     top: -8px;
@@ -111,7 +111,7 @@ h1, h2, h3, h4, p {
 } */
 
 .bc-page__chart__image {
-    max-width: 300px;
+    max-width: 400px;
     height: fit-content;
 }
 
