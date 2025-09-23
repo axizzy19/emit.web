@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -39,9 +41,8 @@ h1, h2, h3, h4, p {
     padding-inline: 30px;
     padding-block: 20px;
     border-radius: 35px;
-    animation-name:autoShowanimation ;
-    animation-timing-function: ease;
-    animation-duration: 2s;
+    animation:FadeIn 2s ease;
+    
 }
 
 .itcommunity-page__section__podcast {
@@ -49,8 +50,8 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 60px;
     position: relative;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 90% 20%);
+    animation: scrollAnimationUp;
+    animation-timeline: view(80% 20%);
 }
 
 .itcommunity-page__section__podcast__part-1 {
@@ -113,8 +114,8 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 30px;
     position: relative;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 90% 20%);
+    animation: scrollAnimationLeft both;
+    animation-timeline: view(block 50% 5%);
 }
 
 .itcommunity-page__product-reverse {
@@ -305,22 +306,4 @@ button:hover {
   }
 }
 
-@keyframes autoShowanimation{
-    from{
-        opacity: 0%;
-        transform:  scale(0.3);
-    }to{
-        opacity: 1;
-        transform:  scale(1);
-    }
-}
 
-@keyframes scrollAnimation{
-    from{
-        opacity: 0%;
-        transform: translateY(200px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}

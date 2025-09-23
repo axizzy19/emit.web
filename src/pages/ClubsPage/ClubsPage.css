@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css); 
+
 button {
     all: unset;
     cursor: pointer;
@@ -37,12 +39,16 @@ h1, h2, h3, h4, p {
     z-index: -1;
     top: 800px;
     left: 290px;
+    filter: blur(5px);
+    
+    
     
 }
 
 .clubs-page__main__arrows-image {
     max-width: 40px;
     align-self: center;
+    animation: FadeIn 1s ease-in-out;
 }
 
 .clubs-page__club__images {
@@ -56,7 +62,10 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 170px;
+    /* animation: scrollAnimation both;
+    animation-timeline: view(block 70% 5%); */
     
+ 
 }
 
 .clubs-page__main__section__clubs__position {
@@ -64,6 +73,9 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 50px;
     justify-content: space-between;
+    animation: AutoBlurAnimation both;
+    animation-timeline: view();
+    
 }
 
 .clubs-page__main__section__clubs__description {
@@ -73,20 +85,19 @@ h1, h2, h3, h4, p {
     justify-content: start;
     align-items: start;
     gap: 30px;
+    
 }
 
 .clubs-page__main__section__clubs__name {
     font-family: 'Montserrat-Bold';
     font-size: 28px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%);
+    
 }
 
 .clubs-page__main__section__clubs__text {
     font-family: 'Montserrat';
     font-size: 20px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%);
+    
 }
 
 .clubs-page__know-more__button {
@@ -97,14 +108,13 @@ h1, h2, h3, h4, p {
     border-radius: 30px;
     padding-block: 7px;
     padding-inline: 20px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%);
+    
 }
 
 .clubs-page__club__arrow-image {
     max-width: 100px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 70% 30%);
+    
+    
 }
 
 button:hover {
@@ -229,12 +239,3 @@ button:hover {
    }
 }
 
-@keyframes scrollAnimation{
-    from{
-        opacity: 0%;
-        transform: translateY(200px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}

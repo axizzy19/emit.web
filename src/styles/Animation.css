@@ -1,0 +1,102 @@
+
+@keyframes scrollAnimationUp{
+    from{
+        opacity: 0;
+        transform: translateY(-200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes scrollAnimationLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes SlideInUp{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0);
+    }to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes SlideInRight{
+    from{
+        opacity: 0;
+        transform: translateX(200px) ; 
+    }to{
+        opacity: 1;
+        transform: translateX(0px) ;
+    }
+}
+
+@keyframes SlideInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-200px) ; 
+    }to{
+        opacity: 1;
+        transform: translateX(0px) ;
+    }
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes AutoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    35%, 65%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
+
+.animate-ScrollAnimationUp {
+    animation: scrollAnimationUp;
+    animation-timeline: view();
+}
+
+.animate-ScrollAnimationLeft{
+    animation: scrollAnimationLeft;
+    animation-timeline: view();
+}
+
+.animate-SlideUp {
+    animation: SlideInUp 2s ease-in-out
+}
+
+.animate-SlideRight {
+    animation: SlideInRight 2s ease-in-out
+}
+
+.animate-Slideleft {
+    animation: SlideInleft 2s ease-in-out
+}
+
+.animate-FadeIn {
+    animation: FadeIn 2s ease-in-out
+}
+
+.animate-AutoBlur{
+    animation: AutoBlurAnimation;
+    animation-timeline: view();
+}
