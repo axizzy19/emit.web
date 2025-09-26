@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -37,13 +39,12 @@ h1, h2, h3, h4, p {
 
 .bc-page__padding__inline {
     padding-inline: 230px; 
+    
 }
 
 .bc-page__section__description {
     width: fit-content;
-    animation-name:autoShowanimation ;
-    animation-timing-function: ease;
-    animation-duration: 2s;
+    animation: FadeIn 2s ease-in-out;
 }
 
 .bc-page__section__description__text {
@@ -61,7 +62,7 @@ h1, h2, h3, h4, p {
     left: 0;
     width: 100%;
     z-index: -1;
-    
+    animation: FadeInLines 3s ease-in-out;   
 }
 
 .bc-page__section__big-heart__images {
@@ -70,8 +71,8 @@ h1, h2, h3, h4, p {
     gap: 20px;
     align-self: center;
     position: relative;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 90% 20%);
+    animation: scrollAnimationLeft both;
+    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__big-heart__foto-corner {
@@ -96,8 +97,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 40% 20%);
+    animation: scrollAnimationUp both;
+    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__insides {
@@ -128,8 +129,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 90% 20%);
+    animation: scrollAnimationUp both;
+    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__section__chart__info {
@@ -297,22 +298,3 @@ button:hover {
   }
 }
 
-@keyframes autoShowanimation{
-    from{
-        opacity: 0%;
-        transform:  scale(0.3);
-    }to{
-        opacity: 1;
-        transform:  scale(1);
-    }
-}
-
-@keyframes scrollAnimation{
-    from{
-        opacity: 0%;
-        transform: translateY(200px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}

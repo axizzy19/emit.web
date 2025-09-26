@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -29,9 +31,7 @@ h1, h2, h3, h4, p, br {
 
 .csc-page__section__description {
     position: relative;
-    animation-name: autoShowanimation;
-    animation-timing-function: ease;
-    animation-duration: 2s;
+    animation: SlideInUp 2s ease-in-out;
     
 }
 
@@ -59,8 +59,8 @@ h1, h2, h3, h4, p, br {
 
 .csc-page__section__main-image {
     position: relative;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 90% 20%);
+    animation: scrollAnimationUp both;
+    animation-timeline: view(block 60% 20%);
 }
 
 .csc-page__csc-image {
@@ -88,8 +88,8 @@ h1, h2, h3, h4, p, br {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    /* animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%); */
+    
+    
 }
 
 .csc-page__project__style {
@@ -98,8 +98,8 @@ h1, h2, h3, h4, p, br {
     align-items: start;
     text-align: start;
     gap: 20px;
-    animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%);
+    animation: scrollAnimationLeft both;
+    animation-timeline: view(block 80% 20%);
     
     
 }
@@ -109,6 +109,7 @@ h1, h2, h3, h4, p, br {
     border: white solid 1px;
     border-radius: 30px;
     
+    
 }
 
 .csc-page__name-project__style {
@@ -116,10 +117,11 @@ h1, h2, h3, h4, p, br {
     font-size: 23px;
     
 }
+    
 
 .csc-page__csc-image__figures {
     max-width: 50px;
-    animation: scrollAnimation both;
+    animation: scrollAnimationLeft both;
     animation-timeline: view(block 70% 5%);
 }
 
@@ -131,7 +133,7 @@ h1, h2, h3, h4, p, br {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    animation: scrollAnimation both;
+    animation: scrollAnimationLeft both;
     animation-timeline: view(block 70% 5%);
 }
 
@@ -260,22 +262,3 @@ button:hover {
     }
 }
 
-@keyframes autoShowanimation{
-    from{
-        opacity: 0%;
-        transform:  scale(0.3);
-    }to{
-        opacity: 1;
-        transform:  scale(1);
-    }
-}
-
-@keyframes scrollAnimation{
-    from{
-        opacity: 0%;
-        transform: translateY(200px) scale(0.3);
-    }to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}

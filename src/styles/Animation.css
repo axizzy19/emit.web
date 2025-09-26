@@ -58,11 +58,21 @@
     }
 }
 
+@keyframes FadeInLines{
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 @keyframes AutoBlurAnimation{
     0%{
         filter: blur(40px);
     }
-    35%, 65%{
+    30%, 60%{
         filter: blur(0px);
     }
     100%{
