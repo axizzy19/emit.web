@@ -10,7 +10,7 @@ const useFavicon = (href) => {
       const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
       link.type = 'image/x-icon';
       link.rel = 'shortcut icon';
-      link.size = '64x64'; 
+      link.size = '32x32'; 
       document.head.appendChild(link);
       linkRef.current = link;
     }

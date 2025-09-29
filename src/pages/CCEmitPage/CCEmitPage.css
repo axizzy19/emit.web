@@ -103,7 +103,7 @@ h1, h2, h3, h4, p {
  }
 
  .ccemit-page__section__calendar__name {
-    justify-content: end;
+    justify-content: center;
     flex-direction: row-reverse;
     
     
@@ -112,6 +112,7 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__calendar__main__info {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;
     
     
