@@ -58,14 +58,16 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+    
    
 }
 
  .ccemit-page__section__description__main__part {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
+    flex-direction:row;
+    /* justify-content: space-between; */
+    align-content: center;
 }
 
  .ccemit-page__description_lines {
@@ -76,7 +78,7 @@ h1, h2, h3, h4, p {
 }
 
  .ccemit-page__main-page__images {
-    max-height: 200px;
+    max-height: 250px;
     max-width: 100%;
     
 }
@@ -86,7 +88,8 @@ h1, h2, h3, h4, p {
     text-align: start;
     padding-inline: 20px;
     padding-block: 25px;
-    max-width: 300px;
+    max-width: 400px;
+    font-size: 20px;
     background-color: #A00F33;
     border-radius: 30px;
     color: white;
