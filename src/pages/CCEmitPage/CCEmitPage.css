@@ -232,7 +232,7 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__president-background {
     position: absolute;
     left: 0;
-    top: 30px;
+    top: -15%;
     width: 100%;
     z-index: -1;
     
@@ -247,7 +247,6 @@ h1, h2, h3, h4, p {
 
  .ccemit-page__section__team__title {
     font-family: 'Montserrat-Bold';
-    font-size: 45px;
 }
 
  .ccemit-page__section__team__image {
