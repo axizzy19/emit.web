@@ -27,8 +27,8 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(15% 50%);
+    /* animation: scrollAnimationLeft both;
+    animation-timeline: view(15% 50%); */
 }
 
 .cckemit-page__section__name__text {
@@ -58,8 +58,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 30%);
+    /* animation: scrollAnimationLeft both;
+    animation-timeline: view(block 90% 30%); */
 }
 
 .cckemit-page__section__description__main__part {
@@ -130,8 +130,8 @@ h1, h2, h3, h4, p {
     gap: 15px;
     justify-content: space-between;
     max-width: 250px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 20%);
+    /* animation: scrollAnimationLeft both;
+    animation-timeline: view(block 90% 20%); */
 }
 
 .cckemit-page__calendar-lines__image {
@@ -151,8 +151,8 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 20%);
+    /* animation: scrollAnimationLeft both;
+    animation-timeline: view(block 90% 20%); */
 }
 
 .cckemit-page__section__calendar__event {
@@ -198,14 +198,10 @@ h1, h2, h3, h4, p {
 
 .cckemit-page__section__president__title {
     font-family: 'Montserrat-Bold';
-    font-size: 25px;
-    
 }
 
 .cckemit-page__section__president__name {
     color: #A00F33;
-
-
 }
 
 .cckemit-page__section__president__image {
@@ -215,8 +211,6 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president {
     position: relative;
     gap: 60px;
-    animation: scrollAnimationUp both;
-    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__president-background {
@@ -224,13 +218,12 @@ h1, h2, h3, h4, p {
     left: 0;
     top: 30px;
     width: 100%;
-    z-index: -1;
+    
 }
 
 .cckemit-page__section__team {
     margin-bottom: 50px;
-    animation: scrollAnimationUp both;
-    animation-timeline: view(block 90% 30%);
+    z-index: 1;
 }
 
 .cckemit-page__section__team__title {
@@ -250,7 +243,6 @@ button:hover {
     .cckemit-page__section__style {
         padding-inline: 15%;
     }
-
     .cckemit-page__section__team {
         margin-top: 50px;
     }
