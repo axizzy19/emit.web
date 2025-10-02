@@ -184,7 +184,7 @@ h1, h2, h3, h4, p {
   .header-black-component__title__page-name {
     max-width: 200px;
     align-self: center;
-    margin-block: -80px;
+    margin-block: -100px;
   }
 
   .header-black-component__section__title {
@@ -196,7 +196,7 @@ h1, h2, h3, h4, p {
   }
 
   .header-black-component__section__navigation {
-    margin-top: 160px;
+    margin-top: 90px;
   }
 }
 @keyframes headerAnimation{
