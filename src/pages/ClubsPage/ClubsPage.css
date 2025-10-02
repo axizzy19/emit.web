@@ -5,9 +5,6 @@ button {
     cursor: pointer;
 }
 
-
-
-
 h1, h2, h3, h4, p {
     padding: 0;
     margin: 0;
@@ -39,22 +36,19 @@ h1, h2, h3, h4, p {
     z-index: -1;
     top: 800px;
     left: 290px;
-    filter: blur(5px);
-    
-    
-    
-}
+    animation: slideDown 3.9s;    
+}   
 
 .clubs-page__main__arrows-image {
     max-width: 40px;
     align-self: center;
-    animation: FadeIn 1s ease-in-out;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__club__images {
     max-width: 250px;
-    /* height: fit-content; */
     height: auto;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__main__section__clubs {
@@ -62,10 +56,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 170px;
-    /* animation: scrollAnimation both;
-    animation-timeline: view(block 70% 5%); */
-    
- 
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__main__section__clubs__position {
@@ -73,9 +64,6 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 50px;
     justify-content: space-between;
-    animation: AutoBlurAnimation both;
-    animation-timeline: view();
-    
 }
 
 .clubs-page__main__section__clubs__description {
@@ -85,19 +73,16 @@ h1, h2, h3, h4, p {
     justify-content: start;
     align-items: start;
     gap: 30px;
-    
 }
 
 .clubs-page__main__section__clubs__name {
     font-family: 'Montserrat-Bold';
     font-size: 28px;
-    
 }
 
 .clubs-page__main__section__clubs__text {
     font-family: 'Montserrat';
     font-size: 20px;
-    
 }
 
 .clubs-page__know-more__button {
@@ -108,13 +93,10 @@ h1, h2, h3, h4, p {
     border-radius: 30px;
     padding-block: 7px;
     padding-inline: 20px;
-    
 }
 
 .clubs-page__club__arrow-image {
     max-width: 100px;
-    
-    
 }
 
 button:hover {
@@ -133,27 +115,16 @@ button:hover {
     }
     .clubs-page__club__images{
         object-fit:contain ;
-        
     }
 }
 
 @media (width < 1024px) {
-    /* .clubs-page__header__image-star {
-        display: none;
-    } */
-
     .clubs-page__main__section__clubs {
         padding-inline: 70px;
     }
-
 }
 
 @media (width <945px) {
-    /* .clubs-page__clubs-background {
-        max-width: 650px;
-        left: 60px;
-    } */
-
     .clubs-page__main__section__clubs {
         gap: 80px;
     }
@@ -184,7 +155,6 @@ button:hover {
     }
 
     .clubs-page__club__arrow-image {
-        /* max-width: 70px; */
         display: none;
     }
 }
