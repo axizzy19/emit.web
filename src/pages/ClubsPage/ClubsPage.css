@@ -39,20 +39,20 @@ h1, h2, h3, h4, p {
     z-index: -1;
     top: 800px;
     left: 290px;
-    animation: slideDown 1s ease-out;
-}
+    animation: slideDown 0.8s ease-out;    
+}   
 
 .clubs-page__main__arrows-image {
     max-width: 40px;
     align-self: center;
-    animation: slideDown 1s ease-out;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__club__images {
     max-width: 250px;
     /* height: fit-content; */
     height: auto;
-    animation: slideDown 1s ease-out;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__main__section__clubs {
@@ -60,7 +60,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 170px;
-    animation: slideDown 1s ease-out;
+    animation: slideDown 0.8s ease-out;
     
     
  
