@@ -35,7 +35,7 @@ const CCEmitPage = () => {
                     className="ccemit-page__arrows__image"
                 />
             </section>
-            <section className="ccemit-page__section__description__main ccemit-page__section__centered">
+            <section className="ccemit-page__section__description__main">
                 <section className="ccemit-page__section__description__main__part">
                     <p className="ccemit-page__main-page__text">Студенческий совет Института экономики, математики и информационных технологий — коллектив смелых, умных и креативных людей, которые не боятся делать новое 
 и сталкиваться с трудностями. </p>
