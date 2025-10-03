@@ -8,8 +8,10 @@
     flex-direction: column;
     text-align: center;
     margin-top: 35px;
-    gap: 50px;
+    gap: 80px;
     color: #171F29;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 h1, h2, h3, h4, p {
@@ -30,12 +32,13 @@ h1, h2, h3, h4, p {
     font-weight: 400;
     font-size: 28px;
     text-align: end;
-    
+    margin-top: 40px;
 }
 
 
  .ccemit-page__arrows__image {
     width: 45px;
+    position: relative; top: 22px;
     
 }
 
@@ -46,18 +49,19 @@ h1, h2, h3, h4, p {
 
  .ccemit-page__section__style {
     padding-inline: 25%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    animation: scrollAnimationUp;
-    animation-timeline: view(80% 2%);
+    /* animation: scrollAnimationUp;
+    animation-timeline: view(80% 2%); */
 } 
 
  .ccemit-page__section__description__main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
    
 }
 
@@ -65,7 +69,8 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: space-between;
+    gap: 20px;
+   
 }
 
  .ccemit-page__description_lines {
@@ -78,6 +83,7 @@ h1, h2, h3, h4, p {
  .ccemit-page__main-page__images {
     max-height: 200px;
     max-width: 100%;
+    align-self: center;
     
 }
  
@@ -105,7 +111,6 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
-    margin-right: 70px;
     
     
 }
@@ -113,8 +118,7 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__calendar__main__info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px;
+    gap: 40px;
     
     
 }
@@ -140,7 +144,6 @@ h1, h2, h3, h4, p {
 }
 
  .ccemit-page__section__calendar__events {
-    max-width: 100%;
     border: black solid 3px;
     border-radius: 30px;
     padding: 20px;
@@ -159,7 +162,7 @@ h1, h2, h3, h4, p {
     text-align: start;
     gap: 20px;
     font-family: 'Montserrat-SemiBold';
-    
+    font-weight: bold;
 }
 
  .ccemit-page__section__calendar__event__details {
@@ -172,7 +175,7 @@ h1, h2, h3, h4, p {
 }
 
  .ccemit-page__section__calendar__event__name {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     
 } 
@@ -186,7 +189,7 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__calendar__event__place {
     color: #A00F33;
     text-align: end;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     
 }
@@ -198,7 +201,7 @@ h1, h2, h3, h4, p {
 
  .ccemit-page__section__calendar__star-image {
     width: 50px;
-    padding-right: 105px;
+    padding-right: 70px;
     margin-top: -25px;
     
 }
@@ -239,8 +242,8 @@ h1, h2, h3, h4, p {
 
  .ccemit-page__section__team {
     margin-top: 200px;
-    animation: scrollAnimationUp;
-    animation-timeline: view(80% 2%);
+    /* animation: scrollAnimationUp;
+    animation-timeline: view(80% 2%); */
     
 }
 
