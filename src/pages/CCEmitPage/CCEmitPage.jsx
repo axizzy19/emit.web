@@ -53,7 +53,7 @@ const CCEmitPage = () => {
                         src={descriptionLines}
                         className="ccemit-page__description_lines"
                     />
-                    <p className="ccemit-page__main-page__text">Мы любим то, что делаем, и делаем то, что любим, развивая себя, среду вокруг себя и других людей. Успех неизбежен, если тыв Институте ЭМИТ</p>
+                    <p className="ccemit-page__main-page__text ccemit-page__main-page__text_2">Мы любим то, что делаем, и делаем то, что любим, развивая себя, среду вокруг себя и других людей. Успех неизбежен, если тыв Институте ЭМИТ</p>
                 </section>
             </section>
         </section>
