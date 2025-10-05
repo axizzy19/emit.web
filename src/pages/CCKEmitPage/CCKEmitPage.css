@@ -27,8 +27,7 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(15% 50%);
+    animation: SlideInDown 2s;
 }
 
 .cckemit-page__section__name__text {
@@ -58,8 +57,6 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 30%);
 }
 
 .cckemit-page__section__description__main__part {
@@ -130,8 +127,6 @@ h1, h2, h3, h4, p {
     gap: 15px;
     justify-content: space-between;
     max-width: 250px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__calendar-lines__image {
@@ -151,8 +146,6 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 90% 20%);
 }
 
 .cckemit-page__section__calendar__event {
@@ -215,8 +208,7 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president {
     position: relative;
     gap: 60px;
-    animation: scrollAnimationUp both;
-    animation-timeline: view(block 90% 20%);
+
 }
 
 .cckemit-page__section__president-background {
@@ -229,8 +221,6 @@ h1, h2, h3, h4, p {
 
 .cckemit-page__section__team {
     margin-bottom: 50px;
-    animation: scrollAnimationUp both;
-    animation-timeline: view(block 90% 30%);
 }
 
 .cckemit-page__section__team__title {
