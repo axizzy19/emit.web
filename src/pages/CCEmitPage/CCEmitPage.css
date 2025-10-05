@@ -54,8 +54,8 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    animation: scrollAnimationUp;
-    animation-timeline: view(80% 2%);
+    /* animation: scrollAnimationUp;
+    animation-timeline: view(80% 2%); */
 } 
 
  .ccemit-page__section__description__main {
@@ -221,16 +221,17 @@ h1, h2, h3, h4, p {
 
  .ccemit-page__section__president__title__status {
     font-family: 'Montserrat-Bold';
-    font-size: 55px;
+    /* font-size: 55px; */
+    
     
     
 }
 
  .ccemit-page__section__president__name {
     color: #A00F33;
-    font-size: 55px;
-    font-weight: 600;
-    
+    /* font-size: 55px;
+    font-weight: 600; */
+
 }
 
  .ccemit-page__section__president__image {
@@ -241,6 +242,8 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__president {
     position: relative;
     gap: 60px;
+    /* animation: scrollAnimationUpS;
+    animation-timeline: view(80% 2%); */
     
 }
 
@@ -251,19 +254,17 @@ h1, h2, h3, h4, p {
     width: 100%;
     z-index: -1;
     scale: 115%;
-    
 }
 
  .ccemit-page__section__team {
     margin-top: 200px;
-    animation: scrollAnimationUp;
-    animation-timeline: view(80% 2%);
+    /* animation: scrollAnimationUpS;
+    animation-timeline: view(80% 2%); */
     
 }
 
  .ccemit-page__section__team__title {
     font-family: 'Montserrat-Bold';
-    font-size: 45px;
 }
 
  .ccemit-page__section__team__image {
