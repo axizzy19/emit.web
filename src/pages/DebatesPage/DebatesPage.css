@@ -55,7 +55,7 @@ h1, h2, h3, h4, p, br {
     text-align: start;
     border: solid 2px #CA0F3E;
     border-radius: 40px;
-    animation: scrollAnimationLeft both;
+    animation: scrollAnimationUpS both;
     animation-timeline: view(70% 20%);
 }
 
@@ -73,7 +73,7 @@ h1, h2, h3, h4, p, br {
 
 .debates-page__debates__foto__logo {
     max-width: 100%;
-    animation: scrollAnimationLeft both;
+    animation: scrollAnimationUpS both;
     animation-timeline: view(80% 20%);
 }
 

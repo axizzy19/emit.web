@@ -84,8 +84,8 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 30px;
     text-align: start;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 80% 20%);
+    animation: scrollAnimationUpS both;
+    animation-timeline: view(block 70% 40%);
 }
 
 .emeetimg-page__emeeting__fotos {

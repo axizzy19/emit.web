@@ -50,7 +50,7 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 60px;
     position: relative;
-    animation: scrollAnimationUp;
+    animation: scrollAnimationUpS;
     animation-timeline: view(80% 20%);
 }
 
@@ -114,7 +114,7 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 30px;
     position: relative;
-    animation: scrollAnimationLeft both;
+    animation: scrollAnimationUpS both;
     animation-timeline: view(block 50% 5%);
 }
 
