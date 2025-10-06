@@ -48,14 +48,14 @@ button:hover {
     padding: 0;
     max-width: 450px;
     animation-name: headerAnimation;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
 
  .header-component__section__logos {
     margin-top: 60px;
     animation-name: headerAnimation;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
    
 }
@@ -219,9 +219,9 @@ button:hover {
 @keyframes headerAnimation{
     from{
         opacity: 0;
-        transform: scale(0.3);
+        transform: translateY(-50px);
     }to{
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(0);
     }
 }
