@@ -31,8 +31,7 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: #171F29;
     padding-top: 50px;
-    
-
+    animation: slideDown 2.5s ease;
 } 
 
 .emeetimg-page__padding__inline {
@@ -51,8 +50,6 @@ h1, h2, h3, h4, p {
     padding-inline: 25px;
     padding-block: 20px;
     border-radius: 35px;
-    animation: FadeIn 2s ease;
-
 }
 
 .emeetimg-page__section__description__background {
@@ -61,7 +58,6 @@ h1, h2, h3, h4, p {
     left: 0;
     top: -20px;
     z-index: -1;
-    animation: FadeInLines 3s ease;
 }
 
 .emeetimg-page__section__emeeting__fotos {
@@ -84,8 +80,6 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 30px;
     text-align: start;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 80% 20%);
 }
 
 .emeetimg-page__emeeting__fotos {
