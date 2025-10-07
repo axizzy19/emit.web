@@ -24,7 +24,8 @@ h1, h2, h3, h4, p {
   text-align: center;
   color: #171F29;
   margin-block: 30px;
-  
+  animation: slideDown 2s ease;
+
 } 
 
 .itcommunity-page__section-reverse {
@@ -40,9 +41,7 @@ h1, h2, h3, h4, p {
     background: linear-gradient(to right,#CA0F3E, #29345B);
     padding-inline: 30px;
     padding-block: 20px;
-    border-radius: 35px;
-    animation:FadeIn 2s ease;
-    
+    border-radius: 35px;    
 }
 
 .itcommunity-page__section__podcast {
@@ -50,8 +49,6 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 60px;
     position: relative;
-    animation: scrollAnimationUp;
-    animation-timeline: view(80% 20%);
 }
 
 .itcommunity-page__section__podcast__part-1 {
@@ -114,8 +111,6 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     gap: 30px;
     position: relative;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 50% 5%);
 }
 
 .itcommunity-page__product-reverse {
