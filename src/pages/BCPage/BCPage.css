@@ -34,7 +34,7 @@ h1, h2, h3, h4, p {
     color: #171F29;
     padding-top: 40px;
     padding-bottom: 40px;
-    
+    animation: slideDown 2s ease;
 } 
 
 .bc-page__padding__inline {
@@ -44,7 +44,6 @@ h1, h2, h3, h4, p {
 
 .bc-page__section__description {
     width: fit-content;
-    animation: FadeIn 2s ease-in-out;
 }
 
 .bc-page__section__description__text {
@@ -62,7 +61,6 @@ h1, h2, h3, h4, p {
     left: 0;
     width: 100%;
     z-index: -1;
-    animation: FadeInLines 3s ease-in-out;   
 }
 
 .bc-page__section__big-heart__images {
@@ -71,8 +69,6 @@ h1, h2, h3, h4, p {
     gap: 20px;
     align-self: center;
     position: relative;
-    animation: scrollAnimationUpS both;
-    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__big-heart__foto-corner {
@@ -97,8 +93,6 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    animation: scrollAnimationUpS both;
-    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__insides {
@@ -129,8 +123,6 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    animation: scrollAnimationUpS both;
-    animation-timeline: view(block 50% 20%);
 }
 
 .bc-page__section__chart__info {
