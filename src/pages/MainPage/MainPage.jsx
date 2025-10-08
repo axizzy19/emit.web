@@ -90,7 +90,7 @@ const MainPage = () => {
                   <li className="header__menu-item">
                   <button
                     className="header__menu-button"
-                    // onClick={() => handleNavigation('/pages/')}
+                    onClick={() => handleNavigation('/auth')}
                   >
                     Личный кабинет
                   </button>
