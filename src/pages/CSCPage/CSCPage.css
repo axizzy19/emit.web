@@ -26,13 +26,11 @@ h1, h2, h3, h4, p, br {
     padding-block: 50px;
     color: white;
     background-color: black;
-    
 }
 
 .csc-page__section__description {
     position: relative;
-    animation: SlideInUp 2s ease-in-out;
-    
+    animation: slideDown 2s ease;
 }
 
 .csc-page__padding__inline {
@@ -46,8 +44,6 @@ h1, h2, h3, h4, p, br {
     padding-inline: 25px;
     padding-block: 20px;
     border-radius: 30px;
-    
-    
 }
 
 .csc-page__section__description__background {
@@ -59,8 +55,7 @@ h1, h2, h3, h4, p, br {
 
 .csc-page__section__main-image {
     position: relative;
-    animation: scrollAnimationUp both;
-    animation-timeline: view(block 60% 20%);
+    animation: slideDown 2s ease;
 }
 
 .csc-page__csc-image {
@@ -82,14 +77,14 @@ h1, h2, h3, h4, p, br {
     align-items: center;
     gap: 20px;
     margin-top: 70px;
+    animation: slideDown 2s ease;
+
 }
 
 .csc-page__section__career-science {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    
-    
 }
 
 .csc-page__project__style {
@@ -98,10 +93,6 @@ h1, h2, h3, h4, p, br {
     align-items: start;
     text-align: start;
     gap: 20px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 80% 20%);
-    
-    
 }
 
 .csc-page__project__text {
@@ -121,8 +112,6 @@ h1, h2, h3, h4, p, br {
 
 .csc-page__csc-image__figures {
     max-width: 50px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 70% 5%);
 }
 
 .csc-page__section__project {
@@ -133,8 +122,7 @@ h1, h2, h3, h4, p, br {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    animation: scrollAnimationLeft both;
-    animation-timeline: view(block 70% 5%);
+    animation: slideDown 2s ease;
 }
 
 .csc-page__section__chat__info {
