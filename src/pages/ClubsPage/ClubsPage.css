@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css); 
+
 button {
     all: unset;
     cursor: pointer;
@@ -9,12 +11,12 @@ h1, h2, h3, h4, p {
     font-family: 'Montserrat';
 }
 
-/* .clubs-page__header__image-star {
+ .clubs-page__header__image-star {
     max-width: 150px;
     position: absolute;
     right: 250px;
     top: 60px;
-} */
+} 
 
 .clubs-page__main {
     display: flex;
@@ -32,19 +34,21 @@ h1, h2, h3, h4, p {
 .clubs-page__clubs-background {
     position: absolute;
     z-index: -1;
-    top: 700px;
-    left: 270px;
-}
+    top: 800px;
+    left: 290px;
+    animation: slideDown 3.9s;    
+}   
 
 .clubs-page__main__arrows-image {
     max-width: 40px;
     align-self: center;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__club__images {
     max-width: 250px;
-    /* height: fit-content; */
     height: auto;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__main__section__clubs {
@@ -52,6 +56,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 170px;
+    animation: slideDown 0.8s ease-out;
 }
 
 .clubs-page__main__section__clubs__position {
@@ -108,25 +113,18 @@ button:hover {
   .clubs-page__clubs-background {
        display: none;
     }
+    .clubs-page__club__images{
+        object-fit:contain ;
+    }
 }
 
 @media (width < 1024px) {
-    /* .clubs-page__header__image-star {
-        display: none;
-    } */
-
     .clubs-page__main__section__clubs {
         padding-inline: 70px;
     }
-
 }
 
 @media (width <945px) {
-    /* .clubs-page__clubs-background {
-        max-width: 650px;
-        left: 60px;
-    } */
-
     .clubs-page__main__section__clubs {
         gap: 80px;
     }
@@ -157,7 +155,6 @@ button:hover {
     }
 
     .clubs-page__club__arrow-image {
-        /* max-width: 70px; */
         display: none;
     }
 }
@@ -211,3 +208,4 @@ button:hover {
         padding-inline: 2px;
    }
 }
+

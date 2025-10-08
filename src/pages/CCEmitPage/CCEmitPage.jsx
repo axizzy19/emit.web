@@ -18,6 +18,7 @@ import teamFoto from "../../assets/images/TeamFoto.svg";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
 
+
 const CCEmitPage = () => {
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
@@ -52,7 +53,7 @@ const CCEmitPage = () => {
                         src={descriptionLines}
                         className="ccemit-page__description_lines"
                     />
-                    <p className="ccemit-page__main-page__text">Мы любим то, что делаем, и делаем то, что любим, развивая себя, среду вокруг себя и других людей. Успех неизбежен, если тыв Институте ЭМИТ</p>
+                    <p className="ccemit-page__main-page__text ccemit-page__main-page__text_2">Мы любим то, что делаем, и делаем то, что любим, развивая себя, среду вокруг себя и других людей. Успех неизбежен, если тыв Институте ЭМИТ</p>
                 </section>
             </section>
         </section>
@@ -70,7 +71,7 @@ const CCEmitPage = () => {
                     <section className="ccemit-page__section__calendar__images">
                     <img
                         src={eventFoto1}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                     <img
                         src={calendarLines}
@@ -78,7 +79,7 @@ const CCEmitPage = () => {
                     />
                     <img
                         src={eventFoto2}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                     <img
                         src={calendarLines}
@@ -86,7 +87,7 @@ const CCEmitPage = () => {
                     />
                     <img
                         src={eventFoto3}
-                        className="ccemit-page__calendar__images ccemit-page__main-page__images"
+                        className="ccemit-page__calendar__images "
                     />
                 </section>
                 <section className="ccemit-page__section__calendar__events">
@@ -148,6 +149,7 @@ const CCEmitPage = () => {
                 src={presidentBackground}
             />
         </section>
+
         <section className="ccemit-page__section__team section__style">
             <h2 className="ccemit-page__section__team__title">Члены созыва</h2>
             

@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -34,10 +36,12 @@ h1, h2, h3, h4, p, br {
     padding-block: 20px;
     border-radius: 30px;
     font-size: 18px;
+    animation: slideDown 2s ease;
 }
 
 .debates-page__debates__line {
     max-width: 100%;
+    animation: slideDown 2s ease;
 }
 
 .debates-page__section__info {
@@ -52,6 +56,7 @@ h1, h2, h3, h4, p, br {
     text-align: start;
     border: solid 2px #CA0F3E;
     border-radius: 40px;
+    animation: slideDown 2s ease;
 }
 
 .debates-page__text-info {
@@ -63,10 +68,12 @@ h1, h2, h3, h4, p, br {
 .debates-page__debates__foto {
     max-width: 350px;
     height: 100%;
+    
 }
 
 .debates-page__debates__foto__logo {
     max-width: 100%;
+    animation: slideDown 2s ease;
 }
 
 .debates-page__style-reversed {
@@ -166,3 +173,4 @@ button:hover {
         padding-inline: 25px;
     }
 }
+

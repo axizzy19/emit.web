@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -29,6 +31,7 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: #171F29;
     padding-top: 50px;
+    animation: slideDown 2.5s ease;
 } 
 
 .emeetimg-page__padding__inline {
@@ -61,6 +64,9 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .emeetimg-page__section__description__text {
@@ -77,7 +83,7 @@ h1, h2, h3, h4, p {
 }
 
 .emeetimg-page__emeeting__fotos {
-    max-width: 350px;
+    max-width: 500px;
 }
 
 .emeetimg-page__position__reversed {
@@ -89,14 +95,14 @@ h1, h2, h3, h4, p {
 }
 
 .emeetimg-page__emeeting__corner-left-top {
-    max-width: 60px;
+    max-width: 80px;
     position: absolute;
     left: -10px;
     top: -10px;
 }
 
 .emeetimg-page__emeeting__corner-right-bottom {
-    max-width: 60px;
+    max-width: 80px;
     position: absolute;
     right: -5px;
     bottom: -5px;
@@ -110,6 +116,7 @@ button:hover {
   .emeetimg-page__section__description__background {
     top: 0px;
   }
+
 }
 
 @media (width < 1024px) {
@@ -119,6 +126,7 @@ button:hover {
 @media (width <945px) {
     .emeetimg-page__padding__inline {
         padding-inline: 200px;
+        
     }
 
     .emeetimg-page__emeeting__fotos {
@@ -129,6 +137,7 @@ button:hover {
 @media (width < 768px) {
     .emeetimg-page__section__fotos__part {
         flex-direction: column;
+        font-size: 17px;
     }
 
     .emeetimg-page__emeeting__fotos {
@@ -171,6 +180,10 @@ button:hover {
     .emeetimg-page__padding__inline {
         padding-inline: 60px;
     }
+
+    .emeetimg-page__section__emeeting__fotos {
+        font-size: 15px;
+    }
 }
 
 @media (width < 380px) {
@@ -200,3 +213,4 @@ button:hover {
     text-align: center;
    }
 }
+

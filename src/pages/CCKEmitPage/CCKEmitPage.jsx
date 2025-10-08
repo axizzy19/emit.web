@@ -40,7 +40,7 @@ const CCKEmitPage = () => {
                     </section>
                     <img
                         src={cckFoto1}
-                        className="cckemit-page__description_images cckemit-page__main-page__images cckemit-page__main-page__image-1"
+                        className="cckemit-page__main-page__image-1"
                     />
                 </section>
                 <section className="cckemit-page__section__description__main__part cckemit-page__section__description__main__part-2">
@@ -48,6 +48,7 @@ const CCKEmitPage = () => {
                         src={cckFoto2}
                         className="cckemit-page__description_images cckemit-page__main-page__images"
                     />
+
                     <p className="cckemit-page__main-page__text">Предоставляет возможности для организации спортивных мероприятий, поиска новых друзей и улучшения жизни института. Ведь успех – это движение, а движение – это ЭМИТ!</p>
                 </section>
             </section>

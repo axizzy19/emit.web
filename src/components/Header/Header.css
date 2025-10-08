@@ -20,6 +20,7 @@ button:hover {
     justify-content: center;
     font-family: 'Montserrat';
     text-align: center;
+    
 }
 
  .header-component__section__header {
@@ -27,7 +28,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-block-start: 30px;
+    margin-block-start: 50px;
 }
 
  .header-component__main {
@@ -42,14 +43,21 @@ button:hover {
     flex-direction: column;
     align-self: center;
     position: absolute;
-    top: 40px;
+    top: 150px;
     margin: 0;
     padding: 0;
     max-width: 450px;
+    animation-name: headerAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
 
  .header-component__section__logos {
-    margin-inline-end: 30px;
+    margin-top: 60px;
+    animation-name: headerAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+   
 }
 
 .header-component__navigation__button {
@@ -65,12 +73,12 @@ button:hover {
 
  .header-component__title__page-name__h2 {
     color: #A00F33;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 27px;
 }
 
  .header-component__section__navigation {
-    margin-block-start: 90px;
+    margin-block-start: 140px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,11 +87,14 @@ button:hover {
     gap: 45px;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
+    
 }
 
 @media (width < 768px) {
     .header-component__ranepa__logos {
-        max-width: 120px;
+        max-width: 300px;
+        margin-top: 20px;
+        margin-inline-end: 5px;
     }
 
     .header-component__navigation__button {
@@ -91,7 +102,11 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 120px;
+        margin-top: 150px;
+    }
+
+    .header-component__section__title {
+        margin-top: 10px;
     }
 }
 
@@ -101,15 +116,16 @@ button:hover {
     }
     
     .header-component__ranepa__logos {
-        max-width: 100px;
+        max-width: 250px;
+        margin-inline-start: 5px;
     }
 
     .header-component__section__title {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     .header-component__title__page-name {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .header-component__title__page-name__h2 {
@@ -121,7 +137,7 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 70px;
+        margin-top: 160px;
     }
 }
 
@@ -135,15 +151,16 @@ button:hover {
     }
 
     .header-component__title__page-name {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     .header-component__title__page-name__h2 {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .header-component__ranepa__logos {
-        max-width: 50px;
+        max-width: 200px;
+        margin-inline-start: 5px;
     }
 
     .header-component__navigation__button {
@@ -151,14 +168,19 @@ button:hover {
     }
 
     .header-component__section__navigation {
-        margin-top: 80px;
+        margin-top: 120px;
         font-size: 10px;
         flex-direction: column;
         gap: 10px;
+        
+    }
+
+    .header-component__section__title {
+        margin-block: -10px;
     }
 
     .header-component__section__logos {
-        margin-inline-end: 5px;
+        margin-inline-end: 10px;
     }
 
     .header-component__main-page__button__main {
@@ -182,9 +204,24 @@ button:hover {
     .header-component__title__page-name {
         max-width: 150px;
         align-self: center;
+        
+    }
+
+    .header-component__section__title {
+        margin-block: -90px;
     }
 
     .header-component__section__navigation {
-        margin-top: 120px;
+        margin-top: 160px;
+    }
+}
+
+@keyframes headerAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

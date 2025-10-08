@@ -18,10 +18,10 @@ const ITCommunityPage = () => {
 
   return (
     <>
-      <Header title="Цифровое комьюнити"/>
+      <Header title="Цифровое комьюнити" subtitle="Паутина возможностей"/>
       <main className="itcommunity-page__main">
         <section className="itcommunity-page__section-reverse">
-            <p className="itcommunity-page__bit-text">Мы объединяем все диджитал-проекты под одной крышей и создаём среду, в которой каждый студент Президентской Академии, который интересуется IT и креативными индустриями, сможет найти единомышленников или даже реализовать собственную инициативу.</p>
+            <p className="itcommunity-page__bit-text">Мы объединяем все диджитал-проекты под одной крышей и создаём среду, в которой каждый студент Президентской Академии, который интересуется IT и креативными индустриями, сможет найти друзей или даже реализовать собственную инициативу.</p>
             <section className="itcommunity-page__section__podcast">
                 <img
                     src={podcastBackground}

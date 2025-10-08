@@ -33,21 +33,28 @@ h1, h2, h3, h4, p {
     font-family: 'Montserrat-Bold';
     font-style: bold;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     text-align: end;
+    margin-top: 40px;
 }
 
 .cckemit-page__arrows__image {
     width: 45px;
+    position: relative; top: 22px;
 }
 
 .cckemit-page__section__style {
     padding-inline: 25%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
 } 
+
+.cckemit-page__section__description{
+    animation: slideDown 2s ease;
+}
 
 .cckemit-page__section__description__main {
     display: flex;
@@ -60,12 +67,33 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     align-content: space-between;
     gap: 20px;
+    
 }
 
+.cckemit-page_corner_image {
+    max-width: 45%;
+    position: relative; left: 120px; bottom: 170px;
+}
+
+.cckemit-page_cornertop_image{
+    max-width: 70px;
+    position: relative; bottom: 15px;
+    margin-right: -70px;
+    
+}
+
+.cckemit-page__main-page__image-1{
+    max-height: 360px;
+    max-width: 100%;
+    align-self: center;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
 .cckemit-page__main-page__images {
     max-height: 200px;
     max-width: 100%;
     align-self: center;
+    
 }
 
 .cckemit-page__main-page__text {
@@ -73,15 +101,24 @@ h1, h2, h3, h4, p {
     border-radius: 30px;
     color: white;
     margin: 0;
+    font-size: 21px;
+    
+    
+}
+
+.cckemit-page__section__calendar{
+    animation: slideDown 2s ease;
 }
 
 .cckemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
+    
 }
 
 .cckemit-page__arrows__image-reverse {
     rotate: 180deg;
+    
 }
 
 .cckemit-page__section__calendar__main__info {
@@ -125,6 +162,7 @@ h1, h2, h3, h4, p {
     text-align: start;
     gap: 20px;
     font-family: 'Montserrat-SemiBold';
+    font-weight: bold;
 }
 
 .cckemit-page__section__calendar__event__details {
@@ -133,10 +171,12 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 12px;
     font-size: 15px;
+    
 }
 
 .cckemit-page__section__calendar__event__name {
     font-size: 20px;
+    
 }
 
 .cckemit-page__section__calendar__event__date {
@@ -155,12 +195,20 @@ h1, h2, h3, h4, p {
     margin-top: -25px;
 }
 
+.cckemit-page__section__president{
+        animation: slideDown 2s ease;
+}
+
 .cckemit-page__section__president__title {
     font-family: 'Montserrat-Bold';
+    font-size: 25px;
+    
 }
 
 .cckemit-page__section__president__name {
     color: #A00F33;
+
+
 }
 
 .cckemit-page__section__president__image {
@@ -170,6 +218,7 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president {
     position: relative;
     gap: 60px;
+
 }
 
 .cckemit-page__section__president-background {
@@ -182,6 +231,7 @@ h1, h2, h3, h4, p {
 
 .cckemit-page__section__team {
     margin-bottom: 50px;
+    animation: slideDown 2s ease;
 }
 
 .cckemit-page__section__team__title {
@@ -380,3 +430,5 @@ button:hover {
     max-width: 160px;
   }
 }
+
+

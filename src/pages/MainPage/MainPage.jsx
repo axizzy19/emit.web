@@ -87,6 +87,14 @@ const MainPage = () => {
                     Студенческий спортивный клуб ЭМИТ
                   </button>
                 </li>
+                  <li className="header__menu-item">
+                  <button
+                    className="header__menu-button"
+                    // onClick={() => handleNavigation('/pages/')}
+                  >
+                    Личный кабинет
+                  </button>
+                </li>
                 {/* <li className="header__menu-item">
                   <button className="header__menu-button" href="#0">ЭМИТ man</button>
                 </li> */}

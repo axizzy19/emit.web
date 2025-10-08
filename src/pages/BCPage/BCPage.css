@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
     all: unset;
     cursor: pointer;
@@ -32,10 +34,12 @@ h1, h2, h3, h4, p {
     color: #171F29;
     padding-top: 40px;
     padding-bottom: 40px;
+    animation: slideDown 2s ease;
 } 
 
 .bc-page__padding__inline {
     padding-inline: 230px; 
+    
 }
 
 .bc-page__section__description {
@@ -103,7 +107,7 @@ h1, h2, h3, h4, p {
     position: relative;
 }
 
-/* .bc-page__big-heart__lines {
+/*.bc-page__big-heart__lines {
     width: fit-content;
     position: absolute;
     top: -8px;
@@ -111,7 +115,7 @@ h1, h2, h3, h4, p {
 } */
 
 .bc-page__chart__image {
-    max-width: 300px;
+    max-width: 400px;
     height: fit-content;
 }
 
@@ -126,6 +130,7 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 20px;
     text-align: start;
+    
 }
 
 button:hover {
@@ -284,3 +289,4 @@ button:hover {
     max-width: 90px;
   }
 }
+

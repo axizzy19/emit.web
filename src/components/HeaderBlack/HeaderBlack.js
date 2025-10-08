@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeaderBlack.css';
 import navigationButton from "../../assets/images/NavigationButton.png"
-import ranepaLogos from "../../assets/images/RanepaLogosWhite.svg"
+import ranepaLogos from "../../assets/images/RanepaLogosWhiteB.svg"
 import { useNavigate } from 'react-router-dom';
 
 const HeaderBlack = ({ title, subtitle }) => {
@@ -14,6 +14,14 @@ const HeaderBlack = ({ title, subtitle }) => {
   return (
     <>
       <header className="header-black-component__header">
+        <section className="header-black-component__section__logos">
+                <a>
+                    <img
+                        src={ranepaLogos}
+                        className="header-black-component__ranepa__logos"
+                    />
+                </a>
+            </section>
         <section className="header-black-component__section__header">
             <button>
                 <img
@@ -22,14 +30,7 @@ const HeaderBlack = ({ title, subtitle }) => {
                     alt="Кнопка навигации"
                 />
             </button>
-            <section className="header-black-component__section__logos">
-                <a>
-                    <img
-                        src={ranepaLogos}
-                        className="header-black-component__ranepa__logos"
-                    />
-                </a>
-            </section>
+            
         </section>
         <section className="header-black-component__section__title">
             <h1 className="header-black-component__title__page-name">{title}</h1>
