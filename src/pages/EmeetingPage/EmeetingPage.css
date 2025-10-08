@@ -65,7 +65,7 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     gap: 40px;
     margin-bottom: 25px;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -116,6 +116,7 @@ button:hover {
   .emeetimg-page__section__description__background {
     top: 0px;
   }
+
 }
 
 @media (width < 1024px) {
@@ -136,6 +137,7 @@ button:hover {
 @media (width < 768px) {
     .emeetimg-page__section__fotos__part {
         flex-direction: column;
+        font-size: 17px;
     }
 
     .emeetimg-page__emeeting__fotos {
@@ -177,6 +179,10 @@ button:hover {
 
     .emeetimg-page__padding__inline {
         padding-inline: 60px;
+    }
+
+    .emeetimg-page__section__emeeting__fotos {
+        font-size: 15px;
     }
 }
 
