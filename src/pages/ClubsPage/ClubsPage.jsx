@@ -37,10 +37,10 @@ const ClubsPage = () => {
             src={mainArrows}
             className="clubs-page__main__arrows-image"
        />
-       <img
+       {/* <img
                 src={clubsBackground}
                 className="clubs-page__clubs-background"
-        />
+        /> */}
        <section className="clubs-page__main__section__clubs">
             <section className="clubs-page__main__section__clubs__position">
                 <img

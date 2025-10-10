@@ -119,7 +119,7 @@ h1, h2, h3, h4, p {
 
 .itcommunity-page__product-foto {
     max-width: 350px;
-    height: fit-content;
+    height: auto;
 }
 
 .itcommunity-page__product__name {
@@ -183,6 +183,7 @@ button:hover {
 
     .itcommunity-page__product-foto {
         max-width: 250px;
+        height: auto;
     }
 
     /* .itcommunity-page__bit-logo {
@@ -280,6 +281,7 @@ button:hover {
 
     .itcommunity-page__product-foto {
         max-width: 100%;
+        height: auto;
     }
 
     .itcommunity-page__product__name {
