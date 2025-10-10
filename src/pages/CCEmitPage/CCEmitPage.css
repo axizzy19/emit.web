@@ -234,18 +234,20 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__president {
     position: relative;
     gap: 60px;
-    /* animation: scrollAnimationUpS;
-    animation-timeline: view(80% 2%); */
-    
+
 }
 
  .ccemit-page__section__president-background {
     position: absolute;
     left: 0px;
     top: 30px;
-    width: 100%;
+    max-width: 100%;
     z-index: -1;
-    scale: 115%;
+ }
+
+.ccemit-page__section__president-and-background {
+    width: 100%;
+    position: relative;
 }
 
  .ccemit-page__section__team {
@@ -257,11 +259,20 @@ h1, h2, h3, h4, p {
 }
 
  .ccemit-page__section__team__image {
-    max-width: 100%;
+    max-width: 80%;
+    border-radius: 70px;
+    margin-block: 25px;
+    border: black 2px solid;
 }
 
 button:hover {
     transform: scale(1.05);
+}
+
+@media (width > 1700px) {
+    .ccemit-page__section__president-background {
+        display: none;
+    }
 }
 
 @media (width < 1024px) {
@@ -309,6 +320,13 @@ button:hover {
 
     .ccemit-page__section__calendar {
         padding-inline: 5%;
+    }
+
+    .ccemit-page__section__team__image {
+        max-width: 80%;
+        border-radius: 40px;
+        margin-block: 25px;
+        border: black 2px solid;
     }
 }
 
@@ -425,6 +443,10 @@ button:hover {
     .ccemit-page__section__president__image {
     max-width: 120px;
    }
+
+   .ccemit-page__section__style {
+        padding-inline: 10%;
+    }
 }
 
 

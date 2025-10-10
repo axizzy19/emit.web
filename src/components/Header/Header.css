@@ -172,7 +172,6 @@ button:hover {
         font-size: 10px;
         flex-direction: column;
         gap: 10px;
-        
     }
 
     .header-component__section__title {
@@ -202,9 +201,8 @@ button:hover {
     }
 
     .header-component__title__page-name {
-        max-width: 150px;
+        max-width: 250px;
         align-self: center;
-        
     }
 
     .header-component__section__title {
@@ -213,6 +211,12 @@ button:hover {
 
     .header-component__section__navigation {
         margin-top: 160px;
+    }
+}
+
+@media (width < 250px) {
+    .header-component__title__page-name {
+        font-size: 25px;
     }
 }
 

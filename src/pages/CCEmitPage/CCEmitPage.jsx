@@ -14,7 +14,7 @@ import eventFoto3 from "../../assets/images/EventsFoto3.png";
 import starImage from "../../assets/images/StarImage.png"
 import presidentImage from "../../assets/images/PresidentImage.png";
 import presidentBackground from "../../assets/images/PresidentBackground.svg";
-import teamFoto from "../../assets/images/TeamFoto.svg";
+import teamFoto from "../../assets/images/TeamFoto.png";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
 
@@ -132,8 +132,25 @@ const CCEmitPage = () => {
             </section>
             
         </section>
-
-        <section className="ccemit-page__section__president  ccemit-page__section__style">
+        <section className="ccemit-page__section__president-and-background">
+            <section className="ccemit-page__section__president  ccemit-page__section__style">
+                <section className="ccemit-page__section__president__title">
+                    <h2 className="ccemit-page__section__president__title__status">ПРЕДСЕДАТЕЛЬ</h2>
+                    <h2 className="ccemit-page__section__president__name">Симанчук Виктория</h2>
+                </section>
+                <section className="ccemit-page__section__president__image__place">
+                    <img
+                        className="ccemit-page__section__president__image"
+                        src={presidentImage}
+                    />
+                </section>
+            </section>
+            <img
+                className="ccemit-page__section__president-background"
+                src={presidentBackground}
+            />
+        </section>
+        {/* <section className="ccemit-page__section__president  ccemit-page__section__style">
             <section className="ccemit-page__section__president__title">
                 <h2 className="ccemit-page__section__president__title__status">ПРЕДСЕДАТЕЛЬ</h2>
                 <h2 className="ccemit-page__section__president__name">Симанчук Виктория</h2>
@@ -144,11 +161,8 @@ const CCEmitPage = () => {
                     src={presidentImage}
                 />
             </section>
-            <img
-                className="ccemit-page__section__president-background"
-                src={presidentBackground}
-            />
-        </section>
+        </section> */}
+
 
         <section className="ccemit-page__section__team section__style">
             <h2 className="ccemit-page__section__team__title">Члены созыва</h2>
