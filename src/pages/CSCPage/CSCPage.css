@@ -26,6 +26,7 @@ h1, h2, h3, h4, p, br {
     padding-block: 50px;
     color: white;
     background-color: black;
+    z-index: -1;
 }
 
 .csc-page__section__description {
@@ -56,6 +57,7 @@ h1, h2, h3, h4, p, br {
 .csc-page__section__main-image {
     position: relative;
     animation: slideDown 2s ease;
+    z-index: 1;
 }
 
 .csc-page__csc-image {
