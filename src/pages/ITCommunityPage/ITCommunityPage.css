@@ -24,7 +24,7 @@ h1, h2, h3, h4, p {
   text-align: center;
   color: #171F29;
   margin-block: 30px;
-  animation: slideDown 2s ease;
+  animation: slideDown ease;
 
 } 
 

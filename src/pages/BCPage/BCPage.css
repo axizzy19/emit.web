@@ -116,7 +116,7 @@ h1, h2, h3, h4, p {
 
 .bc-page__chart__image {
     max-width: 400px;
-    height: fit-content;
+    height: auto;
 }
 
 .bc-page__section__chart {
