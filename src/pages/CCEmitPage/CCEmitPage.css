@@ -269,7 +269,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-@media (width > 1700px) {
+@media (width > 1368px) {
     .ccemit-page__section__president-background {
         display: none;
     }
