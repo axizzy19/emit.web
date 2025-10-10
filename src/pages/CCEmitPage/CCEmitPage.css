@@ -108,8 +108,6 @@ h1, h2, h3, h4, p {
     border-radius: 30px;
     color: white;
     margin: 0;
-
-
 }
 
 
@@ -121,16 +119,12 @@ h1, h2, h3, h4, p {
  .ccemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
-    
-    
 }
 
  .ccemit-page__section__calendar__main__info {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    
-    
 }
 
  .ccemit-page__section__calendar__images {
