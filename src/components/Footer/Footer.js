@@ -15,9 +15,9 @@ const Footer = () => {
           <p>Москва, проспект Вернадского, дом 82, корпус 5</p>
       </section>
       <section className="footer__section__numbers">
-          <p>+7(999) 999-99-99</p>
-          <p>+7(999) 999-99-99</p>
-          <p>contact@ranepa.ru</p>
+          <p>abitura-emit@ranepa.ru</p>
+          <p>info-ef-emit@ranepa.ru</p>
+          <p>+7 (925) 260 95 90</p>
       </section>
       <section className="footer__section__contacts">
           <h4 className="footer__title footer__title__social-media">Мы в социальных сетях</h4>
