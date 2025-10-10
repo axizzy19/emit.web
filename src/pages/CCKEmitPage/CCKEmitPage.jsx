@@ -35,13 +35,11 @@ const CCKEmitPage = () => {
             </section>
             <section className="cckemit-page__section__description__main">
                 <section className="cckemit-page__section__description__main__part">
-                    <section className="cckemit-page__main-page__text__decoration">
                         <p className="cckemit-page__main-page__text">Студенческий спортивный клуб «Чёрная Мамба» - это команда активных студентов, развивающая спорт и здоровый образ жизни. Клуб предлагает разнообразные спортивные секции, от командных до индивидуальных видов</p>
-                    </section>
-                    <img
-                        src={cckFoto1}
-                        className="cckemit-page__main-page__image-1"
-                    />
+                        <img
+                            src={cckFoto1}
+                            className="cckemit-page__main-page__image-1"
+                        />
                 </section>
                 <section className="cckemit-page__section__description__main__part cckemit-page__section__description__main__part-2">
                     <img

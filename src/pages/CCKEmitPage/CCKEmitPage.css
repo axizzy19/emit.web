@@ -86,7 +86,6 @@ h1, h2, h3, h4, p {
     max-height: 360px;
     max-width: 100%;
     align-self: center;
-    margin-top: -50px;
     margin-bottom: 20px;
 }
 .cckemit-page__main-page__images {
@@ -277,15 +276,12 @@ button:hover {
     }
 
     .cckemit-page__main-page__image-1 {
-        width: 100%;
+        width: 80%;
+        height: auto;
     }
 
     .cckemit-page__description_lines {
         display: none;
-    }
-
-    .cckemit-page__main-page__image-1 {
-        padding: 0;
     }
 
     .cckemit-page__section__description {
