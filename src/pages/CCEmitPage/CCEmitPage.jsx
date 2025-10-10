@@ -171,6 +171,7 @@ const CCEmitPage = () => {
                 <img
                     src={teamFoto}
                     className="ccemit-page__section__team__image"
+                    loading="lazy"
                 />
             </section>
         </section>
