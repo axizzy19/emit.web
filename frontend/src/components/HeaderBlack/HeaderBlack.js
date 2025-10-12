@@ -15,12 +15,12 @@ const HeaderBlack = ({ title, subtitle }) => {
     <>
       <header className="header-black-component__header">
         <section className="header-black-component__section__logos">
-                <a>
+                <button onClick={() => handleNavigation('/pages/ccemit')}>
                     <img
                         src={ranepaLogos}
                         className="header-black-component__ranepa__logos"
                     />
-                </a>
+                </button>
             </section>
         <section className="header-black-component__section__header">
             <button>

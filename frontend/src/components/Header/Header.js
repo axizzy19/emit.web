@@ -15,12 +15,12 @@ const Header = ({ title, subtitle }) => {
   return (
         <header className="header-component__header">
           <section className="header-component__section__logos">
-                  <a>
+                  <button onClick={() => handleNavigation('/pages/ccemit')}>
                       <img
                           src={ranepaLogos}
                           className="header-component__ranepa__logos"
                       />
-                  </a>
+                  </button>
               </section>
           <section className="header-component__section__header">
               <button>

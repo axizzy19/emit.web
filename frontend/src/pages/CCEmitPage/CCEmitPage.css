@@ -11,7 +11,7 @@
     gap: 50px;
     color: #171F29;
     align-items: center;
-    animation: SlideInDown 2s;
+    animation: slideDownWithOpacity 1.8s ease;
 }
 
 

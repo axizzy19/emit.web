@@ -24,10 +24,10 @@ const BCPage = () => {
        <section className="bc-page__section__description bc-page__padding__inline">
             <p className="bc-page__section__description__text">В мире, где доброта и сострадание становятся все более важными, волонтерский проект "Большое сердце" представляет собой уникальную возможность для студентов внести свой вклад в мире поддержки, помощи и волонтерства</p>
         </section>
-        <img
+        {/* <img
             src={BCDescriptionBackground}
             className="bc-page__section__description__background"
-        />
+        /> */}
        <section className="bc-page__section__big-heart__images">
             <img
                 className="bc-page__big-heart__foto-corner"

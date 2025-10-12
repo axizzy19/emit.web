@@ -37,13 +37,13 @@ const MainPage = () => {
             />
           </section>
           <header className="header">
-            <a className="header__logo">
+            <button onClick={() => handleNavigation('/pages/ccemit')} className="header__logo">
               <img
                 className="header__logo-img"
                 src={logo}
                 alt="Логотип проекта"
               />
-            </a>
+            </button>
           </header>
           <section className="corner-images__background">
             <img
