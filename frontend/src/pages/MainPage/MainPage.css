@@ -15,8 +15,6 @@ html, body, #root {
   overflow: hidden;
 }
 
-
-
 #main-page .body {
     width: 100%;
     min-height: 100vh;
@@ -57,7 +55,6 @@ html, body, #root {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
 }
 
 #main-page .header__logo-img {
@@ -66,7 +63,7 @@ html, body, #root {
 }
 
 #main-page .button {
-  background: none;
+    background: none;
 	color: inherit;
 	border: none;
 	padding: 0;
@@ -107,28 +104,28 @@ html, body, #root {
     border-radius: 70px;
     padding-block: 25px;
     padding-inline: 125px;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
 }
 
 .corner-image__right{
-    animation: SlideInRight 2s ease-in-out;
+    animation: slideDownWithOpacity 2s ease-in-out;
 }
 
 .corner-image__left{
-    animation: SlideInLeft 2s ease-in-out;
+    animation: slideUpWithOpacity 2s ease-in-out;
 }
 
 .header__menu-button{
-    animation: SlideInUp 2s ease-in-out;
+    animation: slideUpWithOpacity 2s ease;
 }
 
 .header__logo-img{
-    animation: FadeIn 1.5s ease-in-out;
+    animation: slideUpWithOpacity 2s ease;
 }
 
-.lines__corners{
+/* .lines__corners{
     animation: FadeIn 2s ease-in-out;
-}
+} */
 
 @media (width < 1024px) {
     #main-page .body {
@@ -150,7 +147,7 @@ html, body, #root {
     #main-page .header__menu-button {
         padding-block: 15px;
         padding-inline: 100px;
-        max-width: 350px;
+        max-width: 400px;
     }
 }
 
