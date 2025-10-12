@@ -14,7 +14,7 @@ import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
-       <Router>
+    <Router>
       <ScrollToTop /> {}
       <Routes>
         <Route path="/" element={<MainPage />}/>
