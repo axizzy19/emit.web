@@ -7,6 +7,7 @@ from src.students.router import router as students_router
 from src.teams.router import router as teams_router
 from src.events.router import router as events_router
 from src.scores.router import router as scores_router
+from src.users.auth import router as auth_router
 
 
 @asynccontextmanager
@@ -24,3 +25,4 @@ app.include_router(students_router)
 app.include_router(teams_router)
 app.include_router(events_router)
 app.include_router(scores_router)
+app.include_router(auth_router)

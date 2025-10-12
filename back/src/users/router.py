@@ -38,12 +38,15 @@ async def update_user(user_id: int, user: UserCreate):
     if not user_obj:
         raise HTTPException(status_code=404, detail='User not found')
 
-    await user_obj.update_from_dict({
+    update_data = {
         'name': user.name,
-        'password': user.password,
         'role': user.role,
         'event_id': user.event_id
-    }).save()
+    }
+    if user.password:
+        update_data['password_hash'] = User.get_password_hash(user.password)
+
+    await user_obj.update_from_dict(update_data).save()
     return user_obj
 
 

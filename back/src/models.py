@@ -37,10 +37,9 @@ class User(Model):
         table = 'user'
 
     @staticmethod
-    def get_password_hash(self, password: str):
+    def get_password_hash(password: str):
         return CryptContext(schemes=['bcrypt']).hash(password)
 
-    @staticmethod
     def verify_password(self, password: str):
         return CryptContext(schemes=['bcrypt']).verify(
             password, self.password_hash

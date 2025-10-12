@@ -1,6 +1,7 @@
 from tortoise import Tortoise
 
 
+# TODO: add postgresql
 TORTOISE_ORM = {
     'connections': {
         'default': 'sqlite://db.sqlite3'
