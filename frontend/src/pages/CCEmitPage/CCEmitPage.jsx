@@ -93,17 +93,9 @@ const CCEmitPage = () => {
                 <section className="ccemit-page__section__calendar__events">
                     <section className="ccemit-page__section__calendar__event">
                         <section className="ccemit-page__section__calendar__event__details">
-                            <h2 className="ccemit-page__section__calendar__event__name">День первокурсника</h2>
-                            <p className="ccemit-page__section__calendar__event__date">9 сентября</p>
-                            <p className="ccemit-page__section__calendar__event__time">время</p>
-                        </section>
-                        <p className="ccemit-page__section__calendar__event__place">Кампус Академии</p>
-                    </section>
-                    <section className="ccemit-page__section__calendar__event">
-                        <section className="ccemit-page__section__calendar__event__details">
                             <h2 className="ccemit-page__section__calendar__event__name">Пульсар</h2>
-                            <p className="ccemit-page__section__calendar__event__date">10 октября</p>
-                            <p className="ccemit-page__section__calendar__event__time">время</p>
+                            <p className="ccemit-page__section__calendar__event__date">27 ноября</p>
+                            {/* <p className="ccemit-page__section__calendar__event__time">время уточняется</p> */}
                         </section>
                         <p className="ccemit-page__section__calendar__event__place">Академия, 1 корпус БАЗ</p>
                     </section>
@@ -111,15 +103,23 @@ const CCEmitPage = () => {
                         <section className="ccemit-page__section__calendar__event__details">
                             <h2 className="ccemit-page__section__calendar__event__name">1-й этап Актива ЭМИТ</h2>
                             <p className="ccemit-page__section__calendar__event__date">11 ноября</p>
-                            <p className="ccemit-page__section__calendar__event__time">время</p>
+                            {/* <p className="ccemit-page__section__calendar__event__time">время уточняется</p> */}
+                        </section>
+                        <p className="ccemit-page__section__calendar__event__place">Кампус Академии</p>
+                    </section>
+                    <section className="ccemit-page__section__calendar__event">
+                        <section className="ccemit-page__section__calendar__event__details">
+                            <h2 className="ccemit-page__section__calendar__event__name">Цветная капуста</h2>
+                            <p className="ccemit-page__section__calendar__event__date">28 ноября - 1 декабря</p>
+                            {/* <p className="ccemit-page__section__calendar__event__time">время</p> */}
                         </section>
                         <p className="ccemit-page__section__calendar__event__place">Кампус Академии</p>
                     </section>
                     <section className="ccemit-page__section__calendar__event">
                         <section className="ccemit-page__section__calendar__event__details">
                             <h2 className="ccemit-page__section__calendar__event__name">Медиахакатон</h2>
-                            <p className="ccemit-page__section__calendar__event__date">12 декабря</p>
-                            <p className="ccemit-page__section__calendar__event__time">время</p>
+                            <p className="ccemit-page__section__calendar__event__date">дата уточняется</p>
+                            {/* <p className="ccemit-page__section__calendar__event__time">время уточняется</p> */}
                         </section>
                         <p className="ccemit-page__section__calendar__event__place">Академия, 1 корпус библиотека</p>
                     </section>
