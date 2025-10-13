@@ -40,23 +40,6 @@ const ClubsPage = () => {
                     className="clubs-page__clubs-background"
             /> */}
         <section className="clubs-page__main__section__clubs">
-                <section className="clubs-page__main__section__clubs__position">
-                    <img
-                        className="clubs-page__club__images"
-                        src={club01}
-                    />
-                    <section className="clubs-page__main__section__clubs__description">
-                        <h2 className="clubs-page__main__section__clubs__name">Цифровое комьюнити</h2>
-                        <p className="clubs-page__main__section__clubs__text">Комьюнити единомышленников, заинтересованных в развитии в сфере цифровых технологий.</p>
-                        <button className="clubs-page__know-more__button" onClick={() => handleNavigation("/pages/clubs/itcommunity")}>
-                            <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
-                            <img
-                                className="clubs-page__club__arrow-image"
-                                src={knowMoreArrows}
-                            />
-                        </button>
-                    </section>
-                </section>
                 <section className="clubs-page__main__section__clubs__position clubs-page__reversed-position">
                     <section className="clubs-page__main__section__clubs__description">
                         <h2 className="clubs-page__main__section__clubs__name">Career&Science Community</h2>
@@ -124,6 +107,25 @@ const ClubsPage = () => {
                             />
                         </button>
                     </section>
+                </section>
+                <section className="clubs-page__main__section__clubs__position clubs-page__reversed-position">
+                    <section className="clubs-page__main__section__clubs__description">
+                        <section className="clubs-page__main__section__clubs__description">
+                            <h2 className="clubs-page__main__section__clubs__name">Цифровое комьюнити</h2>
+                            <p className="clubs-page__main__section__clubs__text">Комьюнити единомышленников, заинтересованных в развитии в сфере цифровых технологий.</p>
+                            <button className="clubs-page__know-more__button" onClick={() => handleNavigation("/pages/clubs/itcommunity")}>
+                                <h4 className="clubs-page__main__section__clubs__text">узнать больше</h4>
+                                <img
+                                    className="clubs-page__club__arrow-image"
+                                    src={knowMoreArrows}
+                                />
+                            </button>
+                        </section>
+                    </section>
+                    <img
+                            className="clubs-page__club__images"
+                            src={club01}
+                    />
                 </section>
             </section>
 
