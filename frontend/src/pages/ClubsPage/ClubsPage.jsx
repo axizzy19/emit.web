@@ -14,8 +14,10 @@ import usePageTitle from "../../hooks/usePageTitle";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
 import { useNavigate } from "react-router-dom";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const ClubsPage = () => {
+    usePageCache();
   usePageTitle("Клубы Института ЭМИТ");
   useFavicon(customFavicon);
 

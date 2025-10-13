@@ -10,8 +10,10 @@ import emeetingFoto2 from "../../assets/images/emeeting-foto-2.png";
 import emeetingCornerRightBottom from "../../assets/images/EmeetingCornerRightBottom.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const EmeetingPage = () => {
+  usePageCache();
   usePageTitle("ЭMEETING");
   useFavicon(customFavicon);
 

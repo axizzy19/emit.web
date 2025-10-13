@@ -67,3 +67,21 @@ self.addEventListener('fetch', (event) => {
       })
   );
 });
+
+self.addEventListener('message', async (event) => {
+  if (event.data && event.data.type === 'CACHE_CURRENT_PAGE') {
+    const { url } = event.data;
+    console.log('Принудительное кэширование страницы:', url);
+    
+    try {
+      const cache = await caches.open(CACHE_NAME);
+      const response = await fetch(url);
+      if (response.status === 200) {
+        await cache.put(url, response);
+        console.log('Страница закэширована:', new URL(url).pathname);
+      }
+    } catch (error) {
+      console.log('Ошибка принудительного кэширования:', error);
+    }
+  }
+});

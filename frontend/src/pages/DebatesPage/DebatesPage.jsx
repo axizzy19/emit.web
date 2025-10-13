@@ -9,8 +9,10 @@ import debatesFoto2 from "../../assets/images/DebatesFoto-2.png";
 import debatesClubLogo from "../../assets/images/DebatesClubLogo.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const DebatesPage = () => {
+  usePageCache();
   usePageTitle("Клуб дебатов");
   useFavicon(customFavicon);
 

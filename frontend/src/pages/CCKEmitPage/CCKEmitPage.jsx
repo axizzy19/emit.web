@@ -16,8 +16,10 @@ import cckTeamFoto from "../../assets/images/CCKTeamFoto.png";
 import Footer from '../../components/Footer/Footer';
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from '../../hooks/useFavicon';
+import { usePageCache } from '../../hooks/usePageCahce';
 
 const CCKEmitPage = () => {
+  usePageCache();
   usePageTitle("Студенческий спортивный клуб ЭМИТ");
   useFavicon(customFavicon);
 

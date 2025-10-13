@@ -12,8 +12,10 @@ import BCLinesDivision from "../../assets/images/BCLinesDivision.svg";
 import BCChart from "../../assets/images/BCChart.png"
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const BCPage = () => {
+  usePageCache();
   usePageTitle("Большое сердце");
   useFavicon(customFavicon);
   

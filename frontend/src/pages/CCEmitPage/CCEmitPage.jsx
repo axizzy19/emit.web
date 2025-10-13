@@ -17,8 +17,10 @@ import presidentBackground from "../../assets/images/PresidentBackground.svg";
 import teamFoto from "../../assets/images/TeamFoto.png";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const CCEmitPage = () => {
+    usePageCache();
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
 

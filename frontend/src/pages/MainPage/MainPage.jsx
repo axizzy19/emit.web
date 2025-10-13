@@ -11,8 +11,10 @@ import useFavicon from "../../hooks/useFavicon";
 import { useNavigate } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 import { getPageImages, preloadAllImages } from "../../utils/imageManager";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const MainPage = () => {
+  usePageCache();
   usePageTitle('Главная страница');
   useFavicon(customFavicon);
 

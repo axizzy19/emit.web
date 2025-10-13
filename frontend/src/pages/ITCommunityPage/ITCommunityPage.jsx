@@ -11,8 +11,10 @@ import BITCircles from "../../assets/images/BITCircles.svg";
 import pulsarFoto from "../../assets/images/PulsarFoto.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
+import { usePageCache } from "../../hooks/usePageCahce";
 
 const ITCommunityPage = () => {
+  usePageCache();
   usePageTitle("Цифровое комьюнити");
   useFavicon(customFavicon);
   
