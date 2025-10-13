@@ -24,4 +24,4 @@ const PageWrapper = ({ children, images = [] }) => {
     return children;
 };
 
-export default PageWrapper;
+export default React.memo(PageWrapper);
