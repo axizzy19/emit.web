@@ -1,7 +1,7 @@
+import bcrypt
 from enum import Enum
 from tortoise import fields
 from tortoise.models import Model
-from passlib.context import CryptContext
 
 
 class UserRole(str, Enum):
@@ -38,12 +38,14 @@ class User(Model):
 
     @staticmethod
     def get_password_hash(password: str):
-        return CryptContext(schemes=['bcrypt']).hash(password)
+        password_bytes = password.encode('utf-8')
+        salt = bcrypt.gensalt()
+        return bcrypt.hashpw(password_bytes, salt).decode('utf-8')
 
     def verify_password(self, password: str):
-        return CryptContext(schemes=['bcrypt']).verify(
-            password, self.password_hash
-        )
+        password_bytes = password.encode('utf-8')
+        hash_bytes = self.password_hash.encode('utf-8')
+        return bcrypt.checkpw(password_bytes, hash_bytes)
 
 
 class Student(Model):
