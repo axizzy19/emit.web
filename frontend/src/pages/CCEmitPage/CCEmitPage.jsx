@@ -178,7 +178,7 @@ const CCEmitPage = () => {
             </section> */}
 
 
-            <section className="ccemit-page__section__team section__style">
+            <section className="ccemit-page__section__team section__style  ccemit-page__section__style">
                 <h2 className="ccemit-page__section__team__title">Члены созыва</h2>
                 
                 <section className="ccemit-page__section__team__image-place">

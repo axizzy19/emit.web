@@ -1,3 +1,5 @@
+@import url(../../styles/Animation.css);
+
 button {
   all: unset;
   cursor: pointer;
@@ -12,6 +14,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 80px;
     margin: 0;
     padding: 0;
@@ -83,8 +86,8 @@ h1, h2, h3, h4, p {
 }
 
 .cckemit-page__main-page__image-1{
-    max-height: 360px;
-    max-width: 100%;
+    /* max-height: 360px;
+    width: 100%; */
     align-self: center;
     margin-bottom: 20px;
 }
@@ -92,7 +95,6 @@ h1, h2, h3, h4, p {
     max-height: 200px;
     max-width: 100%;
     align-self: center;
-    
 }
 
 .cckemit-page__main-page__text {
@@ -101,8 +103,6 @@ h1, h2, h3, h4, p {
     color: white;
     margin: 0;
     font-size: 21px;
-    
-    
 }
 
 .cckemit-page__section__calendar{
@@ -112,12 +112,10 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__calendar__name {
     justify-content: end;
     flex-direction: row-reverse;
-    
 }
 
 .cckemit-page__arrows__image-reverse {
     rotate: 180deg;
-    
 }
 
 .cckemit-page__section__calendar__main__info {
@@ -170,7 +168,6 @@ h1, h2, h3, h4, p {
     align-items: start;
     gap: 12px;
     font-size: 15px;
-    
 }
 
 .cckemit-page__section__calendar__event__name {
@@ -195,19 +192,16 @@ h1, h2, h3, h4, p {
 }
 
 .cckemit-page__section__president{
-        animation: slideDown 2s ease;
+    /* animation: slideDownWithOpacity 2s ease; */
 }
 
 .cckemit-page__section__president__title {
     font-family: 'Montserrat-Bold';
     font-size: 25px;
-    
 }
 
 .cckemit-page__section__president__name {
     color: #A00F33;
-
-
 }
 
 .cckemit-page__section__president__image {
@@ -217,15 +211,19 @@ h1, h2, h3, h4, p {
 .cckemit-page__section__president {
     position: relative;
     gap: 60px;
-
 }
 
 .cckemit-page__section__president-background {
     position: absolute;
     left: 0;
     top: 30px;
-    width: 100%;
+    max-width: 100%;
     z-index: -1;
+}
+
+.cckemit-page__section__president-and-background {
+    width: 100%;
+    position: relative;
 }
 
 .cckemit-page__section__team {
@@ -238,7 +236,7 @@ h1, h2, h3, h4, p {
 }
 
 .cckemit-page__section__team__image {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 40px;
 }
 
@@ -273,12 +271,13 @@ button:hover {
 
     .cckemit-page__main-page__images {
         width: fit-content;
+        max-height: 400px;
     }
 
-    .cckemit-page__main-page__image-1 {
+    /* .cckemit-page__main-page__image-1 {
         width: 80%;
         height: auto;
-    }
+    } */
 
     .cckemit-page__description_lines {
         display: none;

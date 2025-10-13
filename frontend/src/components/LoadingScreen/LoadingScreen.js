@@ -21,10 +21,6 @@ const LoadingScreen = ({ progress, status }) => {
                 <div className="loading-screen__status">
                     {status}
                 </div>
-                
-                <div className="loading-screen__hint">
-                    Загрузка медиа-контента...
-                </div>
             </div>
         </div>
     );

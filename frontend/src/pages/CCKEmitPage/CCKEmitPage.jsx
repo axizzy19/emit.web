@@ -40,7 +40,7 @@ const CCKEmitPage = () => {
                             <p className="cckemit-page__main-page__text">Студенческий спортивный клуб «Чёрная Мамба» - это команда активных студентов, развивающая спорт и здоровый образ жизни. Клуб предлагает разнообразные спортивные секции, от командных до индивидуальных видов</p>
                             <img
                                 src={cckFoto1}
-                                className="cckemit-page__main-page__image-1"
+                                className="cckemit-page__description_images cckemit-page__main-page__images"
                             />
                     </section>
                     <section className="cckemit-page__section__description__main__part cckemit-page__section__description__main__part-2">
@@ -128,23 +128,25 @@ const CCKEmitPage = () => {
                 </section>
                 
             </section>
-
-            <section className="cckemit-page__section__president  cckemit-page__section__style">
-                <section className="cckemit-page__section__president__title">
-                    <h2 className="cckemit-page__section__president__title__status">ПРЕДСЕДАТЕЛЬ</h2>
-                    <h2 className="cckemit-page__section__president__name">Ажгалиева Александра</h2>
+            <section className='cckemit-page__section__president-and-background'>
+                <section className="cckemit-page__section__president  cckemit-page__section__style">
+                    <section className="cckemit-page__section__president__title">
+                        <h2 className="cckemit-page__section__president__title__status">ПРЕДСЕДАТЕЛЬ</h2>
+                        <h2 className="cckemit-page__section__president__name">Ажгалиева Александра</h2>
+                    </section>
+                    <section className="cckemit-page__section__president__image__place">
+                        <img
+                            className="cckemit-page__section__president__image"
+                            src={presidentCckFoto}
+                        />
+                    </section>
+                    {/* <img
+                        className="cckemit-page__section__president-background"
+                        src={presidentCckBackground}
+                    /> */}
                 </section>
-                <section className="cckemit-page__section__president__image__place">
-                    <img
-                        className="cckemit-page__section__president__image"
-                        src={presidentCckFoto}
-                    />
-                </section>
-                <img
-                    className="cckemit-page__section__president-background"
-                    src={presidentCckBackground}
-                />
             </section>
+            
 
             <section className="cckemit-page__section__team cckemit-page__section__style">
                 <h2 className="cckemit-page__section__team__title">Члены созыва</h2>
