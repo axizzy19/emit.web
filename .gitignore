@@ -2,9 +2,3 @@ node_modules/
 
 dist/service-worker.js
 dist/workbox-*
-dist/workbox-*.js
-dist/workbox-*.js.map
-
-dist/*
-!dist/index.html
-!dist/static/
