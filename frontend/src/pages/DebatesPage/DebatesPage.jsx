@@ -9,13 +9,16 @@ import debatesFoto2 from "../../assets/images/DebatesFoto-2.png";
 import debatesClubLogo from "../../assets/images/DebatesClubLogo.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const DebatesPage = () => {
   usePageTitle("Клуб дебатов");
   useFavicon(customFavicon);
 
+  const pageImages = [debatesBackground, debatesFoto1, debatesFoto2, debatesClubLogo, customFavicon];
+
   return (
-    <>
+    <PageWrapper images={pageImages}>
     <HeaderBlack title="Клуб дебатов ЭМИТ" subtitle="Учим аргументировать"/>
     <main className="debates-page__main">
         <section className="debates-page__section__description debates-page__padding__inline">
@@ -48,7 +51,7 @@ const DebatesPage = () => {
 
     </main>
     <Footer/>
-    </>
+    </PageWrapper>
   )
 }
 

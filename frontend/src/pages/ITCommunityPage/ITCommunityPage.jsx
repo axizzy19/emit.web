@@ -11,13 +11,16 @@ import BITCircles from "../../assets/images/BITCircles.svg";
 import pulsarFoto from "../../assets/images/PulsarFoto.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const ITCommunityPage = () => {
   usePageTitle("Цифровое комьюнити");
   useFavicon(customFavicon);
 
+  const pageImages = [podcastBackground, podcastFoto1, podcastFoto2, BITFoto, BITCircles, pulsarFoto, customFavicon];
+
   return (
-    <>
+    <PageWrapper images={pageImages}>
       <Header title="Цифровое комьюнити" subtitle="Паутина возможностей"/>
       <main className="itcommunity-page__main">
         <section className="itcommunity-page__section-reverse">
@@ -75,7 +78,7 @@ const ITCommunityPage = () => {
         </section>
       </main>
       <Footer/>
-    </>
+    </PageWrapper>
   )
 }
 
