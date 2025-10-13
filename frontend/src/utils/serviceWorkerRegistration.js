@@ -1,7 +1,7 @@
 export function register() {
   if ('serviceWorker' in navigator) {
     setTimeout(() => {
-      const swUrl = '/sw.js';
+      const swUrl = '../../public/sw.js';
       
       console.log('Регистрация Service Worker...');
       
