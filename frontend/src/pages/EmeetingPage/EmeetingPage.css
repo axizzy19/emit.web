@@ -31,7 +31,7 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: #171F29;
     padding-top: 50px;
-    animation: slideDown 2.5s ease;
+    animation: slideDownWithOpacity 2s ease;
 } 
 
 .emeetimg-page__padding__inline {

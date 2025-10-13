@@ -42,13 +42,13 @@ h1, h2, h3, h4, p {
 .clubs-page__main__arrows-image {
     max-width: 40px;
     align-self: center;
-    animation: slideDown 0.8s ease-out;
+    animation: slideDownWithOpacity 2s ease;
 }
 
 .clubs-page__club__images {
     max-width: 250px;
     height: auto;
-    animation: slideDown 0.8s ease-out;
+    animation: slideDownWithOpacity 2s ease;
 }
 
 .clubs-page__main__section__clubs {
@@ -56,7 +56,7 @@ h1, h2, h3, h4, p {
     display: flex;
     flex-direction: column;
     gap: 170px;
-    animation: slideDown 0.8s ease-out;
+    animation: slideDownWithOpacity 2s ease;
 }
 
 .clubs-page__main__section__clubs__position {

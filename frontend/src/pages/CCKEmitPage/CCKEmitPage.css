@@ -53,7 +53,7 @@ h1, h2, h3, h4, p {
 } 
 
 .cckemit-page__section__description{
-    animation: slideDown 2s ease;
+    animation: slideDownWithOpacity 2s ease;
 }
 
 .cckemit-page__section__description__main {
