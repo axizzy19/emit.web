@@ -11,6 +11,7 @@ import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
 import ScrollToTop from './ScrollToTop';
+import ButtonSave from './ButtonSave/ButtonSave';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/pages/clubs/bc" element={<BCPage/>} />
         <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
         <Route path="/pages/clubs/emeeting" element={<EmeetingPage/>} />
+        <Route path="/components/ButtonSave" element={<ButtonSave/>} />
       </Routes>
     </Router>
   );
