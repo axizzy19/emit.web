@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { GenerateSW } = require('workbox-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = (env, argv) => {
@@ -115,52 +115,57 @@ module.exports = (env, argv) => {
           filename: 'static/css/[name].[contenthash:8].css',
           chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
         }),
-        new GenerateSW({
-          clientsClaim: true,
-          skipWaiting: true,
-          runtimeCaching: [{
-            urlPattern: /\.(?:js|css|html)$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'static-resources',
-              expiration: {
-                maxEntries: 100,
-                maxAgeSeconds: 30 * 24 * 60 * 60,
-              },
-            },
-          }, {
-            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'images',
-              expiration: {
-                maxEntries: 60,
-                maxAgeSeconds: 30 * 24 * 60 * 60, 
-              },
-            },
-          }, {
-            urlPattern: /\.(?:woff|woff2|eot|ttf|otf)$/,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'fonts',
-              expiration: {
-                maxEntries: 30,
-                maxAgeSeconds: 365 * 24 * 60 * 60,
-              },
-            },
-          }, {
-            urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com/,
-            handler: 'StaleWhileRevalidate',
-            options: {
-              cacheName: 'google-fonts',
-            },
-          }],
-          navigateFallback: '/index.html',
-          navigateFallbackDenylist: [
-            new RegExp('^/api/'),
-            new RegExp('/[^/?]+\\.[^/]+$'),
+        new CopyWebpackPlugin({
+        patterns: [
+          { from: 'public/sw.js', to: 'sw.js' },
           ],
-        })
+      }),
+        // new GenerateSW({
+        //   clientsClaim: true,
+        //   skipWaiting: true,
+        //   runtimeCaching: [{
+        //     urlPattern: /\.(?:js|css|html)$/,
+        //     handler: 'CacheFirst',
+        //     options: {
+        //       cacheName: 'static-resources',
+        //       expiration: {
+        //         maxEntries: 100,
+        //         maxAgeSeconds: 30 * 24 * 60 * 60,
+        //       },
+        //     },
+        //   }, {
+        //     urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+        //     handler: 'CacheFirst',
+        //     options: {
+        //       cacheName: 'images',
+        //       expiration: {
+        //         maxEntries: 60,
+        //         maxAgeSeconds: 30 * 24 * 60 * 60, 
+        //       },
+        //     },
+        //   }, {
+        //     urlPattern: /\.(?:woff|woff2|eot|ttf|otf)$/,
+        //     handler: 'CacheFirst',
+        //     options: {
+        //       cacheName: 'fonts',
+        //       expiration: {
+        //         maxEntries: 30,
+        //         maxAgeSeconds: 365 * 24 * 60 * 60,
+        //       },
+        //     },
+        //   }, {
+        //     urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com/,
+        //     handler: 'StaleWhileRevalidate',
+        //     options: {
+        //       cacheName: 'google-fonts',
+        //     },
+        //   }],
+        //   navigateFallback: '/index.html',
+        //   navigateFallbackDenylist: [
+        //     new RegExp('^/api/'),
+        //     new RegExp('/[^/?]+\\.[^/]+$'),
+        //   ],
+        // })
       ] : []),
     ],
     optimization: {

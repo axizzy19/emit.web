@@ -3,7 +3,6 @@ import './Header.css';
 import navigationButton from '../../assets/images/NavigationButton.png';
 import ranepaLogos from '../../assets/images/RanepaLogosB.svg';
 import { useLocation, useNavigate } from 'react-router-dom';
-import PageWrapper from '../PageWrapper/PageWrapper';
 
 
 const Header = ({ title, subtitle }) => {
@@ -16,7 +15,6 @@ const Header = ({ title, subtitle }) => {
   const pageImages = [ranepaLogos];
 
   return (
-    <PageWrapper images={pageImages}>
         <header className="header-component__header">
           <section className="header-component__section__logos">
                   <button onClick={() => handleNavigation('/pages/ccemit')}>
@@ -69,7 +67,6 @@ const Header = ({ title, subtitle }) => {
               </button> */}
           </section>
         </header>
-    </PageWrapper>
   )
 }
 

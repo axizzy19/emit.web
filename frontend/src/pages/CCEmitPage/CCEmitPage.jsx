@@ -17,22 +17,14 @@ import presidentBackground from "../../assets/images/PresidentBackground.svg";
 import teamFoto from "../../assets/images/TeamFoto.png";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const CCEmitPage = () => {
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
- 
-  const pageImages = [
-    arrowsImage, ccFoto1, ccFoto2, descriptionLines, 
-    eventFoto1, calendarLines, eventFoto2, eventFoto3,
-    starImage, presidentImage, presidentBackground, teamFoto
-  ];
 
   return ( 
     <>
       <Header title="Cтуденческий совет ЭМИТ" subtitle="XVI созыв"/>
-      <PageWrapper images={pageImages}>
         <main className="ccemit-page__main">
             <section className="ccemit-page__section__description  ccemit-page__section__style">
                 <section className="ccemit-page__section__name">
@@ -197,7 +189,6 @@ const CCEmitPage = () => {
             </section>
         </main>
         <Footer />
-       </PageWrapper>
     </>
   )
 }

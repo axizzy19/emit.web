@@ -10,18 +10,14 @@ import emeetingFoto2 from "../../assets/images/emeeting-foto-2.png";
 import emeetingCornerRightBottom from "../../assets/images/EmeetingCornerRightBottom.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const EmeetingPage = () => {
   usePageTitle("ЭMEETING");
   useFavicon(customFavicon);
 
-  const pageImages = [emeetingBackground, emeetingFoto1, emeetingCornerLeftTop, emeetingFoto2, emeetingCornerRightBottom, customFavicon];
-
   return (
     <>
         <Header title="ЭMEETING" subtitle="Встречи, мероприятия"/>
-        <PageWrapper images={pageImages}>
         <div className="positions">
         <main className="emeetimg-page__main">
             <section className="emeetimg-page__section__description emeetimg-page__padding__inline">
@@ -63,7 +59,6 @@ const EmeetingPage = () => {
         </main>
         <Footer/>
         </div>
-        </PageWrapper>
     </>
   )
 }

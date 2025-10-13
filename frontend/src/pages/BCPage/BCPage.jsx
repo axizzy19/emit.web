@@ -12,18 +12,14 @@ import BCLinesDivision from "../../assets/images/BCLinesDivision.svg";
 import BCChart from "../../assets/images/BCChart.png"
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const BCPage = () => {
   usePageTitle("Большое сердце");
   useFavicon(customFavicon);
   
-  const pageImages = [BCDescriptionBackground, BCCorner, BCCircles, BCFoto1, BCFoto2, BCLinesDivision, BCChart];
-
   return (
     <>
         <Header title="Большое сердце" subtitle="Делаем добро вместе"/>
-        <PageWrapper images={pageImages}>
         <main className="bc-page__main">
         <section className="bc-page__section__description bc-page__padding__inline">
                 <p className="bc-page__section__description__text">В мире, где доброта и сострадание становятся все более важными, волонтерский проект "Большое сердце" представляет собой уникальную возможность для студентов внести свой вклад в мире поддержки, помощи и волонтерства</p>
@@ -92,7 +88,6 @@ const BCPage = () => {
         </section>
         </main>
         <Footer/>
-        </PageWrapper>
     </>
   )
 };

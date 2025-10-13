@@ -16,18 +16,14 @@ import cckTeamFoto from "../../assets/images/CCKTeamFoto.png";
 import Footer from '../../components/Footer/Footer';
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from '../../hooks/useFavicon';
-import PageWrapper from '../../components/PageWrapper/PageWrapper';
 
 const CCKEmitPage = () => {
   usePageTitle("Студенческий спортивный клуб ЭМИТ");
   useFavicon(customFavicon);
 
-  const pageImages = [cckFoto1, cckFoto2, cckFotoEvents1, cckCalendarLines, cckFotoEvents2, cckFotoEvents3, starImage, presidentCckFoto, presidentCckBackground, cckTeamFoto];
-
   return (
     <>
         <HeaderBlack title="Студенческий спортивный клуб ЭМИТ" subtitle="V созыв"/>
-        <PageWrapper images={pageImages}>
         <main className="cckemit-page__main">
             <section className="cckemit-page__section__description  cckemit-page__section__style">
                 <section className="cckemit-page__section__name">
@@ -160,7 +156,6 @@ const CCKEmitPage = () => {
             </section>
         </main>
         <Footer />
-        </PageWrapper>
     </>
   )
 }

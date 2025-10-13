@@ -10,6 +10,7 @@ import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
 import { useNavigate } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
+import { getPageImages, preloadAllImages } from "../../utils/imageManager";
 
 const MainPage = () => {
   usePageTitle('Главная страница');
@@ -21,10 +22,11 @@ const MainPage = () => {
     navigate(path);
   };
 
-  const pageImages = [logo, cornerLineLeftTop, cornerLineRightBottom, cornerPictureRightTop, cornerPictureLeftBottom, customFavicon];
+  const BCPageImages = getPageImages('bcPage');
+  const mainPageImages = getPageImages('mainPage');
   
   return (
-    <PageWrapper images={pageImages}>
+    <PageWrapper images={mainPageImages}>
       <div id="main-page">
         {
           <div className="body">
@@ -111,6 +113,6 @@ const MainPage = () => {
       </div>
     </PageWrapper>
   )
-}
+};
 
 export default MainPage;

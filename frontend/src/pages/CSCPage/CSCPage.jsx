@@ -10,7 +10,6 @@ import cscFigures from "../../assets/images/CSCFigures.svg";
 import chatImage from "../../assets/images/CSCChat.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const CSCPage = () => {
   usePageTitle("Career&Science Community");
@@ -20,12 +19,9 @@ const CSCPage = () => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
-  const pageImages = [CSCLeftTopCorner, cscImage, mainImageBackground, cscFigures, chatImage, customFavicon];
-
   return (
     <>
         <HeaderBlack title="Career&Science Community" subtitle="Про карьеру, науку, проекты"/>
-        <PageWrapper images={pageImages}>
         <main className="csc-page__main">
             <section className="csc-page__section__description csc-page__padding__inline">
                 <p className="csc-page__section__description__text">Это уникальная инициатива, объединяющая карьерное развитие, научные исследования и инновационные проекты. </p>
@@ -85,7 +81,6 @@ const CSCPage = () => {
 
         </main>
         <Footer/>
-        </PageWrapper>
     </>
   )
 }

@@ -14,7 +14,6 @@ import usePageTitle from "../../hooks/usePageTitle";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
 import { useNavigate } from "react-router-dom";
-import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const ClubsPage = () => {
   usePageTitle("Клубы Института ЭМИТ");
@@ -26,12 +25,9 @@ const ClubsPage = () => {
     navigate(path);
   };
 
-  const pageImages = [mainArrows, clubsBackground, club01, knowMoreArrows, cscLogo, clubBC, clubDebates, clubEmeeting, customFavicon];
-
   return (
     <>
         <Header title="Клубы Института ЭМИТ" subtitle="Выходи за рамки"/>
-        <PageWrapper images={pageImages}>
         <main className="clubs-page__main">
         <img
                 src={mainArrows}
@@ -131,7 +127,6 @@ const ClubsPage = () => {
 
         </main>
         <Footer/>
-        </PageWrapper>
     </>
   )
 }
