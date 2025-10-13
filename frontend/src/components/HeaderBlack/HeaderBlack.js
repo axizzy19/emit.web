@@ -3,6 +3,7 @@ import './HeaderBlack.css';
 import navigationButton from "../../assets/images/NavigationButton.png"
 import ranepaLogos from "../../assets/images/RanepaLogosWhiteB.svg"
 import { useNavigate } from 'react-router-dom';
+import PageWrapper from '../PageWrapper/PageWrapper';
 
 const HeaderBlack = ({ title, subtitle }) => {
   const navigate = useNavigate();
@@ -11,8 +12,10 @@ const HeaderBlack = ({ title, subtitle }) => {
     navigate(path);
   };
 
+  const pageImages = [ranepaLogos];
+
   return (
-    <>
+    <PageWrapper images={pageImages}>
       <header className="header-black-component__header">
         <section className="header-black-component__section__logos">
                 <button onClick={() => handleNavigation('/pages/ccemit')}>
@@ -58,7 +61,7 @@ const HeaderBlack = ({ title, subtitle }) => {
             {/* <button className="header-black-component__main-page__button main-page__button__emitman">ЭМИТMAN</button> */}
         </section>
       </header>
-    </>
+    </PageWrapper>
   )
 }
 
