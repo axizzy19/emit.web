@@ -12,13 +12,16 @@ import BCLinesDivision from "../../assets/images/BCLinesDivision.svg";
 import BCChart from "../../assets/images/BCChart.png"
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const BCPage = () => {
   usePageTitle("Большое сердце");
   useFavicon(customFavicon);
+  
+  const pageImages = [BCDescriptionBackground, BCCorner, BCCircles, BCFoto1, BCFoto2, BCLinesDivision, BCChart];
 
   return (
-    <>
+    <PageWrapper images={pageImages}>
       <Header title="Большое сердце" subtitle="Делаем добро вместе"/>
       <main className="bc-page__main">
        <section className="bc-page__section__description bc-page__padding__inline">
@@ -88,7 +91,7 @@ const BCPage = () => {
        </section>
       </main>
       <Footer/>
-    </>
+    </PageWrapper>
   )
 };
 
