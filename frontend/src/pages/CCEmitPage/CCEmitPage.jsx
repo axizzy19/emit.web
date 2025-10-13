@@ -17,14 +17,20 @@ import presidentBackground from "../../assets/images/PresidentBackground.svg";
 import teamFoto from "../../assets/images/TeamFoto.png";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
-
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const CCEmitPage = () => {
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
+ 
+  const pageImages = [
+    arrowsImage, ccFoto1, ccFoto2, descriptionLines, 
+    eventFoto1, calendarLines, eventFoto2, eventFoto3,
+    starImage, presidentImage, presidentBackground, teamFoto
+  ];
 
   return ( 
-    <>
+    <PageWrapper images={pageImages}>
       <Header title="Cтуденческий совет ЭМИТ" subtitle="XVI созыв"/>
       <main className="ccemit-page__main">
         <section className="ccemit-page__section__description  ccemit-page__section__style">
@@ -33,6 +39,7 @@ const CCEmitPage = () => {
                 <img
                     src={arrowsImage}
                     className="ccemit-page__arrows__image"
+                    alt="Декоративные стрелки"
                 />
             </section>
             <section className="ccemit-page__section__description__main">
@@ -42,16 +49,19 @@ const CCEmitPage = () => {
                     <img
                         src={ccFoto1}
                         className="ccemit-page__description_images ccemit-page__main-page__images ccemit-page__main-page__image-1"
+                        alt="Фото студенческого совета 1"
                     />
                 </section>
                 <section className="ccemit-page__section__description__main__part ccemit-page__section__description__main__part-2">
                     <img
                         src={ccFoto2}
                         className="ccemit-page__description_images ccemit-page__main-page__images"
+                        alt="Фото студенческого совета 2"
                     />
                     <img 
                         src={descriptionLines}
                         className="ccemit-page__description_lines"
+                        alt="Декоративные линии"
                     />
                     <p className="ccemit-page__main-page__text ccemit-page__main-page__text_2">Мы любим то, что делаем, и делаем то, что любим, развивая себя, среду вокруг себя и других людей. Успех неизбежен, если тыв Институте ЭМИТ</p>
                 </section>
@@ -64,6 +74,7 @@ const CCEmitPage = () => {
                 <img
                     src={arrowsImage}
                     className="ccemit-page__arrows__image ccemit-page__arrows__image-reverse"
+                    alt="Декоративные стрелки"
                 />
             </section>
             <section className="ccemit-page__section__calendar__main">
@@ -72,22 +83,27 @@ const CCEmitPage = () => {
                     <img
                         src={eventFoto1}
                         className="ccemit-page__calendar__images "
+                        alt="Мероприятие 1"
                     />
                     <img
                         src={calendarLines}
                         className="ccemit-page__calendar-lines__image"
+                        alt="Разделительные линии"
                     />
                     <img
                         src={eventFoto2}
                         className="ccemit-page__calendar__images "
+                        alt="Мероприятие 2"
                     />
                     <img
                         src={calendarLines}
                         className="ccemit-page__calendar-lines__image"
+                        alt="Разделительные линии"
                     />
                     <img
                         src={eventFoto3}
                         className="ccemit-page__calendar__images "
+                        alt="Мероприятие 3"
                     />
                 </section>
                 <section className="ccemit-page__section__calendar__events">
@@ -128,6 +144,7 @@ const CCEmitPage = () => {
                 <img
                     className="ccemit-page__section__calendar__star-image"
                     src={starImage}
+                    alt="Декоративная звезда"
                 />
             </section>
             
@@ -142,12 +159,14 @@ const CCEmitPage = () => {
                     <img
                         className="ccemit-page__section__president__image"
                         src={presidentImage}
+                        alt="Председатель студенческого совета"
                     />
                 </section>
             </section>
             <img
                 className="ccemit-page__section__president-background"
                 src={presidentBackground}
+                alt="Фон секции председателя"
             />
         </section>
         {/* <section className="ccemit-page__section__president  ccemit-page__section__style">
@@ -171,12 +190,13 @@ const CCEmitPage = () => {
                 <img
                     src={teamFoto}
                     className="ccemit-page__section__team__image"
+                    alt="Фото созыва"
                 />
             </section>
         </section>
       </main>
       <Footer />
-    </>
+    </PageWrapper>
   )
 }
 

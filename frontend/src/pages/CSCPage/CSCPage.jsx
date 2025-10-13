@@ -15,6 +15,10 @@ const CSCPage = () => {
   usePageTitle("Career&Science Community");
   useFavicon(customFavicon);
 
+  const handleExternalNavigation = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
       <HeaderBlack title="Career&Science Community" subtitle="Про карьеру, науку, проекты"/>
@@ -59,10 +63,12 @@ const CSCPage = () => {
         <section className="csc-page__section__chat csc-page__padding__inline">
             <section className="csc-page__section__chat-image">
                 {/* <!-- <img /> --> */}
-                <img
-                    src={chatImage}
-                    className="csc-page__chat-image"
-                />
+                <button onClick={() => handleExternalNavigation('https://t.me/+llPytTIk7v5jNTNi')}>
+                    <img
+                        src={chatImage}
+                        className="csc-page__chat-image"
+                    />
+                </button>
                 {/* <!-- <img/> --> */}
             </section>
             <section className="csc-page__section__chat__info">
