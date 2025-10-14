@@ -12,6 +12,7 @@ import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
 import ScrollToTop from './ScrollToTop';
 import ButtonSave from './ButtonSave/ButtonSave';
+import InputComponent from './InputComponent/InputComponent'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
         <Route path="/pages/clubs/emeeting" element={<EmeetingPage/>} />
         <Route path="/components/ButtonSave" element={<ButtonSave/>} />
+        <Route path="/components/InputComponent" element={<InputComponent/>}/>
       </Routes>
     </Router>
   );
