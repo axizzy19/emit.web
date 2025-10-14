@@ -1,1 +1,3 @@
 node_modules/
+dist/service-worker.js
+dist/workbox-*

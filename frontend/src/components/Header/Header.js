@@ -12,6 +12,8 @@ const Header = ({ title, subtitle }) => {
     navigate(path);
   };
 
+  const pageImages = [ranepaLogos];
+
   return (
         <header className="header-component__header">
           <section className="header-component__section__logos">

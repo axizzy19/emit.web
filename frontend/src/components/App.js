@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from '../pages/MainPage/MainPage';
+import MainPage, { AppImagePreloader } from '../pages/MainPage/MainPage';
 import CCEmitPage from '../pages/CCEmitPage/CCEmitPage';
 import '../styles/App.css';
 import CCKEmitPage from '../pages/CCKEmitPage/CCKEmitPage';
@@ -10,12 +10,10 @@ import CSCPage from '../pages/CSCPage/CSCPage';
 import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
-import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
     <Router>
-      <ScrollToTop /> {}
       <Routes>
         <Route path="/" element={<MainPage />}/>
         <Route path="/pages/ccemit" element={<CCEmitPage />}/>

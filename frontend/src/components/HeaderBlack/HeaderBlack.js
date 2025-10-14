@@ -11,8 +11,9 @@ const HeaderBlack = ({ title, subtitle }) => {
     navigate(path);
   };
 
+  const pageImages = [ranepaLogos];
+
   return (
-    <>
       <header className="header-black-component__header">
         <section className="header-black-component__section__logos">
                 <button onClick={() => handleNavigation('/pages/ccemit')}>
@@ -58,7 +59,6 @@ const HeaderBlack = ({ title, subtitle }) => {
             {/* <button className="header-black-component__main-page__button main-page__button__emitman">ЭМИТMAN</button> */}
         </section>
       </header>
-    </>
   )
 }
 
