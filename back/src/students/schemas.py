@@ -9,13 +9,6 @@ class StudentCreate(BaseModel):
     event_id: Optional[int] = None
 
 
-class StudentUpdate(BaseModel):
-    full_name: Optional[str] = None
-    static_points: Optional[int] = None
-    team_id: Optional[int] = None
-    event_id: Optional[int] = None
-
-
 class StudentResponse(BaseModel):
     id: int
     full_name: str

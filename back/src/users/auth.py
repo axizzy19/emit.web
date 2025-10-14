@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordRequestForm
 from datetime import timedelta
 from src.models import User
-from src.users.jwt import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
+from src.users.jwt import create_access_token, ACCESS_TOKEN_EXPIRE_DAYS
 from src.users.middlewares import get_current_user
 
 router = APIRouter(prefix='/auth', tags=['auth'])
@@ -29,7 +29,7 @@ async def login(
     if not user_obj.verify_password(form_data.password):
         raise HTTPException(status_code=401, detail='Invalid credentials')
 
-    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token_expires = timedelta(days=ACCESS_TOKEN_EXPIRE_DAYS)
     access_token = create_access_token(
         data={'sub': str(user_obj.id), 'name': user_obj.name,
               'role': user_obj.role},

@@ -1,6 +1,6 @@
 [project]
 name = 'back'
-version = '0.1.1(unstable)'
+version = '0.1.1'
 description = 'EMIT Backend API'
 readme = 'README.md'
 requires-python = '>=3.12'

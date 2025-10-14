@@ -7,11 +7,6 @@ class TeamCreate(BaseModel):
     mentor_id: Optional[int] = None
 
 
-class TeamUpdate(BaseModel):
-    name: Optional[str] = None
-    mentor_id: Optional[int] = None
-
-
 class TeamResponse(BaseModel):
     id: int
     name: str

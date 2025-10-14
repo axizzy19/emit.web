@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 
 from src.models import Student
-from src.students.schemas import StudentCreate, StudentUpdate, StudentResponse
+from src.students.schemas import StudentCreate, StudentResponse
 
 router = APIRouter(prefix='/students', tags=['students'])
 

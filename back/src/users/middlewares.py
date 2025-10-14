@@ -1,4 +1,5 @@
 from fastapi import Depends, HTTPException, status, Request
+from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer
 from src.users.jwt import verify_token
 from src.models import User
@@ -30,9 +31,16 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
 
 class CheckAuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
-        if request.url.path.startswith('/auth'):
+        if (
+            request.url.path.startswith('/auth') or
+            request.url.path.startswith('/docs') or
+            request.url.path.startswith('/openapi.json')
+        ):
             return await call_next(request)
         token = request.headers.get('Bearer')
         if not token:
-            raise HTTPException(status_code=401, detail='Unauthorized')
+            return JSONResponse(
+                status_code=401,
+                content={'detail': 'Unauthorized'}
+            )
         return await call_next(request)
