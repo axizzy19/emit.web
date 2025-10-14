@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 
 from src.models import Team
-from src.teams.schemas import TeamCreate, TeamUpdate, TeamResponse
+from src.teams.schemas import TeamCreate, TeamResponse
 
 router = APIRouter(prefix='/teams', tags=['teams'])
 

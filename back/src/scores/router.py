@@ -1,10 +1,23 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 
-from src.models import Score
-from src.scores.schemas import ScoreCreate, ScoreUpdate, ScoreResponse
+from src.models import Score, User
+from src.scores.schemas import ScoreCreate, ScoreResponse
 
 router = APIRouter(prefix='/scores', tags=['scores'])
+
+
+async def update_user_points(score_obj: ScoreCreate):
+    user_obj = await User.filter(id=score_obj.student_id).first()
+    if not user_obj:
+        raise HTTPException(status_code=404, detail='User not found')
+    try:
+        await User.filter(id=score_obj.student_id).update(
+            points=user_obj.points + score_obj.points
+        )
+    except Exception:
+        raise HTTPException(
+            status_code=400, detail='Failed to update user points')
 
 
 @router.post('/', response_model=ScoreResponse)
@@ -15,6 +28,7 @@ async def create_score(score: ScoreCreate):
         event_id=score.event_id,
         student_id=score.student_id
     )
+    await update_user_points(score)
     return score_obj
 
 
@@ -44,6 +58,7 @@ async def update_score(score_id: int, score: ScoreCreate):
         'event_id': score.event_id,
         'student_id': score.student_id
     }).save()
+    await update_user_points(score)
     return score_obj
 
 

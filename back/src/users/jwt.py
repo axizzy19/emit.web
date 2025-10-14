@@ -4,7 +4,7 @@ from typing import Optional
 
 SECRET_KEY = 'dev-secret-key-change-in-production-openssl-rand-hex-32'
 ALGORITHM = 'HS256'
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_DAYS = 30
 
 
 def create_access_token(
@@ -16,7 +16,7 @@ def create_access_token(
         expire = datetime.utcnow() + expires_delta
     else:
         expire = datetime.utcnow() + timedelta(
-            minutes=ACCESS_TOKEN_EXPIRE_MINUTES
+            days=ACCESS_TOKEN_EXPIRE_DAYS
         )
 
     to_encode.update({'exp': expire})
