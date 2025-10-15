@@ -11,9 +11,6 @@ import BITCircles from "../../assets/images/BITCircles.svg";
 import pulsarFoto from "../../assets/images/PulsarFoto.png";
 import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
-import InputComponent from "../../components/InputComponent/InputComponent";
-import DateComponent from "../../components/DateComponent/DateComponent";
-import ButtonSave from "../../components/ButtonSave/ButtonSave";
 
 const ITCommunityPage = () => {
   usePageTitle("Цифровое комьюнити");
@@ -77,9 +74,6 @@ const ITCommunityPage = () => {
             </section>
         </section>
       </main>
-      <InputComponent/>
-      <DateComponent/>
-      <ButtonSave/>
       <Footer/>
     </>
   )
