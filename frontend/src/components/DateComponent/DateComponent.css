@@ -1,0 +1,26 @@
+.Main{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Main_text{
+    width:55%;
+    padding: 24px 80px;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: 29px;
+    
+}
+
+@media (width < 768px) {
+    .Main_text{
+        width: 35%;
+        font-size: 18px;
+    }
+    
+}
