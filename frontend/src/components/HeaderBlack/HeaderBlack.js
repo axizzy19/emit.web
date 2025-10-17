@@ -38,18 +38,24 @@ const HeaderBlack = ({ title, subtitle }) => {
             <h2 className="header-black-component__title__page-name__h2">{subtitle}</h2>
         </section>
         <section className="header-black-component__section__navigation">
-            <button
+            {/* <button
               className="header-black-component__main-page__button main-page__button__main"
               onClick={() => handleNavigation('/')}
             >
               ГЛАВНАЯ СТРАНИЦА
-            </button>
+            </button> */}
             <button
               className="header-black-component__main-page__button"
-              onClick={() => handleNavigation('/pages/ccemit')}
+              onClick={() => handleNavigation('/')}
             >
-              СТУДЕНЧЕСКАЯ СТРУКТУРА
+              СТУДЕНЧЕСКИЙ СОВЕТ
             </button>
+            <button
+                className="header-black-component__main-page__button"
+                onClick={() => handleNavigation('/pages/cckemit')}
+              >
+                СТУДЕНЧЕСКИЙ СПОРТИВНЫЙ КЛУБ
+              </button>
             <button 
               className="header-black-component__main-page__button"
               onClick={() => handleNavigation('/pages/clubs')}

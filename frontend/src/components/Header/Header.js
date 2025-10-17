@@ -41,17 +41,23 @@ const Header = ({ title, subtitle }) => {
                 )}
           </section>
           <section className="header-component__section__navigation">
-              <button
+              {/* <button
                 className="header-component__main-page__button header-component__main-page__button__main"
                 onClick={() => handleNavigation('/')}
               >
                     ГЛАВНАЯ СТРАНИЦА
+              </button> */}
+              <button
+                className="header-component__main-page__button"
+                onClick={() => handleNavigation('/')}
+              >
+                СТУДЕНЧЕСКИЙ СОВЕТ
               </button>
               <button
                 className="header-component__main-page__button"
-                onClick={() => handleNavigation('/pages/ccemit')}
+                onClick={() => handleNavigation('/pages/cckemit')}
               >
-                СТУДЕНЧЕСКАЯ СТРУКТУРА
+                СТУДЕНЧЕСКИЙ СПОРТИВНЫЙ КЛУБ
               </button>
               <button
                 className="header-component__main-page__button"
@@ -59,6 +65,12 @@ const Header = ({ title, subtitle }) => {
               >
                 КЛУБЫ
               </button>
+              {/* <button
+                className="header-component__main-page__button"
+                onClick={() => handleNavigation('')}
+              >
+                ВХОД
+              </button> */}
               {/* <button
                 className="header-component__main-page__button header-component__main-page__button__emitman"
                 onClick={() => handleNavigation('/pages/')}
