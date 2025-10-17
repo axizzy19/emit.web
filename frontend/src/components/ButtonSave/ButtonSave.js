@@ -14,9 +14,9 @@ const ButtonSave = ({
   };
 
   return (
-    <section className="button-save-container">
+    <section className="button-save-component__container">
       <button
-        className={`button-save ${loading ? 'loading' : ''} ${disabled ? 'disabled' : ''}`}
+        className={`button-save__button ${loading ? 'loading' : ''} ${disabled ? 'disabled' : ''}`}
         onClick={handleClick}
         disabled={disabled || loading}
       >

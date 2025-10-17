@@ -1,35 +1,36 @@
-.Main-Input{
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input-component__main{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-family: 'Montserrat';
 }
 
-.Input{
+.input-component__input{
   border: 2px solid black;
   border-radius: 30px;
-  width: 55%;
-  padding: 25px 80px;
-  font-family: 'Monstserrat';
+  width: 100%;
+  max-width: 100%;
+  padding: 25px 20px;
   font-size: 25px;
-  font-weight: 400px;
-  position: relative;
+  font-weight: 400;
   cursor: pointer;
-  transition: all 0.3s ease;
-  
+  box-sizing: border-box;
+  margin-inline: 20px;
 }
 
-.Input:hover{
-  transform: translateY(-2px) ;
-  border: 3px solid black;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.input-component__input:hover{
+  outline: 1px solid black;
 }
 
 @media (width < 768px) {
-  .Input{
-    width: 35%;
+  .input-component__input{
+    width: 100%;
     font-size: 18px;
   }
 }

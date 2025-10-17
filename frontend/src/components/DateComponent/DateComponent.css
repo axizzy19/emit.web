@@ -1,26 +1,44 @@
-.Main{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
-.Main_text{
-    width:55%;
-    padding: 24px 80px;
-    position: relative;
-    border-radius: 30px;
-    border: 2px solid black;
-    font-size: 29px;
-    
+input {
+    all: unset;
+}
+
+.date-compponent__main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Montserrat';
+}
+
+.date-component__input{
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 100%;
+  padding: 25px 20px;
+  font-size: 25px;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-inline: 20px;
+}
+
+.date-component__input:hover{
+  outline: 1px solid black;
+}
+
+.date-component__input:focus {
+  outline: 1px solid black;
 }
 
 @media (width < 768px) {
-    .Main_text{
-        width: 35%;
-        font-size: 18px;
-    }
-    
+  .date-component__input{
+    width: 100%;
+    font-size: 18px;
+  }
 }

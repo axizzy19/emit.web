@@ -12,6 +12,8 @@ import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
 import ScrollToTop from './ScrollToTop';
 import DateComponent from './DateComponent/DateComponent';
+import InputComponent from './InputComponent/InputComponent';
+import ButtonSave from './ButtonSave/ButtonSave';
 
 const App = () => {
   return (

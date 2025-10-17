@@ -9,12 +9,12 @@ const DateComponent = () => {
     };
 
     return(
-        <div className="Main">
-            <input className="Main_text"
-            type="date"
-            value={date}
-            onChange={dateChange}
-            placeholder="Дата мероприятия"
+        <div className="date-compponent__main">
+            <input className="date-component__input"
+                type="date"
+                value={date}
+                onChange={dateChange}
+                placeholder="Дата мероприятия"
             />
         </div>
     );
