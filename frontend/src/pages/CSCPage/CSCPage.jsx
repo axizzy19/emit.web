@@ -30,16 +30,19 @@ const CSCPage = () => {
                 <img
                     src={CSCLeftTopCorner}
                     className="csc-page__section__description__background"
+                    alt="Декоративный фон"
                 />
             </section>
             <section className="csc-page__section__main-image csc-page__padding__inline">
                 <img
                     src={cscImage}
                     className="csc-page__csc-image"
+                    alt="Каритнка науного сообщества"
                 />
                 <img
                     src={mainImageBackground}
                     className="csc-page__main-image__background"
+                    alt="Декоративный фон"
                 />
             </section>
             <section className="csc-page__section__fields csc-page__padding__inline">
@@ -56,6 +59,7 @@ const CSCPage = () => {
                 <img
                     className="csc-page__csc-image__figures"
                     src={cscFigures}
+                    alt="Декоративные фигуры"
                 />
                 <section className="csc-page__section__project csc-page__project__style">
                     <h3 className="csc-page__name-project__style">ПРОЕКТЫ</h3>
@@ -69,6 +73,7 @@ const CSCPage = () => {
                         <img
                             src={chatImage}
                             className="csc-page__chat-image"
+                            alt="Картинка чата сообщества"
                         />
                     </button>
                     {/* <!-- <img/> --> */}

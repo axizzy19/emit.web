@@ -18,14 +18,19 @@ import teamFoto from "../../assets/images/TeamFoto.png";
 import useFavicon from "../../hooks/useFavicon";
 import customFavicon from "../../assets/images/favicon.svg";
 import { usePageCache } from "../../hooks/usePageCahce";
+import { getPageImages } from "../../utils/imageManager";
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const CCEmitPage = () => {
-    usePageCache();
+  usePageCache();
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
+ 
+  const pagesImages = getPageImages('mainPage');
+
 
   return ( 
-    <>
+    <PageWrapper images={pagesImages}>
       <Header title="Cтуденческий совет ЭМИТ" subtitle="XVI созыв"/>
         <main className="ccemit-page__main">
             <section className="ccemit-page__section__description  ccemit-page__section__style">
@@ -191,7 +196,7 @@ const CCEmitPage = () => {
             </section>
         </main>
         <Footer />
-    </>
+    </PageWrapper>
   )
 }
 

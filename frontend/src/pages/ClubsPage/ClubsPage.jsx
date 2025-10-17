@@ -34,11 +34,8 @@ const ClubsPage = () => {
         <img
                 src={mainArrows}
                 className="clubs-page__main__arrows-image"
+                alt="Декоративные стрелки"
         />
-        {/* <img
-                    src={clubsBackground}
-                    className="clubs-page__clubs-background"
-            /> */}
         <section className="clubs-page__main__section__clubs">
                 <section className="clubs-page__main__section__clubs__position clubs-page__reversed-position">
                     <section className="clubs-page__main__section__clubs__description">
@@ -49,18 +46,21 @@ const ClubsPage = () => {
                             <img
                                 className="clubs-page__club__arrow-image"
                                 src={knowMoreArrows}
+                                alt="Декоративная стрелка"
                             />
                         </button>
                     </section>
                     <img
                         className="clubs-page__club__images"
                         src={cscLogo}
+                        alt="Логотип научного сообщества"
                     />
                 </section>
                 <section className="clubs-page__main__section__clubs__position">
                     <img
                         className="clubs-page__club__images"
                         src={clubBC}
+                        alt="Логотип большого сердца"
                     />
                     <section className="clubs-page__main__section__clubs__description">
                         <h2 className="clubs-page__main__section__clubs__name">Большое сердце</h2>
@@ -70,6 +70,7 @@ const ClubsPage = () => {
                             <img
                                 className="clubs-page__club__arrow-image"
                                 src={knowMoreArrows}
+                                alt="Декоративная стрелка"
                             />
                         </button>
                     </section>
@@ -83,18 +84,21 @@ const ClubsPage = () => {
                             <img
                                 className="clubs-page__club__arrow-image"
                                 src={knowMoreArrows}
+                                alt="Декоративная стрелка"
                             />
                         </button>
                     </section>
                     <img
                         className="clubs-page__club__images"
                         src={clubDebates}
+                        alt="Логотип клуба дебатов"
                     />
                 </section>
                 <section className="clubs-page__main__section__clubs__position">
                     <img
                         className="clubs-page__club__images"
                         src={clubEmeeting}
+                        alt="Логотип Emeeting"
                     />
                     <section className="clubs-page__main__section__clubs__description">
                         <h2 className="clubs-page__main__section__clubs__name">ЭMEETING</h2>
@@ -104,6 +108,7 @@ const ClubsPage = () => {
                             <img
                                 className="clubs-page__club__arrow-image"
                                 src={knowMoreArrows}
+                                alt="Декоративная стрелка"
                             />
                         </button>
                     </section>
@@ -118,6 +123,7 @@ const ClubsPage = () => {
                                 <img
                                     className="clubs-page__club__arrow-image"
                                     src={knowMoreArrows}
+                                    alt="Декоративная стрелка"
                                 />
                             </button>
                         </section>
@@ -125,6 +131,7 @@ const ClubsPage = () => {
                     <img
                             className="clubs-page__club__images"
                             src={club01}
+                            alt="Логотип цифрового комьюнити"
                     />
                 </section>
             </section>

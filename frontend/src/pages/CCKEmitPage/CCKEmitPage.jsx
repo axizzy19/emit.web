@@ -33,6 +33,7 @@ const CCKEmitPage = () => {
                     <img
                         src={arrows}
                         className="cckemit-page__arrows__image"
+                        alt="Декоративные стрелки"
                     />
                 </section>
                 <section className="cckemit-page__section__description__main">
@@ -41,12 +42,14 @@ const CCKEmitPage = () => {
                             <img
                                 src={cckFoto1}
                                 className="cckemit-page__description_images cckemit-page__main-page__images"
+                                alt="Фотография спортсменов и эмблема"
                             />
                     </section>
                     <section className="cckemit-page__section__description__main__part cckemit-page__section__description__main__part-2">
                         <img
                             src={cckFoto2}
                             className="cckemit-page__description_images cckemit-page__main-page__images"
+                            alt="Фотография спортсменов"
                         />
 
                         <p className="cckemit-page__main-page__text">Предоставляет возможности для организации спортивных мероприятий, поиска новых друзей и улучшения жизни института. Ведь успех – это движение, а движение – это ЭМИТ!</p>
@@ -60,6 +63,7 @@ const CCKEmitPage = () => {
                     <img
                         src={arrows}
                         className="cckemit-page__arrows__image cckemit-page__arrows__image-reverse"
+                        alt="Декоративные стрелки"
                     />
                 </section>
                 <section className="cckemit-page__section__calendar__main">
@@ -68,22 +72,27 @@ const CCKEmitPage = () => {
                         <img
                             src={cckFotoEvents1}
                             className="cckemit-page__calendar__images cckemit-page__main-page__images"
+                            alt="Фотография спортивных событий"
                         />
                         <img
                             src={cckCalendarLines}
                             className="cckemit-page__calendar-lines__image"
+                            alt="Декоративные линии"
                         />
                         <img
                             src={cckFotoEvents2}
                             className="cckemit-page__calendar__images cckemit-page__main-page__images"
+                            alt="Фотография спортивных событий"
                         />
                         <img
                             src={cckCalendarLines}
                             className="cckemit-page__calendar-lines__image"
+                            alt="Декоративные линии"
                         />
                         <img
                             src={cckFotoEvents3}
                             className="cckemit-page__calendar__images cckemit-page__main-page__images"
+                            alt="Фотография спортивных событий"
                         />
                     </section>
                     <section className="cckemit-page__section__calendar__events">
@@ -124,6 +133,7 @@ const CCKEmitPage = () => {
                     <img
                         className="cckemit-page__section__calendar__star-image"
                         src={starImage}
+                        alt="Декоративная звезда"
                     />
                 </section>
                 
@@ -138,12 +148,9 @@ const CCKEmitPage = () => {
                         <img
                             className="cckemit-page__section__president__image"
                             src={presidentCckFoto}
+                            alt="Фотография председателя"
                         />
                     </section>
-                    {/* <img
-                        className="cckemit-page__section__president-background"
-                        src={presidentCckBackground}
-                    /> */}
                 </section>
             </section>
             
@@ -155,6 +162,7 @@ const CCKEmitPage = () => {
                     <img
                         src={cckTeamFoto}
                         className="cckemit-page__section__team__image"
+                        alt="Фотография созыва"
                     />
                 </section>
             </section>

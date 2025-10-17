@@ -10,7 +10,7 @@ import customFavicon from "../../assets/images/favicon.svg";
 import useFavicon from "../../hooks/useFavicon";
 import { useNavigate } from "react-router-dom";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
-import { getPageImages, preloadAllImages } from "../../utils/imageManager";
+import { getPageImages } from "../../utils/imageManager";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const MainPage = () => {
@@ -24,7 +24,6 @@ const MainPage = () => {
     navigate(path);
   };
 
-  const BCPageImages = getPageImages('bcPage');
   const mainPageImages = getPageImages('mainPage');
   
   return (

@@ -26,12 +26,14 @@ const DebatesPage = () => {
             <img
                 src={debatesBackground}
                 className="debates-page__debates__line"
+                alt="Декоративные линии"
             />
             <section className="debates-page__section__info debates-page__padding__inline">
                 <section className="debates-page__section__info-part">
                     <img
                         className="debates-page__debates__foto"
                         src={debatesFoto1}
+                        alt="Фотография дебатов"
                     />
                     <p className="debates-page__text-info">В парламентских дебатах участвуют 4 команды по два человека в каждой. Одна команда является правительством, другая – оппозицией. Дебатеры узнают тему раунда за 15 минут до его начала.</p>
                 </section>
@@ -39,6 +41,7 @@ const DebatesPage = () => {
                     <img
                         className="debates-page__debates__foto"
                         src={debatesFoto2}
+                        alt="Фотография дебатов"
                     />
                     <p className="debates-page__text-info">При подготовке они могут пользоваться любыми источниками информации. По окончании времени начинается раунд. Все спикеры выступают в определенном порядке, на речи дается по 7 минут. Команду победителей определяет судья. </p>
                 </section>
@@ -46,6 +49,7 @@ const DebatesPage = () => {
             <img
                 src={debatesClubLogo}
                 className="debates-page__debates__foto__logo debates-page__padding__inline"
+                alt="Логотип клуба дебатов"
             />
 
         </main>

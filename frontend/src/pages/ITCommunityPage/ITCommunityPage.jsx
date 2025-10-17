@@ -28,11 +28,13 @@ const ITCommunityPage = () => {
                     <img
                         src={podcastBackground}
                         className="itcommunity-page__podcast__background"
+                        alt="Декоративный фон"
                     />
                     <section className="itcommunity-page__section__podcast__part-1">
                         <img
                             src={podcastFoto1}
                             className="itcommunity-page__podcast__fotos"
+                            alt="Фотография подкаста"
                         />
                         <section className="itcommunity-page__podcast__name">
                             <h2 className="itcommunity-page__name__podcast">Подкаст</h2>
@@ -43,6 +45,7 @@ const ITCommunityPage = () => {
                         <img
                             src={podcastFoto2}
                             className="itcommunity-page__podcast__fotos"
+                            alt="Фотография подкаста"
                         />
                     </section>
                 </section>
@@ -54,6 +57,7 @@ const ITCommunityPage = () => {
                     <img
                         className="itcommunity-page__product-foto"
                         src={BITFoto}
+                        alt="Логотип BIT"
                     />
                     <section className="itcommunity-page__product__description">
                         <h2 className="itcommunity-page__product__name">Цифровой форум BIT</h2>
@@ -62,12 +66,14 @@ const ITCommunityPage = () => {
                     <img
                         className="itcommunity-page__background__circles"
                         src={BITCircles}
+                        alt="Декоративные круги"
                     />
                 </section>
                 <section className="itcommunity-page__product-item product-reverse">
                     <img
                         className="itcommunity-page__product-foto"
                         src={pulsarFoto}
+                        alt="Фотография Пульсара"
                     />
                     <section className="itcommunity-page__product__description">
                         <h2 className="itcommunity-page__product__name">Телеграмм-бот Пульсар</h2>

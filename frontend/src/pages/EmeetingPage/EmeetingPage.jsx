@@ -27,6 +27,7 @@ const EmeetingPage = () => {
                 <img
                     src={emeetingBackground}
                     className="emeetimg-page__section__description__background"
+                    alt="Декоративный фон"
                 />
             </section>
             <section className="emeetimg-page__section__emeeting__fotos">
@@ -36,10 +37,12 @@ const EmeetingPage = () => {
                         <img
                             src={emeetingFoto1}
                             className="emeetimg-page__emeeting__fotos emeetimg-page__foto-1"
+                            alt="Фотография emeetng"
                         />
                         <img 
                             src={emeetingCornerLeftTop}
                             className="emeetimg-page__emeeting__corner-left-top"
+                            alt="Декоративный угол"
                         />
                     </section>
                 </section>
@@ -49,10 +52,12 @@ const EmeetingPage = () => {
                         <img
                             src={emeetingFoto2}
                             className="emeetimg-page__emeeting__fotos emeetimg-page__foto-2"
+                            alt="Фотография emeetng"
                         />
                         <img 
                             src={emeetingCornerRightBottom}
                             className="emeetimg-page__emeeting__corner-right-bottom"
+                            alt="Декоративный угол"
                         />
                     </section>
                 </section>
