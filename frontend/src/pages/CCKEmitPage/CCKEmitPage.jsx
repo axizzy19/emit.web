@@ -19,7 +19,7 @@ import useFavicon from '../../hooks/useFavicon';
 import { usePageCache } from '../../hooks/usePageCahce';
 
 const CCKEmitPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("Студенческий спортивный клуб ЭМИТ");
   useFavicon(customFavicon);
 

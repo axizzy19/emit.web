@@ -14,7 +14,7 @@ import useFavicon from "../../hooks/useFavicon";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const ITCommunityPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("Цифровое комьюнити");
   useFavicon(customFavicon);
   

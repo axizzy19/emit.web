@@ -13,7 +13,7 @@ import useFavicon from "../../hooks/useFavicon";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const CSCPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("Career&Science Community");
   useFavicon(customFavicon);
 

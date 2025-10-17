@@ -17,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const ClubsPage = () => {
-    usePageCache();
+    // usePageCache();
   usePageTitle("Клубы Института ЭМИТ");
   useFavicon(customFavicon);
 

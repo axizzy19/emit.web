@@ -14,7 +14,7 @@ import { getPageImages } from "../../utils/imageManager";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const MainPage = () => {
-  usePageCache();
+  // usePageCache();
   usePageTitle('Главная страница');
   useFavicon(customFavicon);
 

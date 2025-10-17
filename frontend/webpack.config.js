@@ -89,11 +89,11 @@ module.exports = (env, argv) => {
       ],
     },
     plugins: [
-      new Dotenv({
-        systemvars: true, // Берет переменные из системы
-        safe: true, // Не падать если .env файла нет
-        defaults: true // Использовать значения по умолчанию
-      }), 
+      // new Dotenv({
+      //   systemvars: true, // Берет переменные из системы
+      //   safe: true, // Не падать если .env файла нет
+      //   defaults: true // Использовать значения по умолчанию
+      // }), 
 
       new HtmlWebpackPlugin({
         template: './public/index.html',
@@ -120,52 +120,6 @@ module.exports = (env, argv) => {
           { from: 'public/sw.js', to: 'sw.js' },
           ],
       }),
-        // new GenerateSW({
-        //   clientsClaim: true,
-        //   skipWaiting: true,
-        //   runtimeCaching: [{
-        //     urlPattern: /\.(?:js|css|html)$/,
-        //     handler: 'CacheFirst',
-        //     options: {
-        //       cacheName: 'static-resources',
-        //       expiration: {
-        //         maxEntries: 100,
-        //         maxAgeSeconds: 30 * 24 * 60 * 60,
-        //       },
-        //     },
-        //   }, {
-        //     urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
-        //     handler: 'CacheFirst',
-        //     options: {
-        //       cacheName: 'images',
-        //       expiration: {
-        //         maxEntries: 60,
-        //         maxAgeSeconds: 30 * 24 * 60 * 60, 
-        //       },
-        //     },
-        //   }, {
-        //     urlPattern: /\.(?:woff|woff2|eot|ttf|otf)$/,
-        //     handler: 'CacheFirst',
-        //     options: {
-        //       cacheName: 'fonts',
-        //       expiration: {
-        //         maxEntries: 30,
-        //         maxAgeSeconds: 365 * 24 * 60 * 60,
-        //       },
-        //     },
-        //   }, {
-        //     urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com/,
-        //     handler: 'StaleWhileRevalidate',
-        //     options: {
-        //       cacheName: 'google-fonts',
-        //     },
-        //   }],
-        //   navigateFallback: '/index.html',
-        //   navigateFallbackDenylist: [
-        //     new RegExp('^/api/'),
-        //     new RegExp('/[^/?]+\\.[^/]+$'),
-        //   ],
-        // })
       ] : []),
     ],
     optimization: {

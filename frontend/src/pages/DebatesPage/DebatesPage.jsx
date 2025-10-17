@@ -12,7 +12,7 @@ import useFavicon from "../../hooks/useFavicon";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const DebatesPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("Клуб дебатов");
   useFavicon(customFavicon);
 

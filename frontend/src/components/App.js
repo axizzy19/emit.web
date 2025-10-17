@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage, { AppImagePreloader } from '../pages/MainPage/MainPage';
 import CCEmitPage from '../pages/CCEmitPage/CCEmitPage';
 import '../styles/App.css';
 import CCKEmitPage from '../pages/CCKEmitPage/CCKEmitPage';
@@ -10,8 +9,12 @@ import CSCPage from '../pages/CSCPage/CSCPage';
 import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
+import Auth from '../pages/AuthPage/AuthPage';
+import { useAuth } from '../hooks/useAuth';
 
 const App = () => {
+
+  const { user, login, logout, loading, error } = useAuth();
   return (
     <Router>
       <Routes>
@@ -23,6 +26,7 @@ const App = () => {
         <Route path="/pages/clubs/bc" element={<BCPage/>} />
         <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
         <Route path="/pages/clubs/emeeting" element={<EmeetingPage/>} />
+        <Route path="/pages/auth" element={<Auth onLogin={login}/>} />
       </Routes>
     </Router>
   );

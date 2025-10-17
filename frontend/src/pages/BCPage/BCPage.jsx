@@ -15,7 +15,7 @@ import customFavicon from "../../assets/images/favicon.svg";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const BCPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("Большое сердце");
   useFavicon(customFavicon);
   

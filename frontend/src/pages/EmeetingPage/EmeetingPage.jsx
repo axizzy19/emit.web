@@ -13,7 +13,7 @@ import useFavicon from "../../hooks/useFavicon";
 import { usePageCache } from "../../hooks/usePageCahce";
 
 const EmeetingPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle("ЭMEETING");
   useFavicon(customFavicon);
 

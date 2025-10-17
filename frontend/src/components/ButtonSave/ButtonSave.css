@@ -1,0 +1,56 @@
+button {
+  all: unset;
+}
+
+.button-save-component__container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+}
+
+.button-save__button {
+  text-align: center;
+  margin-inline: 20px;
+  background: linear-gradient(135deg, #ca0f3e 0%, #29345b 100%);
+  color: white;
+  border: 2px solid black;
+  padding: 20px 80px;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.button-save__button:hover:not(.disabled):not(.loading) {
+  background: linear-gradient(135deg, #5a071c 0%, #151728 100%);
+  transform: none;
+}
+
+.button-save__button:active:not(.disabled):not(.loading) {
+  background: linear-gradient(135deg, #5a071c 0%, #151728 100%);
+}
+
+.button-save__button.loading {
+  background: #171F29;
+  cursor: not-allowed;
+}
+
+.button-save__button.disabled {
+  background: #171F29;
+  color: white;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (width < 768px) {
+  .button-save__button{
+    font-size: 18px;
+  }
+}

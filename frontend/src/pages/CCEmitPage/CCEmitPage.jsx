@@ -22,7 +22,7 @@ import { getPageImages } from "../../utils/imageManager";
 import PageWrapper from "../../components/PageWrapper/PageWrapper";
 
 const CCEmitPage = () => {
-  usePageCache();
+//   usePageCache();
   usePageTitle('Студенческий совет ЭМИТ');
   useFavicon(customFavicon);
  
@@ -30,7 +30,8 @@ const CCEmitPage = () => {
 
 
   return ( 
-    <PageWrapper images={pagesImages}>
+    // <PageWrapper images={pagesImages}>
+    <>
       <Header title="Cтуденческий совет ЭМИТ" subtitle="XVI созыв"/>
         <main className="ccemit-page__main">
             <section className="ccemit-page__section__description  ccemit-page__section__style">
@@ -169,20 +170,6 @@ const CCEmitPage = () => {
                     alt="Фон секции председателя"
                 />
             </section>
-            {/* <section className="ccemit-page__section__president  ccemit-page__section__style">
-                <section className="ccemit-page__section__president__title">
-                    <h2 className="ccemit-page__section__president__title__status">ПРЕДСЕДАТЕЛЬ</h2>
-                    <h2 className="ccemit-page__section__president__name">Симанчук Виктория</h2>
-                </section>
-                <section className="ccemit-page__section__president__image__place">
-                    <img
-                        className="ccemit-page__section__president__image"
-                        src={presidentImage}
-                    />
-                </section>
-            </section> */}
-
-
             <section className="ccemit-page__section__team section__style  ccemit-page__section__style">
                 <h2 className="ccemit-page__section__team__title">Члены созыва</h2>
                 
@@ -196,7 +183,8 @@ const CCEmitPage = () => {
             </section>
         </main>
         <Footer />
-    </PageWrapper>
+    </>
+    // </PageWrapper>
   )
 }
 
