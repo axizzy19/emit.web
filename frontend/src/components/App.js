@@ -11,7 +11,7 @@ import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
 import ScrollToTop from './ScrollToTop';
-import DateComponent from './DateComponent/DateComponent';
+import ListItem from './ListItem/ListItem';
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/pages/clubs/bc" element={<BCPage/>} />
         <Route path="/pages/clubs/debates" element={<DebatesPage/>} />
         <Route path="/pages/clubs/emeeting" element={<EmeetingPage/>} />
-        <Route path="/components/Datecomponent" element={<DateComponent/>}/>
+        <Route path ="/components/ListItem" element={<ListItem/>}/>
       </Routes>
     </Router>
   );

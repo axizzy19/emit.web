@@ -1,0 +1,20 @@
+.ListItem-Main{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 31svh;
+    margin-bottom: 50px;
+}
+
+.ListItem{
+    font-family: 'Monstserrat';
+    border: 2px solid black;
+    border-radius: 45px;
+    width: 28%;
+    padding: 25px 80px;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+}
