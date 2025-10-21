@@ -10,10 +10,12 @@ import CSCPage from '../pages/CSCPage/CSCPage';
 import BCPage from '../pages/BCPage/BCPage';
 import DebatesPage from '../pages/DebatesPage/DebatesPage';
 import EmeetingPage from '../pages/EmeetingPage/EmeetingPage';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<CCEmitPage />}/>
         <Route path="/pages/cckemit" element={<CCKEmitPage />}/>
