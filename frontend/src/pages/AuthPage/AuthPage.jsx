@@ -1,8 +1,11 @@
+// components/Auth.js
 import React, { useState } from 'react';
 import './AuthPage.css';
+import authBackground from '../../assets/images/auth-background.svg';
+import authLines from '../../assets/images/authLines.svg';
+import AuthButton from '../../components/AuthButton/AuthButton';
 
-const Auth = ({ onLogin }) => {
-  const [isLogin, setIsLogin] = useState(true);
+const AuthPage = ({ onLogin }) => {
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -52,6 +55,16 @@ const Auth = ({ onLogin }) => {
 
   return (
     <div className="auth-page__container">
+      <img
+        className="auth-page__background"
+        src={authBackground}
+        alt="Декоративный угол"
+      />
+      <img
+        className="auth-page__lines"
+        src={authLines}
+        alt="Декоративные линии"
+      />
       <div className="auth-page__form">
         <h2 className="auth-page__title">ВХОД</h2>
         
@@ -87,21 +100,14 @@ const Auth = ({ onLogin }) => {
               className="auth-page__input"
             />
           </div>
-          
-          <div className="auth-page__button-save__section">
-            <button 
-              type="submit" 
-              className="auth-page__submit-button"
+            <AuthButton 
+              loading={loading}
               disabled={loading}
-            >
-              {loading ? 'Загрузка...' : 'ВОЙТИ'}
-            </button>
-          </div>
+            />
         </form>
-        
       </div>
     </div>
-  )
+  );
 };
 
-export default Auth;
+export default AuthPage;

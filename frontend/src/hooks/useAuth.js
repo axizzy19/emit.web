@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+// hooks/useAuth.js
+import { useState, useEffect } from 'react';
 import { getMe, login as apiLogin, logout as apiLogout } from '../services/authApi';
 
 export const useAuth = () => {
@@ -7,22 +8,24 @@ export const useAuth = () => {
   const [error, setError] = useState(null);
 
   const setAuthToken = (token) => {
-    const expiryTime = new Date().getTime + 30*60*1000;
-    localStorage.setItem('authToken', token);
-    localStorage.setItem('tokenExpiry', expiryTime.toString());
+    const expiryTime = new Date().getTime() + 30 * 24 * 60 * 60 * 1000; // 30 дней
+    localStorage.setItem('access_token', token);
+    localStorage.setItem('token_expiry', expiryTime.toString());
   };
 
   const isTokenValid = () => {
-    const expiry = localStorage.getItem('tokenExpiry');
-    if (!expiry) return false;
-
+    const expiry = localStorage.getItem('token_expiry');
+    const token = localStorage.getItem('access_token');
+    
+    if (!token || !expiry) return false;
+    
     return new Date().getTime() < parseInt(expiry);
   };
 
   const fetchUser = async () => {
     try {
-      if (!isTokenValid) {
-        await apiLogout();
+      if (!isTokenValid()) {
+        apiLogout();
         setUser(null);
         return;
       }
@@ -30,9 +33,9 @@ export const useAuth = () => {
       const userData = await getMe();
       setUser(userData);
       setError(null);
-    } catch (error) {
+    } catch (err) {
       console.error('Failed to fetch user:', err);
-      await apiLogout();
+      apiLogout();
       setUser(null);
       setError('Не удалось загрузить информацию о пользователе');
     }
@@ -44,45 +47,38 @@ export const useAuth = () => {
       setError(null);
 
       const response = await apiLogin(username, password);
-
-      const token = response.access_token || response.token;
-
+      
+      const token = response.access_token;
+      
       if (!token) {
         throw new Error('Token not received from server');
       }
 
       setAuthToken(token);
-      await fetchUser();
-
+      await fetchUser(); // Загружаем информацию о пользователе
+      
       return { success: true };
-    } catch (error) {
-      const errorMessage = err.message || 'Ошибка авторизации';
+    } catch (err) {
+      const errorMessage = err.message || 'Ошибка авторизации. Проверьте логин и пароль';
       setError(errorMessage);
       return { success: false, error: errorMessage };
     } finally {
       setLoading(false);
     }
-  }
+  };
 
-  const logout = async () => {
-    try {
-      setLoading(true);
-      await apiLogout();
-      setUser(null);
-      setError(null);
-    } catch (err) {
-      console.error('Logout error:', err);
-    } finally {
-      setLoading(false);
-    }
+  const logout = () => {
+    apiLogout();
+    setUser(null);
+    setError(null);
   };
 
   useEffect(() => {
-    const checkAuth = async() => {
+    const checkAuth = async () => {
       if (isTokenValid()) {
         await fetchUser();
       } else {
-        await apiLogout();
+        apiLogout();
         setUser(null);
       }
       setLoading(false);
@@ -91,17 +87,6 @@ export const useAuth = () => {
     checkAuth();
   }, []);
 
-  useEffect(() => {
-    const checkTokenExpiry = () => {
-      if (!isTokenValid && user) {
-        logout();
-      }
-    };
-
-    const interval = setInterval(checkTokenExpiry, 60000);
-    return () => clearInterval(interval);
-  }, [user]);
-
   return {
     user,
     login,
@@ -109,6 +94,7 @@ export const useAuth = () => {
     loading,
     error,
     isAuthenticated: !!user && isTokenValid(),
+    userRole: user?.role, // Добавляем роль пользователя
     refreshUser: fetchUser,
   };
-}
+};

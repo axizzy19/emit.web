@@ -14,7 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat';
-  height: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .auth-page__form {
@@ -97,5 +98,44 @@ body {
 
 .auth-page__submit-button:hover {
   transform: none;
+}
 
+.auth-page__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.auth-page__lines {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+@media (width < 650px) {
+  .auth-page__button-save__section {
+    padding-inline: 30px;
+  }
+
+  .auth-page__form-group {
+    padding-inline: 30px;
+  }
+
+  .auth-page__background {
+    display: none;
+  }
+
+  .auth-page__lines {
+    display: none;
+  }
+}
+
+@media (width < 350px) {
+  .auth-page__button-save__section {
+    padding-inline: 10px;
+  }
+
+  .auth-page__form-group {
+    padding-inline: 10px;
+  }
 }
