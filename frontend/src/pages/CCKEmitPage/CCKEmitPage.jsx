@@ -98,36 +98,37 @@ const CCKEmitPage = () => {
                     <section className="cckemit-page__section__calendar__events">
                         <section className="cckemit-page__section__calendar__event">
                             <section className="cckemit-page__section__calendar__event__details">
-                                <h2 className="cckemit-page__section__calendar__event__name">Кубок Первокурсников по футболу</h2>
-                                <p className="cckemit-page__section__calendar__event__date">24-26 сентября</p>
-                                <p className="cckemit-page__section__calendar__event__time">время</p>
-                            </section>
-                            <p className="cckemit-page__section__calendar__event__place">Место</p>
-                        </section>
-                        <section className="cckemit-page__section__calendar__event">
-                            <section className="cckemit-page__section__calendar__event__details">
-                                <h2 className="cckemit-page__section__calendar__event__name">Академические Игры Дружбы</h2>
-                                <p className="cckemit-page__section__calendar__event__date">15-20 сентября</p>
-                                <p className="cckemit-page__section__calendar__event__time">время</p>
-                            </section>
-                            <p className="cckemit-page__section__calendar__event__place">Место</p>
-                        </section>
-                        <section className="cckemit-page__section__calendar__event">
-                            <section className="cckemit-page__section__calendar__event__details">
                                 <h2 className="cckemit-page__section__calendar__event__name">Лига Академических команд по футболу</h2>
                                 <p className="cckemit-page__section__calendar__event__date">октябрь - апрель</p>
-                                <p className="cckemit-page__section__calendar__event__time">время</p>
+                                {/* <p className="cckemit-page__section__calendar__event__time">время</p> */}
                             </section>
-                            <p className="cckemit-page__section__calendar__event__place">Место</p>
+                            <p className="cckemit-page__section__calendar__event__place">Кампус Академии</p>
                         </section>
                         <section className="cckemit-page__section__calendar__event">
                             <section className="cckemit-page__section__calendar__event__details">
                                 <h2 className="cckemit-page__section__calendar__event__name">Спартакиада Президентской академии</h2>
                                 <p className="cckemit-page__section__calendar__event__date">осень-весна</p>
-                                <p className="cckemit-page__section__calendar__event__time">время</p>
+                                {/* <p className="cckemit-page__section__calendar__event__time">время</p> */}
                             </section>
-                            <p className="cckemit-page__section__calendar__event__place">Место</p>
+                            <p className="cckemit-page__section__calendar__event__place">Кампус Академии</p>
                         </section>
+                         <section className="cckemit-page__section__calendar__event">
+                            <section className="cckemit-page__section__calendar__event__details">
+                                <h2 className="cckemit-page__section__calendar__event__name">Турнир "Бросок Кобры" ССК ЭМИТ</h2>
+                                <p className="cckemit-page__section__calendar__event__date">6-12 апреля</p>
+                                {/* <p className="cckemit-page__section__calendar__event__time">время</p> */}
+                            </section>
+                            <p className="cckemit-page__section__calendar__event__place">Кампус Академии</p>
+                        </section>
+                        <section className="cckemit-page__section__calendar__event">
+                            <section className="cckemit-page__section__calendar__event__details">
+                                <h2 className="cckemit-page__section__calendar__event__name">Кубок Ректора по футболу</h2>
+                                <p className="cckemit-page__section__calendar__event__date">апрель-май</p>
+                                {/* <p className="cckemit-page__section__calendar__event__time">время</p> */}
+                            </section>
+                            <p className="cckemit-page__section__calendar__event__place">Кампус Академии</p>
+                        </section>
+                       
                     </section>
                     </section>
                     <img
