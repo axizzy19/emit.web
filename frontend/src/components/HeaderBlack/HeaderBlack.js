@@ -16,7 +16,7 @@ const HeaderBlack = ({ title, subtitle }) => {
   return (
       <header className="header-black-component__header">
         <section className="header-black-component__section__logos">
-                <button onClick={() => handleNavigation('/pages/ccemit')}>
+                <button onClick={() => handleNavigation('/')}>
                     <img
                         src={ranepaLogos}
                         className="header-black-component__ranepa__logos"

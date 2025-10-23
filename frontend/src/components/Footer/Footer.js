@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <section className="footer__section__info">
           <h4 className="footer__title">Контактная информация</h4>
-          <p>Москва, проспект Вернадского, дом 82, корпус 5</p>
+          <p>Москва, проспект Вернадского, 82, корпус 3, стр. 4</p>
       </section>
       <section className="footer__section__numbers">
           <p>abitura-emit@ranepa.ru</p>
