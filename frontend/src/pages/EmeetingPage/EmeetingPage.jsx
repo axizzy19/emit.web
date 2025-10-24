@@ -23,7 +23,7 @@ const EmeetingPage = () => {
         <div className="positions">
         <main className="emeetimg-page__main">
             <section className="emeetimg-page__section__description emeetimg-page__padding__inline">
-                <p className="emeetimg-page__section__description__text">Посещая наши мероприятия, вы сможете познакомиться с другими ребятами нашего института(и не только), поиграть в настольные и видео-игры, а так же просто расслабиться, проведя время в приятной компании!</p>
+                <p className="emeetimg-page__section__description__text">Посещая наши мероприятия, вы сможете познакомиться с другими ребятами нашего института (и не только), поиграть в настольные и видео-игры, а так же просто расслабиться, проведя время в приятной компании!</p>
                 <img
                     src={emeetingBackground}
                     className="emeetimg-page__section__description__background"

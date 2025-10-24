@@ -137,6 +137,12 @@ button:hover {
     transform: scale(1.csc-page__05);
 }
 
+@media (width > 1600px) {
+    .csc-page__main-image__background {
+        display: none;
+    }
+}
+
 @media (width < 1024px) {
     .csc-page__padding__inline {
         padding-inline: 180px;
