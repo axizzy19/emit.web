@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import navigationButton from '../../assets/images/NavigationButton.png';
 import ranepaLogos from '../../assets/images/RanepaLogosB.svg';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const Header = ({ title, subtitle }) => {
@@ -11,8 +11,6 @@ const Header = ({ title, subtitle }) => {
   const handleNavigation = (path) => {
     navigate(path);
   };
-
-  const pageImages = [ranepaLogos];
 
   return (
         <header className="header-component__header">
